@@ -1,4 +1,7 @@
   
+ 
+  
+  
   /*------------------------*/
   /* Row and column styling */
   /*------------------------*/
@@ -115,84 +118,83 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+/*------------------JUNK CODE BELOW------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+
+   /* Start
+
+   CODE FROM ATTEMPT AT TRANSPARENT OVERLAY ON ABOUT ME PHOTO 
    
-  
-  /* ----------------------------------------------------------------------------- */
-  /*                                                                               */
-  /*                       Style from x child Parallax Template                    */
-  /*                                                                               */
-  /* ----------------------------------------------------------------------------- */
 
+   .full-block-about-me-img {
+    background: url('../images/headshot-001-christopher-cattron-square.jpg');
+    width: 333px;
+    height: 500px;
+    max-width: 100%;
+    height: auto;
+    min-height: 300px;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .full-block-about-me-img:hover .overlay-block {
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  
+  .overlay-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: 0.5s ease;
+    background-color: rgba(128, 206, 215, 0.7); /* middle-blue */
+    overflow: hidden; /* Not sure if you need this 
+  }
+  
+  /*
 
-   .entry-thumb {
-    background-color:transparent;
-  }
-  .entry-featured {
-    border:none;
-  }
-  .single-post .entry-featured {
-  display:none;
-  }
-  .single-post .entry-header .entry-title {
-  display:none;
-  }
-  .featured-image {
-  position: relative;
-  height: 500px;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  }
-  
-  @media (max-width: 736px) {
-  .featured-image {
-  background-attachment: initial;
-  background-position: center center;
-  }
-  .featured-image .caption{
-  bottom: 5% !important;
-  }
-  }
-  
-  .featured-image:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: block;
-  }
-  
-  .featured-image:after {
-    background: -webkit-linear-gradient(to bottom, rgba(96, 124, 138, 0.85), rgba(139, 195, 74, 0.85)); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, rgba(96, 124, 138, 0.85), rgba(139, 195, 74, 0.85)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  Not sure exactly what this does:
+
+  @media screen and (max-width: 768px) {
+    .full-block-about-me-img, {
+      margin-bottom: 20px
     }
+    
+*/
+
+      /* END
+      
+      CODE FROM ATTEMPT AT TRANSPARENT OVERLAY ON ABOUT ME PHOTO 
+    
 
 
+      HTML:
 
+                <!--START About me image code-->
+                <div class="full-block-about-me-img w3-col m6 w3-center w3-padding-large">
+                    <div class="overlay-block"></div>
+                 </div>
+                <!--START About me image code-->
 
-  .featured-image:after {
-  bottom: 0;
-  background: rgba(96, 124, 138, 0.85);
-  }
-  
-  .featured-image img {
-  width: 100% !important;
-  height: auto;
-  margin: auto;
-  }
-  
-  .featured-image .caption {
-  position: absolute;
-  z-index: 999;
-  color: #fff !important;
-  bottom: 15%;
-  }
-  
-  .featured-image .caption h1 {
-  color: rgba(255, 255, 255, 0.7) !important;
-  }
-  
-  .entry-header .p-meta>span {
-    display:none;
-  }
+      */
