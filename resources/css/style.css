@@ -1,6 +1,45 @@
   
+  /*------------------------*/
+  /* Row and column styling */
+  /*------------------------*/
+  .column-1of2 {
+    float: left;
+    width: 50%;
+    padding-right: 2em;
+  }
+
+  .column-2of2 {
+    float: left;
+    width: 50%;
+  }
   
   
+  .column-3 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column-2, .column-3 {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
   
   /* ---------------------------------------------------------------------- */
   /*                                                                        */
@@ -9,7 +48,7 @@
   /* ---------------------------------------------------------------------- */
 
 
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
     body, html {
     height: 100%;
     color: #777;
@@ -17,28 +56,37 @@
     }
 
     /* Create a Parallax Effect */
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    opacity: 65%;
     }
 
+    
     /* First image (Logo. Full height) */
     .bgimg-1 {
-    background-image: url('/w3images/parallax1.jpg');
+    background-image: url('../images/banner-1.JPG');
     min-height: 100%;
     }
 
-    /* Second image (Portfolio) */
+    /* Second image (Education) */
     .bgimg-2 {
-    background-image: url("/w3images/parallax2.jpg");
+      background-image: url("../images/banner-education.JPG");
+      min-height: 400px;
+      }
+
+    /* Third image (Portfolio) */
+    .bgimg-3 {
+    background-image: url("../images/bridge/bridge-jerome\ \(9\).JPG");
     min-height: 400px;
     }
 
-    /* Third image (Contact) */
-    .bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
+    /* Fourth image (Contact) */
+    .bgimg-4 {
+    background-image: url("../images/banner-1.JPG");
     min-height: 400px;
     }
 
@@ -46,9 +94,15 @@
     .w3-hover-opacity {cursor: pointer;}
 
     /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1600px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-        min-height: 400px;
-    }
+    @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+          background-attachment: scroll;
+          min-height: 400px;
+      }
+
+     /* .bgimg-2{
+        background-image: url("../images/banner-education-crop.jpg");
+      }
+      */
+   }
 

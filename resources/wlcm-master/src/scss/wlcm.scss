@@ -1,0 +1,14 @@
+
+
+@keyframes __wlcm_scroll_up {
+  100% {
+    transform: translate3d(0,100%,0);
+  }
+}
+
+
+.__wlcm_scroll_up {
+  animation-name: __wlcm_scroll_up;
+  animation-timing-function: ease;
+  animation-duration: 5s;
+}

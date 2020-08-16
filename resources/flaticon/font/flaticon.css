@@ -1,0 +1,167 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 16/08/2020 17:51
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-mosque:before { content: "\f100"; }
+.flaticon-bibi-heybat-mosque:before { content: "\f101"; }
+.flaticon-mosque-1:before { content: "\f102"; }
+.flaticon-mosque-2:before { content: "\f103"; }
+.flaticon-castle-1:before { content: "\f104"; }
+.flaticon-heaven:before { content: "\f105"; }
+.flaticon-historic-theatre:before { content: "\f106"; }
+.flaticon-bibi-heybat-mosque-1:before { content: "\f107"; }
+.flaticon-coliseum:before { content: "\f108"; }
+.flaticon-coliseum-1:before { content: "\f109"; }
+.flaticon-historical-building:before { content: "\f10a"; }
+.flaticon-coliseum-2:before { content: "\f10b"; }
+.flaticon-laptop-with-antique-historical-building-on-screen:before { content: "\f10c"; }
+.flaticon-elegant-antique-building-shape-with-columns:before { content: "\f10d"; }
+.flaticon-old-monument:before { content: "\f10e"; }
+.flaticon-temple-of-heaven:before { content: "\f10f"; }
+.flaticon-kremlin:before { content: "\f110"; }
+.flaticon-university:before { content: "\f111"; }
+.flaticon-history:before { content: "\f112"; }
+.flaticon-burj-khalifa:before { content: "\f113"; }
+.flaticon-monument:before { content: "\f114"; }
+.flaticon-eiffel-tower:before { content: "\f115"; }
+.flaticon-city-hall:before { content: "\f116"; }
+.flaticon-museum:before { content: "\f117"; }
+.flaticon-ciudad-mitad-del-mundo:before { content: "\f118"; }
+.flaticon-bridges:before { content: "\f119"; }
+.flaticon-parthenon:before { content: "\f11a"; }
+.flaticon-obelisk:before { content: "\f11b"; }
+.flaticon-galata-tower:before { content: "\f11c"; }
+.flaticon-hagia-sophia:before { content: "\f11d"; }
+.flaticon-temple:before { content: "\f11e"; }
+.flaticon-columns:before { content: "\f11f"; }
+.flaticon-obelisk-1:before { content: "\f120"; }
+.flaticon-statue-of-liberty:before { content: "\f121"; }
+.flaticon-taj-mahal:before { content: "\f122"; }
+.flaticon-hyderabad-charminar:before { content: "\f123"; }
+.flaticon-mosque-3:before { content: "\f124"; }
+.flaticon-hagia-sophia-1:before { content: "\f125"; }
+.flaticon-galata-tower-1:before { content: "\f126"; }
+.flaticon-obelisk-2:before { content: "\f127"; }
+.flaticon-empire-state-building:before { content: "\f128"; }
+.flaticon-space-needle:before { content: "\f129"; }
+.flaticon-millau-viaduct:before { content: "\f12a"; }
+.flaticon-gate-of-india:before { content: "\f12b"; }
+.flaticon-bridge:before { content: "\f12c"; }
+.flaticon-bridge-1:before { content: "\f12d"; }
+.flaticon-bridge-2:before { content: "\f12e"; }
+.flaticon-bridge-3:before { content: "\f12f"; }
+.flaticon-bridge-4:before { content: "\f130"; }
+.flaticon-bridge-5:before { content: "\f131"; }
+.flaticon-beam:before { content: "\f132"; }
+.flaticon-beam-1:before { content: "\f133"; }
+.flaticon-beam-2:before { content: "\f134"; }
+.flaticon-beam-3:before { content: "\f135"; }
+.flaticon-beam-4:before { content: "\f136"; }
+.flaticon-block:before { content: "\f137"; }
+.flaticon-beam-5:before { content: "\f138"; }
+.flaticon-beam-6:before { content: "\f139"; }
+.flaticon-concrete-mixer:before { content: "\f13a"; }
+.flaticon-truck:before { content: "\f13b"; }
+.flaticon-cement-truck:before { content: "\f13c"; }
+.flaticon-concrete:before { content: "\f13d"; }
+.flaticon-concrete-1:before { content: "\f13e"; }
+.flaticon-concrete-mixer-1:before { content: "\f13f"; }
+.flaticon-bricklayer:before { content: "\f140"; }
+.flaticon-brickwork:before { content: "\f141"; }
+.flaticon-mansory:before { content: "\f142"; }
+.flaticon-brickwall:before { content: "\f143"; }
+.flaticon-brickwall-1:before { content: "\f144"; }
+.flaticon-brick:before { content: "\f145"; }
+.flaticon-brick-wall:before { content: "\f146"; }
+.flaticon-wood-board:before { content: "\f147"; }
+.flaticon-board:before { content: "\f148"; }
+.flaticon-wood:before { content: "\f149"; }
+.flaticon-wood-board-1:before { content: "\f14a"; }
+.flaticon-plank:before { content: "\f14b"; }
+.flaticon-chisel:before { content: "\f14c"; }
+.flaticon-wood-1:before { content: "\f14d"; }
+.flaticon-saw:before { content: "\f14e"; }
+.flaticon-hammer-drill:before { content: "\f14f"; }
+.flaticon-diagram:before { content: "\f150"; }
+.flaticon-business-and-finance:before { content: "\f151"; }
+.flaticon-tin:before { content: "\f152"; }
+.flaticon-can:before { content: "\f153"; }
+.flaticon-house:before { content: "\f154"; }
+.flaticon-earthquake:before { content: "\f155"; }
+.flaticon-earthquake-1:before { content: "\f156"; }
+.flaticon-earthquake-2:before { content: "\f157"; }
+.flaticon-earthquake-3:before { content: "\f158"; }
+.flaticon-seismograph:before { content: "\f159"; }
+.flaticon-earthquake-4:before { content: "\f15a"; }
+.flaticon-graph:before { content: "\f15b"; }
+.flaticon-earthquake-5:before { content: "\f15c"; }
+.flaticon-earthquake-6:before { content: "\f15d"; }
+.flaticon-earthquake-7:before { content: "\f15e"; }
+.flaticon-puzzle-pieces:before { content: "\f15f"; }
+.flaticon-puzzle:before { content: "\f160"; }
+.flaticon-problem-solving:before { content: "\f161"; }
+.flaticon-skill:before { content: "\f162"; }
+.flaticon-light-bulb:before { content: "\f163"; }
+.flaticon-hypothesis:before { content: "\f164"; }
+.flaticon-puzzle-1:before { content: "\f165"; }
+.flaticon-idea:before { content: "\f166"; }
+.flaticon-idea-1:before { content: "\f167"; }
+.flaticon-light-bulb-1:before { content: "\f168"; }
+.flaticon-learning:before { content: "\f169"; }
+.flaticon-knowledge:before { content: "\f16a"; }
+.flaticon-analytics:before { content: "\f16b"; }
+.flaticon-education:before { content: "\f16c"; }
+.flaticon-business:before { content: "\f16d"; }
+.flaticon-mapping:before { content: "\f16e"; }
+.flaticon-engineer:before { content: "\f16f"; }
+.flaticon-model:before { content: "\f170"; }
+.flaticon-engineer-1:before { content: "\f171"; }
+.flaticon-work:before { content: "\f172"; }
+.flaticon-engineer-2:before { content: "\f173"; }
+.flaticon-mapping-1:before { content: "\f174"; }
+.flaticon-equipment:before { content: "\f175"; }
+.flaticon-construction:before { content: "\f176"; }
+.flaticon-worker:before { content: "\f177"; }
+.flaticon-compass:before { content: "\f178"; }
+.flaticon-clipboard:before { content: "\f179"; }
+.flaticon-clipboard-1:before { content: "\f17a"; }
+.flaticon-maths:before { content: "\f17b"; }
+.flaticon-formula:before { content: "\f17c"; }
+.flaticon-triangle:before { content: "\f17d"; }
+.flaticon-board-1:before { content: "\f17e"; }
+.flaticon-analytics-1:before { content: "\f17f"; }
+.flaticon-3d-modeling:before { content: "\f180"; }
+.flaticon-3d-model:before { content: "\f181"; }
+.flaticon-edit:before { content: "\f182"; }
+.flaticon-business-plan:before { content: "\f183"; }
+.flaticon-report:before { content: "\f184"; }
+.flaticon-laptop:before { content: "\f185"; }
+.flaticon-report-1:before { content: "\f186"; }
