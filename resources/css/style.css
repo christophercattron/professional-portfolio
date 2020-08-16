@@ -29,13 +29,10 @@
 
   /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .column-2, .column-3 {
+    .column-1of2, .column-2of2, .column-3 {
       width: 100%;
     }
   }
-
-
-
 
 
 
@@ -68,8 +65,12 @@
     
     /* First image (Logo. Full height) */
     .bgimg-1 {
-    background-image: url('../images/banner-1.JPG');
+    background-image: url('..//images/banner-header.PNG');
     min-height: 100%;
+    }
+
+    .bgimg-1:after{
+      background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1));
     }
 
     /* Second image (Education) */
