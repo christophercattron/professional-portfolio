@@ -14,7 +14,8 @@
         <link rel="stylesheet/scss" href="./resources/css/palette.scss" type="text/css"> <!--Color palette SCSS stylesheet-->
         <link rel="shortcut icon" href="./resources/favicon/favicon-cc-arrows.ico" type="image/x-icon">  <!--Favicon CC Logo (1of2)-->
         <link rel="icon" href="./resources/favicon/favicon-cc-arrows.ico" type="image/x-icon">  <!--Favicon CC Logo (2of2)-->
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> <!--links to jquery 3.1.0 (required for slideshow in experience section to work-->
+        <!--<script src="./resources/js/xp-slideshow.js"></script> js for xp-slideshow-->
 
         <link rel="stylesheet" href="./resources/wlcm-master/dist/wlcm.css"> <!--Word Cloud stylesheet-->
 
@@ -112,7 +113,13 @@
                     <p class="w3-wide"><i class="flaticon-education"></i> Collaboration</p>
 
                 </div>
-                
+
+
+            </div>
+        </div>
+
+
+
                 <!--
                 <div class="column-3">
                     <p class="w3-large w3-center w3-padding-16">Traits</p>
@@ -138,8 +145,7 @@
                 -->
 
 
-            </div>
-        </div>
+
 
 <!------------------------->
 <!--START Word Cloud Code-->
@@ -196,44 +202,11 @@
             </p>
             <br />
 
-            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-            <div class="w3-row-padding w3-center">
-                <div class="w3-col m3">
-                    <img src="/w3images/p1.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" />
-                </div>
 
-                <div class="w3-col m3">
-                    <img src="/w3images/p2.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans" />
-                </div>
 
-                <div class="w3-col m3">
-                    <img src="/w3images/p3.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup" />
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/w3images/p4.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean" />
-                </div>
-            </div>
-
-            <div class="w3-row-padding w3-center w3-section">
-                <div class="w3-col m3">
-                    <img src="/w3images/p5.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist" />
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/w3images/p6.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter" />
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/w3images/p7.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train" />
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/w3images/p8.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing" />
-                </div>
-                <button class="w3-button w3-padding-large w3-light-grey" style="margin-top: 64px;">LOAD MORE</button>
-            </div>
-        </div>
+           
+        
+        </div><!--Ends div for id="education"-->
 
 
 
@@ -255,44 +228,76 @@
             </p>
             <br />
 
-            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-            <div class="w3-row-padding w3-center">
-                <div class="w3-col m3">
-                    <img src="/w3images/p1.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" />
-                </div>
+            <!--START experience container-->
 
-                <div class="w3-col m3">
-                    <img src="/w3images/p2.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans" />
+            <div class="cont-1">
+                <div class="cont-1-1">
+                  <div class="cont-1-1-1">
+                    <div class="cont-1-1-1-1">
+                      <p id="xp-employer-name">Larson Engineering, Inc.</p>
+                    </div>
+                    <div class="cont-1-1-1-2">
+                      <p id="xp-job-title">Engineer Intern</p>
+                    </div>
+                  </div>
+                  <div class="cont-1-1-2">
+                    <div class="cont-1-1-2-1">
+                      <p id="xp-location">St. Louis, Missouri</p>
+                    </div>
+                    <div class="cont-1-1-2-2">
+                      <p id="xp-date">Summer 2019</p>
+                    </div>
+                  </div>
                 </div>
+                <div class="cont-1-2">
+                  <div class="cont-1-2-1" id="xp-slideshow"> <!--start of xp-slideshow-->
+                    <!--START SLIDESHOW-->
+                    <script>
+                        $("#xp-slideshow > div:gt(0)").hide();
+                        setInterval(function () {
+                        $("#xp-slideshow > div:first")
+                            .fadeOut(1000)
+                            .next()
+                            .fadeIn(1000)
+                            .end()
+                            .appendTo("#xp-slideshow");
+                        }, 8000);
+                    </script><!--For some reason it takes a few seconds for this to start working properly...-->
 
-                <div class="w3-col m3">
-                    <img src="/w3images/p3.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup" />
+                      <div>
+                        <img src="./resources/images/larson/larson-1.png">
+                      </div>
+                      <div>
+                        <img src="./resources/images/larson/larson-2.JPG" >
+                      </div>
+                      <div>
+                        <img src="./resources/images/larson/larson-3.jpg">
+                      </div>
+                    
+                    <!--END Slideshow div-->
+                  </div><!--end of xp-slideshow div-->
+                  <div class="cont-1-2-2">
+                    <ul id="xp-job-highlights">
+                      <li>Prepared structural design calculations and structural drawings for pre-fabricated steel and 
+                          aluminum buildings including guard booths, equipment enclosures, and other structures.</li> 
+                      <li>Designed using the latest American codes and standards.</li> 
+                      <li>Utilized RISA-3D to model structural systems and analyze static loads</li> 
+                      <li>Created and revised MathCAD calculation templates for use in the design of aluminum facade 
+                          structural members and curtain-wall systems per the latest codes and standards.</li> 
+                    </ul>
+                  </div>
                 </div>
+                <div class="cont-1-3">
+                  <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Eget aliquet nibh praesent tristique magna. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Ut eu sem integer vitae justo. Proin libero nunc consequat interdum. Viverra orci sagittis eu volutpat. Phasellus faucibus scelerisque eleifend donec pretium. Ullamcorper sit amet risus nullam eget felis eget. Non quam lacus suspendisse faucibus interdum posuere lorem. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
+                </div>
+              </div>
 
-                <div class="w3-col m3">
-                    <img src="/w3images/p4.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean" />
-                </div>
-            </div>
 
-            <div class="w3-row-padding w3-center w3-section">
-                <div class="w3-col m3">
-                    <img src="/w3images/p5.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist" />
-                </div>
 
-                <div class="w3-col m3">
-                    <img src="/w3images/p6.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter" />
-                </div>
+            <!--END experience container-->
 
-                <div class="w3-col m3">
-                    <img src="/w3images/p7.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train" />
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/w3images/p8.jpg" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing" />
-                </div>
-                <button class="w3-button w3-padding-large w3-light-grey" style="margin-top: 64px;">LOAD MORE</button>
-            </div>
-        </div>
+            
+        </div><!--Ends id="experience" div-->
 
         <!-- Modal for full size images on click-->
         <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
