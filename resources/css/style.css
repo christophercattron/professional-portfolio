@@ -313,6 +313,47 @@
   position: absolute;
 }
 
+/* xp-slideshow for Great Rivers Greenway */
+
+
+#xp-slideshow-2 {
+  position: relative;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+  text-align: center;
+
+}
+
+#xp-slideshow-2 > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ 
+
+  
+}
+
+#xp-slideshow-2 img {
+  border-radius: 15px;
+/*my code for responsive image sizing*/
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+
+/* testing new code below: */
+
+#xp-slideshow-2 > div > img{
+
+  position: absolute;
+}
 /* When using this code, it aligns h5 text to the bottom
  center of the ex-slideshow div, but it stopped the hover 
  effect from removing the transparency
