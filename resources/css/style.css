@@ -279,6 +279,8 @@
   padding: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 
+  text-align: center;
+
 }
 
 #xp-slideshow > div {
@@ -303,11 +305,6 @@
   object-fit:cover;
 }
 
-#xp-slideshow h5{
-  position:absolute;
-  bottom:0px;
-  text-align: center;
-}
 
 /* testing new code below: */
 
@@ -316,8 +313,15 @@
   position: absolute;
 }
 
-
-
+/* When using this code, it aligns h5 text to the bottom
+ center of the ex-slideshow div, but it stopped the hover 
+ effect from removing the transparency
+#xp-slideshow h5{
+  position:absolute;
+  bottom:0px;
+  text-align: center;
+}
+*/
 
 
 
