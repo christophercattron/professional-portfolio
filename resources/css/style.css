@@ -1,4 +1,8 @@
-  
+  /*Navbar flaticon formatting to match font-awesome */
+  #navbar-flaticon{
+    font-size: 15px!important;
+    margin-left: none!important;
+  }
  
   
   

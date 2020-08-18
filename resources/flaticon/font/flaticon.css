@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 16/08/2020 17:51
+  	Creation date: 18/08/2020 19:21
   	*/
 
 @font-face {
@@ -165,3 +165,26 @@ margin-left: 20px;
 .flaticon-report:before { content: "\f184"; }
 .flaticon-laptop:before { content: "\f185"; }
 .flaticon-report-1:before { content: "\f186"; }
+.flaticon-confetti:before { content: "\f187"; }
+.flaticon-live-music:before { content: "\f188"; }
+.flaticon-fireworks:before { content: "\f189"; }
+.flaticon-celebration:before { content: "\f18a"; }
+.flaticon-party:before { content: "\f18b"; }
+
+
+/*This is so that the flaticon styling matches that of the
+font-awesome icons in the navbars*/
+    .flaticon-party:before{
+      font-family: Flaticon;
+            font-size: 15px;
+    font-style: normal;
+    margin-left: 0px;
+    }
+    
+    .flaticon-party{
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
