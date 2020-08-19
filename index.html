@@ -19,6 +19,15 @@
 
         <link rel="stylesheet" href="./resources/wlcm-master/dist/wlcm.css"> <!--Word Cloud stylesheet-->
 
+        <!--The five lines below (two elements) are required for the "Read more" button JavaScript to work-->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin="anonymous">
+        </script>
+        <script src="./resources/js/Read-More-Less-Buttons/src/readmore.js"></script>
+        <!-------------------------------------------------------------------------------------------------->
+
+
 
     </head>
 
@@ -291,11 +300,45 @@
                   </div>
                 </div>
                 <div class="cont-1-3">
-                  <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Eget aliquet nibh praesent tristique magna. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Ut eu sem integer vitae justo. Proin libero nunc consequat interdum. Viverra orci sagittis eu volutpat. Phasellus faucibus scelerisque eleifend donec pretium. Ullamcorper sit amet risus nullam eget felis eget. Non quam lacus suspendisse faucibus interdum posuere lorem. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
-                </div>
-              </div>
-
-
+                    <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum metus ac semper finibus. Praesent vulputate augue ac tempus congue.
+                        Curabitur in sapien semper, tristique arcu eget, pharetra risus. Donec tempus aliquet purus eu lobortis.
+                        Etiam ac finibus felis. Integer congue sit amet neque sit amet pellentesque. Donec cursus interdum rutrum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p class="read-more">Praesent luctus at erat at sagittis.
+                        Etiam posuere, erat nec laoreet ornare, odio dui mattis nisl, convallis semper ligula lectus eu turpis.
+                        Phasellus pharetra risus tortor, eget fringilla tortor laoreet at. Quisque egestas tristique dui. Mauris non iaculis ex.
+                        Ut pellentesque, massa ut molestie egestas, tortor leo imperdiet sem, vitae malesuada nibh dolor in magna. Etiam pulvinar pharetra dolor, vel dapibus ipsum commodo eget.
+                        Praesent turpis odio, suscipit ut ullamcorper vel, finibus at ligula. Phasellus dolor lectus, molestie a velit sed, iaculis rhoncus risus.
+                        Ut id pellentesque erat, quis elementum ligula. Donec dignissim diam sem, a bibendum erat mattis quis. Vivamus id erat dui. Vestibulum sollicitudin ac justo at lacinia.
+                    </p>
+                    <script>
+                        $(function(){
+                            $(".read-more").readmore({
+                                buttonClasses: "btn-read-more",
+                            });
+                        });
+                
+                        /* *I don't know why this is commented out*
+                            $(function(){
+                                $(".read-more").readmore({
+                                    hideText: "Any text",
+                                    readText: "New text",
+                                    isTextShown: true,
+                                    effect: true,
+                                    effectOption: "slow",
+                                    buttonClasses: "btn-primary opacity-rollover",
+                                    id: "read-more-action"
+                                });
+                            })
+                
+                        */
+                    </script>
+                    <!--END 'Read more read less' code-->
+                </div><!--END cont-1-3 div-->
+            </div><!--END Larson cont-1 div-->
 
             <!--END Larson Engineering experience container-->
 
@@ -375,9 +418,23 @@
 
                 </div>
                 <div class="cont-1-3">
-                  <p>Vitae suscipit tellus mauris a diam maecenas sed enim ut. Eget aliquet nibh praesent tristique magna. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Ut eu sem integer vitae justo. Proin libero nunc consequat interdum. Viverra orci sagittis eu volutpat. Phasellus faucibus scelerisque eleifend donec pretium. Ullamcorper sit amet risus nullam eget felis eget. Non quam lacus suspendisse faucibus interdum posuere lorem. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
-                </div>
-              </div>
+                    <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum metus ac semper finibus. Praesent vulputate augue ac tempus congue.
+                        Curabitur in sapien semper, tristique arcu eget, pharetra risus. Donec tempus aliquet purus eu lobortis.
+                        Etiam ac finibus felis. Integer congue sit amet neque sit amet pellentesque. Donec cursus interdum rutrum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p class="read-more">Praesent luctus at erat at sagittis.
+                        Etiam posuere, erat nec laoreet ornare, odio dui mattis nisl, convallis semper ligula lectus eu turpis.
+                        Phasellus pharetra risus tortor, eget fringilla tortor laoreet at. Quisque egestas tristique dui. Mauris non iaculis ex.
+                        Ut pellentesque, massa ut molestie egestas, tortor leo imperdiet sem, vitae malesuada nibh dolor in magna. Etiam pulvinar pharetra dolor, vel dapibus ipsum commodo eget.
+                        Praesent turpis odio, suscipit ut ullamcorper vel, finibus at ligula. Phasellus dolor lectus, molestie a velit sed, iaculis rhoncus risus.
+                        Ut id pellentesque erat, quis elementum ligula. Donec dignissim diam sem, a bibendum erat mattis quis. Vivamus id erat dui. Vestibulum sollicitudin ac justo at lacinia.
+                    </p>
+                    <!--END 'Read more read less' code-->
+                </div><!--END GRG cont-1-3 div-->
+            </div><!--END GRG cont-1 div-->
 
 
 

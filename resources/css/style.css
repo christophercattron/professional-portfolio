@@ -359,7 +359,7 @@
 }
 
 
-/* testing new code below: */
+/* testing new code for slideshow below: */
 
 #xp-slideshow-2 > div > img{
 
@@ -376,7 +376,64 @@
 */
 
 
+/*----------------------------*/
+/* Read More Read Less button */
+/*----------------------------*/
 
+.btn-read-more{
+  margin-left:0;
+  display:block;
+  width:90%;
+  margin: 0 auto;
+
+  color:#333;
+  background-color:#fff;
+  border-color:#ccc
+}
+
+[data-toggle=buttons]>.btn-read-more input[type=checkbox],[data-toggle=buttons]>.btn-read-more input[type=radio]{
+  position:absolute;
+  clip:rect(0,0,0,0);
+  pointer-events:none
+}
+
+.btn-read-more.focus,.btn-read-more:focus{
+  color:#333;
+  background-color:#e6e6e6;
+  border-color:#8c8c8c
+}
+.btn-read-more:hover{
+  color:#333;
+  background-color:#e6e6e6;
+  border-color:#adadad
+}
+.btn-read-more.active,.btn-read-more:active,.open>.dropdown-toggle.btn-read-more{
+  color:#333;
+  background-color:#e6e6e6;
+  background-image:none;
+  border-color:#adadad
+}
+.btn-read-more.active.focus,.btn-read-more.active:focus,.btn-read-more.active:hover,.btn-read-more:active.focus,.btn-read-more:active:focus,.btn-read-more:active:hover,.open>.dropdown-toggle.btn-read-more.focus,.open>.dropdown-toggle.btn-read-more:focus,.open>.dropdown-toggle.btn-read-more:hover{
+  color:#333;
+  background-color:#d4d4d4;
+  border-color:#8c8c8c
+}
+.btn-read-more.disabled.focus,.btn-read-more.disabled:focus,.btn-read-more.disabled:hover,.btn-read-more[disabled].focus,.btn-read-more[disabled]:focus,.btn-read-more[disabled]:hover,fieldset[disabled] .btn-read-more.focus,fieldset[disabled] .btn-read-more:focus,fieldset[disabled] .btn-read-more:hover{
+  background-color:#fff;
+  border-color:#ccc
+}
+.btn-read-more .badge{
+  color:#fff;
+  background-color:#333
+}
+
+.btn-read-more+.btn-read-more{
+  margin-top:5px
+}
+
+input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=submit].btn-read-more{
+  width:100%
+}
 
 
 
