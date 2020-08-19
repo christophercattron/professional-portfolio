@@ -4,7 +4,14 @@
     margin-left: none!important;
   }
  
-  
+  /* Style for logo "line" between sections */
+  #end-line-logo {
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+  }
+
+
   
   /*------------------------*/
   /* Row and column styling */
@@ -179,8 +186,14 @@
 
 .cont-1 {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.43);
+  box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.43);
+  border-radius: 10px;
 }
+
 
 
 /* cont-X-X level */
@@ -191,6 +204,7 @@
 
 .cont-1-2{
   display: flex;
+  width: 100%;
 }
 
 .cont-1-3{
@@ -218,14 +232,70 @@
 }
 
 .cont-1-2-1{
-  width: 50%;
-  border-radius: 15px;
+  /*width: 50%;*/
+  border-radius: 5px;
+  width: 450px;
+  height: 375px;
+
 }
 
 .cont-1-2-2{
   width: 50%;
   font-style: italic;
 }
+
+/*START test new code*/
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on 
+  top of each other instead of next to each other and reduce font size */
+  @media screen and (max-width: 850px) {
+    
+    /* For elements in cont-1-1 */
+
+    .cont-1-1{
+      flex-wrap: wrap;
+    }
+  
+    .cont-1-1-1{
+      width: 100%;
+    }
+
+    .cont-1-1-2{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: 0;
+    }
+    
+    
+    /* For elements in cont-1-2 */
+    
+    .cont-1-2{
+      display: flex-column;
+      flex-wrap: wrap;
+    }
+    .cont-1-2-1{
+      width: 100%;
+      height: 500px;
+    }
+
+    .cont-1-2-2{
+      width: 100%;
+    }
+    
+    
+    #xp-slideshow-1 > div ,
+    #xp-slideshow-2 > div ,
+    #xp-slideshow-3 > div , 
+    #xp-slideshow-4 > div {
+      height: 500px;
+    }
+
+
+  }
+  /*END test new code*/
+  
 
 .cont-1-2-2 ul li { padding: 5px 0px; }
 
@@ -256,6 +326,7 @@
 .cont-1-1-1-1, .cont-1-1-1-2, .cont-1-1-2-1, .cont-1-1-2-2 {
   margin: 5px;
 }
+
 
 /*-----------*/
 /* ID Styles */
@@ -291,7 +362,7 @@
 #xp-slideshow-4 {
   position: relative;
   padding: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 
   text-align: center;
 
@@ -315,7 +386,7 @@
 #xp-slideshow-2 img , 
 #xp-slideshow-3 img , 
 #xp-slideshow-4 img {
-  border-radius: 15px;
+  border-radius: 5px;
 /*my code for responsive image sizing*/
   max-width: 100%;
   height: auto;
@@ -360,8 +431,8 @@
   width:90%;
   margin: 0 auto;
 
-  color:#333;
-  background-color:#fff;
+  /*color:#333; */
+  /*background-color:#fff; */ 
   border-color:#ccc
 }
 
