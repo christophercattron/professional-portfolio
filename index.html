@@ -255,34 +255,34 @@
                   </div>
                 </div>
                 <div class="cont-1-2">
-                  <div class="cont-1-2-1" id="xp-slideshow"> <!--start of xp-slideshow-->
+                  <div class="cont-1-2-1" id="xp-slideshow-1"> <!--start of xp-slideshow-->
                     <!--START SLIDESHOW-->
                     <script>
-                        $("#xp-slideshow > div:gt(0)").hide();
+                        $("#xp-slideshow-1 > div:gt(0)").hide();
                         setInterval(function () {
-                        $("#xp-slideshow > div:first")
+                        $("#xp-slideshow-1 > div:first")
                             .fadeOut(1000)
                             .next()
                             .fadeIn(1000)
                             .end()
-                            .appendTo("#xp-slideshow");
+                            .appendTo("#xp-slideshow-1");
                         }, 8000);
                     </script><!--For some reason it takes a few seconds for this to start working properly...-->
 
                       <div>
-                        <img class="w3-opacity w3-hover-opacity-off" src="./resources/images/larson/larson-1.png">
+                        <img src="./resources/images/larson/larson-1.png"> <!--I used to use class="w3-opacity w3-hover-opacity-off" for the img divs-->
                         <h5>Got to get out of the office a few times—I didn't forget my PPE!</h5>
                       </div>
                       <div>
-                        <img class="w3-opacity w3-hover-opacity-off" src="./resources/images/larson/larson-2.JPG" >
+                        <img src="./resources/images/larson/larson-2.JPG" >
                         <h5>Posing with calc books I produced over the summer.</h5>
                       </div>
                       <div>
-                        <img class="w3-opacity w3-hover-opacity-off" src="./resources/images/larson/larson-3.jpg">
+                        <img src="./resources/images/larson/larson-3.jpg">
                         <h5>My workspace complete with nametag and adjustable height desk.</h5>
                       </div>
                       <div>
-                        <img class="w3-opacity w3-hover-opacity-off" src="./resources/images/larson/larson-4.jpg">
+                        <img src="./resources/images/larson/larson-4.jpg">
                         <h5>I used MathCAD extensively to perform calculations, check designs, and produce reports.</h5>
                       </div>
                     
@@ -343,7 +343,90 @@
             <!--END Larson Engineering experience container-->
 
 
-            <!--START Great Rivers Greenway experience container-->
+            <!--START Missouri S&T Department of Civil Engineering (S&T Civil) experience container-->
+
+            <div class="cont-1">
+                <div class="cont-1-1">
+                  <div class="cont-1-1-1">
+                    <div class="cont-1-1-1-1">
+                      <p id="xp-employer-name">Missouri S&T Dept. of Civil Engineering</p>
+                    </div>
+                    <div class="cont-1-1-1-2">
+                      <p id="xp-job-title">Research Assistant</p>
+                    </div>
+                  </div>
+                  <div class="cont-1-1-2">
+                    <div class="cont-1-1-2-1">
+                      <p id="xp-location">Rolla, Missouri</p>
+                    </div>
+                    <div class="cont-1-1-2-2">
+                      <p id="xp-date">Jul 2018 – Aug 2018</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont-1-2">
+                    <div class="cont-1-2-2">
+                        <ul id="xp-job-highlights">
+                          <li>Prepare test specimens and perform tests in accordance with ASTM standards.</li> 
+                          <li>Collect and prepare data for submission to research team lead.</li> 
+                          <li>Maintain condition of laboratory station and laboratory equipment.</li> 
+                        </ul>
+                    </div>
+                    <div class="cont-1-2-1" id="xp-slideshow-2"> <!--start of xp-slideshow-2-->
+                    <!--START SLIDESHOW-->
+                        <script>
+                            $("#xp-slideshow-2 > div:gt(0)").hide();
+                            setInterval(function () {
+                            $("#xp-slideshow-2 > div:first")
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo("#xp-slideshow-2");
+                            }, 8000);
+                        </script><!--For some reason it takes a few seconds for this to start working properly...-->
+
+                      <div>
+                        <img src="./resources/images/civil-lab/civil-1.jpg">
+                        <h5>caption-1</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/civil-lab/civil-2.jpg" >
+                        <h5>caption-2</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/civil-lab/civil-3.jpg">
+                        <h5>caption-3</h5>
+                      </div>
+
+
+                    <!--END Slideshow div-->
+                    </div><!--end of xp-slideshow-2 div-->
+
+                </div>
+                <div class="cont-1-3">
+                    <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum metus ac semper finibus. Praesent vulputate augue ac tempus congue.
+                        Curabitur in sapien semper, tristique arcu eget, pharetra risus. Donec tempus aliquet purus eu lobortis.
+                        Etiam ac finibus felis. Integer congue sit amet neque sit amet pellentesque. Donec cursus interdum rutrum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p class="read-more">Praesent luctus at erat at sagittis.
+                        Etiam posuere, erat nec laoreet ornare, odio dui mattis nisl, convallis semper ligula lectus eu turpis.
+                        Phasellus pharetra risus tortor, eget fringilla tortor laoreet at. Quisque egestas tristique dui. Mauris non iaculis ex.
+                        Ut pellentesque, massa ut molestie egestas, tortor leo imperdiet sem, vitae malesuada nibh dolor in magna. Etiam pulvinar pharetra dolor, vel dapibus ipsum commodo eget.
+                        Praesent turpis odio, suscipit ut ullamcorper vel, finibus at ligula. Phasellus dolor lectus, molestie a velit sed, iaculis rhoncus risus.
+                        Ut id pellentesque erat, quis elementum ligula. Donec dignissim diam sem, a bibendum erat mattis quis. Vivamus id erat dui. Vestibulum sollicitudin ac justo at lacinia.
+                    </p>
+                    <!--END 'Read more read less' code-->
+                </div><!--END S&T Civil cont-1-3 div-->
+            </div><!--END S&T Civil cont-1 div-->
+
+            <!--END Missouri S&T Dept. of Civil Engineering experience container-->
+
+
+            <!--START Great Rivers Greenway (GRG) experience container-->
 
             <div class="cont-1">
                 <div class="cont-1-1">
@@ -365,6 +448,45 @@
                   </div>
                 </div>
                 <div class="cont-1-2">
+                    <div class="cont-1-2-1" id="xp-slideshow-3"> <!--start of xp-slideshow-3-->
+                    <!--START SLIDESHOW-->
+                        <script>
+                            $("#xp-slideshow-3 > div:gt(0)").hide();
+                            setInterval(function () {
+                            $("#xp-slideshow-3 > div:first")
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo("#xp-slideshow-3");
+                            }, 8000);
+                        </script><!--For some reason it takes a few seconds for this to start working properly...-->
+
+                      <div>
+                        <img src="./resources/images/grg/grg-1.jpg">
+                        <h5>Taking a look under a steel plate girder bridge on Grant's Trail.</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/grg/grg-2.jpg" >
+                        <h5>I became familiar with engineering drawings, specifications, and other documents.</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/grg/grg-3.jpg">
+                        <h5>Posing near a prefabricated steel bowstring pratt truss bridge.</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/grg/grg-4.png">
+                        <h5>I was exposed to a variety of bridges, box-culverts, tunnels, boardwalks, & more.</h5>
+                      </div>
+                      <!--
+                      <div>
+                        <img src="./resources/images/grg/grg-5.png">
+                        <h5>GRG let me sit in on construction meetings, join site visits, and network with engineers.</h5>
+                      </div>
+                      -->
+
+                    <!--END Slideshow div-->
+                    </div><!--end of xp-slideshow-3 div-->
                     <div class="cont-1-2-2">
                         <ul id="xp-job-highlights">
                           <li>Performed field visits to each bridge & structural asset on greenways to gather data, 
@@ -376,46 +498,6 @@
                             detailed findings in a written <a target="_blank" href="./resources/docs/grg/GRG Bridge Inventory Report - July 2017 (FULL).pdf">report</a>.</li> 
                         </ul>
                     </div>
-                    <div class="cont-1-2-1" id="xp-slideshow-2"> <!--start of xp-slideshow-2-->
-                    <!--START SLIDESHOW-->
-                        <script>
-                            $("#xp-slideshow-2 > div:gt(0)").hide();
-                            setInterval(function () {
-                            $("#xp-slideshow-2 > div:first")
-                                .fadeOut(1000)
-                                .next()
-                                .fadeIn(1000)
-                                .end()
-                                .appendTo("#xp-slideshow-2");
-                            }, 8000);
-                        </script><!--For some reason it takes a few seconds for this to start working properly...-->
-
-                      <div>
-                        <img class="w3-opacity w3-hover-opacity-off" src="./resources/images/grg/grg-1.jpg">
-                        <h5>Taking a look under a steel plate girder bridge on Grant's Trail.</h5>
-                      </div>
-                      <div>
-                        <img class="w3-opacity w3-hover-opacity-off" src="./resources/images/grg/grg-2.jpg" >
-                        <h5>I became familiar with engineering drawings, specifications, and other documents.</h5>
-                      </div>
-                      <div>
-                        <img class="w3-opacity w3-hover-opacity-off" src="./resources/images/grg/grg-3.jpg">
-                        <h5>Posing near a prefabricated steel bowstring pratt truss bridge.</h5>
-                      </div>
-                      <div>
-                        <img class="w3-opacity w3-hover-opacity-off" src="./resources/images/grg/grg-4.png">
-                        <h5>I was exposed to a variety of bridges, box-culverts, tunnels, boardwalks, & more.</h5>
-                      </div>
-                      <!--
-                      <div>
-                        <img class="w3-opacity w3-hover-opacity-off" src="./resources/images/grg/grg-5.png">
-                        <h5>GRG let me sit in on construction meetings, join site visits, and network with engineers.</h5>
-                      </div>
-                      -->
-
-                    <!--END Slideshow div-->
-                    </div><!--end of xp-slideshow-2 div-->
-
                 </div>
                 <div class="cont-1-3">
                     <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
@@ -438,10 +520,96 @@
 
 
 
-            <!--END Great Rivers Greenway experience container-->
+            <!--END Great Rivers Greenway (GRG) experience container-->
 
 
 
+            <!--START Concrete Strategies (CSI) experience container-->
+
+            <div class="cont-1">
+                <div class="cont-1-1">
+                <div class="cont-1-1-1">
+                    <div class="cont-1-1-1-1">
+                    <p id="xp-employer-name">Concrete Strategies, Inc.</p>
+                    </div>
+                    <div class="cont-1-1-1-2">
+                    <p id="xp-job-title">Project Engineer Intern</p>
+                    </div>
+                </div>
+                <div class="cont-1-1-2">
+                    <div class="cont-1-1-2-1">
+                    <p id="xp-location">St. Louis, Missouri</p>
+                    </div>
+                    <div class="cont-1-1-2-2">
+                    <p id="xp-date">Summer 2015</p>
+                    </div>
+                </div>
+                </div>
+                <div class="cont-1-2">
+                    <div class="cont-1-2-2">
+                        <ul id="xp-job-highlights">
+                        <li>Oversaw site work for a concrete restoration project in St. Charles, Missouri.</li> 
+                        <li>Detailed project objectives and timeline, with assistance of Project Manager.</li> 
+                        <li>Tracked amount of removal, grading, and pouring that occurred daily.</li> 
+                        <li>Interacted with public, city inspector, and sub-contractors courteously and professionally.</li> 
+                        </ul>
+                    </div>
+                    <div class="cont-1-2-1" id="xp-slideshow-4"> <!--start of xp-slideshow-4-->
+                    <!--START SLIDESHOW-->
+                        <script>
+                            $("#xp-slideshow-4 > div:gt(0)").hide();
+                            setInterval(function () {
+                            $("#xp-slideshow-4 > div:first")
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo("#xp-slideshow-4");
+                            }, 8000);
+                        </script><!--For some reason it takes a few seconds for this to start working properly...-->
+
+                    <div>
+                        <img src="./resources/images/csi/csi-1.jpg">
+                        <h5>caption-1</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/csi/csi-2.jpg" >
+                        <h5>caption-2</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/csi/csi-3.jpg">
+                        <h5>caption-3</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/csi/csi-4.jpg">
+                        <h5>caption-4</h5>
+                    </div>
+
+                    <!--END Slideshow div-->
+                    </div><!--end of xp-slideshow-4 div-->
+
+                </div>
+                <div class="cont-1-3">
+                    <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum metus ac semper finibus. Praesent vulputate augue ac tempus congue.
+                        Curabitur in sapien semper, tristique arcu eget, pharetra risus. Donec tempus aliquet purus eu lobortis.
+                        Etiam ac finibus felis. Integer congue sit amet neque sit amet pellentesque. Donec cursus interdum rutrum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p class="read-more">Praesent luctus at erat at sagittis.
+                        Etiam posuere, erat nec laoreet ornare, odio dui mattis nisl, convallis semper ligula lectus eu turpis.
+                        Phasellus pharetra risus tortor, eget fringilla tortor laoreet at. Quisque egestas tristique dui. Mauris non iaculis ex.
+                        Ut pellentesque, massa ut molestie egestas, tortor leo imperdiet sem, vitae malesuada nibh dolor in magna. Etiam pulvinar pharetra dolor, vel dapibus ipsum commodo eget.
+                        Praesent turpis odio, suscipit ut ullamcorper vel, finibus at ligula. Phasellus dolor lectus, molestie a velit sed, iaculis rhoncus risus.
+                        Ut id pellentesque erat, quis elementum ligula. Donec dignissim diam sem, a bibendum erat mattis quis. Vivamus id erat dui. Vestibulum sollicitudin ac justo at lacinia.
+                    </p>
+                    <!--END 'Read more read less' code-->
+                </div><!--END CSI cont-1-3 div-->
+            </div><!--END CSI cont-1 div-->
+
+
+            <!--END Concrete Strategies (CSI) experience container-->
 
 
         </div><!--Ends id="experience" div-->
