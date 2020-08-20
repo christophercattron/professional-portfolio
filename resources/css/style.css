@@ -1,4 +1,6 @@
-  /*Navbar flaticon formatting to match font-awesome */
+ 
+ 
+ /*Navbar flaticon formatting to match font-awesome */
   #navbar-flaticon{
     font-size: 15px!important;
     margin-left: none!important;
@@ -519,74 +521,70 @@ input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=subm
 }
 
 
+/*-----------------------------------------*/
+/* NEW CODE FOR INTERESTS/SKILLS/ABILITIES */
+/*-----------------------------------------*/
 
+/* cont-X-X level */
 
-
-/*---------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------*/
-/*------------------JUNK CODE BELOW------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------*/
-
-   /* Start
-
-   CODE FROM ATTEMPT AT TRANSPARENT OVERLAY ON ABOUT ME PHOTO 
-   
-
-   .full-block-about-me-img {
-    background: url('../images/headshot-001-christopher-cattron-square.jpg');
-    width: 333px;
-    height: 500px;
-    max-width: 100%;
-    height: auto;
-    min-height: 300px;
-    background-size: cover;
-    position: relative;
-    background-repeat: no-repeat;
-  }
+.cont-2-1 {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
   
-  
-  .full-block-about-me-img:hover .overlay-block {
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  
-  .overlay-block {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    transition: 0.5s ease;
-    background-color: rgba(128, 206, 215, 0.7); /* middle-blue */
-    overflow: hidden; /* Not sure if you need this 
-  }
-  
-  /*
+  /*border: 1px solid blue; /*display outline*/
+}
 
-  Not sure exactly what this does:
+/* cont-X-X-X level */
 
-  @media screen and (max-width: 768px) {
-    .full-block-about-me-img, {
-      margin-bottom: 20px
+.cont-2-1-1{
+  width: 50%;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.cont-2-1-2{
+  width: 50%;
+  font-size: 18px;
+  padding: 15px;
+}
+
+
+/* cont-X-X-X level ALL */
+.cont-2-1-1, .cont-2-1-2{
+    margin: 5px;
+   /* border: 1px solid green; /*display outline*/
+}
+
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on 
+  top of each other instead of next to each other and reduce font size */
+  @media screen and (max-width: 1175px) {
+    
+    /* For elements in cont-1-1 */
+
+    .cont-2-1{
+      flex-wrap: wrap;
+    }
+  
+    .cont-2-1-1{
+      width: 100%;
+    }
+
+    .cont-2-1-2{
+      width: 100%;
+      
     }
     
-*/
-
-      /* END
-      
-      CODE FROM ATTEMPT AT TRANSPARENT OVERLAY ON ABOUT ME PHOTO 
     
 
 
-      HTML:
 
-                <!--START About me image code-->
-                <div class="full-block-about-me-img w3-col m6 w3-center w3-padding-large">
-                    <div class="overlay-block"></div>
-                 </div>
-                <!--START About me image code-->
+  }
 
-      */
+/*---------------------------------------------*/
+/* END NEW CODE FOR INTERESTS/SKILLS/ABILITIES */
+/*---------------------------------------------*/
+
