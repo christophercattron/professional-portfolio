@@ -500,9 +500,9 @@ input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=subm
 }
 
 
-    /*  Responsive layout - when the device width is less than 1024px wide, make the two columns stack on 
-  top of each other instead of next to each other and reduce font size  */
-    @media only screen and (max-device-width: 1024px) {
+    /*  Responsive layout - when the device width is less than 1334px wide, make the two columns stack on 
+  top of each other instead of next to each other and reduce letter spacing  */
+    @media only screen and (max-device-width: 1334px) {
 
       
     /* For elements in cont-2-1 */
