@@ -463,8 +463,12 @@ input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=subm
 /*-----------------------------------------*/
 /* NEW CODE FOR INTERESTS/SKILLS/ABILITIES */
 /*-----------------------------------------*/
+#isa{
+  letter-spacing: 10px;
+}
 
-/* cont-X-X level */
+
+/* cont-2-X level */
 
 .cont-2-1 {
   display: flex;
@@ -474,7 +478,7 @@ input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=subm
   /*border: 1px solid blue; /*display outline*/
 }
 
-/* cont-X-X-X level */
+/* cont-2-X-X level */
 
 .cont-2-1-1{
   width: 50%;
@@ -517,6 +521,10 @@ input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=subm
     }
     
     
+    #isa{
+      letter-spacing: normal;
+    }
+
 
    }
 
