@@ -2,9 +2,9 @@
 are added so that the flaticon styling matches that of the font-awesome icons in the navbars*/
 .flaticon-party:before{
   font-family: Flaticon;
-        font-size: 15px;
-font-style: normal;
-margin-left: 0px;
+  font-size: 15px;
+  font-style: normal;
+  margin-left: 0px;
 }
 
 .flaticon-party{
@@ -419,6 +419,8 @@ margin-left: 0px;
       justify-content: space-between;
       flex-direction: row;
       margin-top: 0;
+
+      text-align: center; /*added this to test mobile responsive */
     }
     
     
