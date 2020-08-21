@@ -184,7 +184,7 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 
 /* cont-3-X level ALL */
 .cont-3-1, .cont-3-2, .cont-3-3{
-    margin: 5px;
+  /*margin: 5px;*/
 
 }
 
@@ -240,7 +240,7 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 
 /* cont-3-X-X level ALL */
 .cont-3-1-1, .cont-3-1-2, .cont-3-1-3, .cont-3-2-1, .cont-3-2-2,.cont-3-2-3, .cont-3-2-4, .cont-3-3-1, .cont-3-3-2, .cont-3-3-3{
-    margin: 5px;
+  /*margin: 5px;*/
 
 }
 
@@ -264,7 +264,7 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 
 /* cont-X-X-X-X level ALL */
 .cont-3-1-1-1, .cont-3-1-1-2, .cont-3-1-2-1, .cont-3-1-2-2, .cont-3-2-1-1, .cont-3-2-1-2, .cont-3-2-2-1, .cont-3-2-2-2{
-    margin: 5px;
+  /*margin: 5px;*/
 
 }
 
@@ -340,7 +340,7 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 .cont-1 {
   width: 100%;
   margin: 50px auto;
-  padding: 20px;
+  padding: 35px;
   background-color: whitesmoke;
   -webkit-box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.43);
   box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.43);
@@ -366,7 +366,7 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 
 /* cont-X-X level ALL */
 .cont-1-1, .cont-1-2, .cont-1-3{
-  margin: 5px;
+  /*margin: 5px;*/
 }
 
 
@@ -385,7 +385,6 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 }
 
 .cont-1-2-1{
-  /*width: 50%;*/
   border-radius: 5px;
   width: 450px;
   height: 375px;
@@ -397,7 +396,13 @@ are added so that the flaticon styling matches that of the font-awesome icons in
   font-style: italic;
 }
 
-
+  /* Responsive layout - when the screen is less than 600px wide, reduce padding of xp-cont */
+  @media screen and (max-width: 600px) {
+    
+    .cont-1{
+      padding: 20px;
+    }
+  }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on 
   top of each other instead of next to each other and reduce font size */
@@ -454,7 +459,7 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 
 /* cont-X-X-X level ALL */
 .cont-1-1-1, .cont-1-1-2, .cont-1-2-1, .cont-1-2-2{
-  margin: 5px;
+  /*margin: 5px;*/
 }
 
 /* cont-X-X-X-X level */
@@ -477,7 +482,7 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 
 /* cont-X-X-X-X level ALL */
 .cont-1-1-1-1, .cont-1-1-1-2, .cont-1-1-2-1, .cont-1-1-2-2 {
-  margin: 5px;
+  /*margin: 5px;*/
 }
 
 
@@ -514,7 +519,7 @@ are added so that the flaticon styling matches that of the font-awesome icons in
   }
 
   /* Responsive layout - when the screen is less than 720px wide, center text for xp-employer-name & xp-job-title */
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 720px) {
     
     #xp-employer-name, #xp-job-title{
     
@@ -523,7 +528,21 @@ are added so that the flaticon styling matches that of the font-awesome icons in
     }
     
   }
-
+  /* Responsive layout - when the screen is less than 600px wide, reduce font size of xp-job-title, xp-date, xp-location */
+  @media screen and (max-width: 600px) {
+    
+    #xp-job-title{
+    
+      font-size: 26px;
+    
+    }
+    
+    #xp-date, #xp-location{
+    
+      font-size: 16px;
+    
+    }
+  }
 
 
 
@@ -709,7 +728,7 @@ input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=subm
 
 /* cont-2-X-X level ALL */
 .cont-2-1-1, .cont-2-1-2{
-    margin: 5px;
+  /*margin: 5px;*/
    /* border: 1px solid green; /*display outline*/
 }
 
