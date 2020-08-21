@@ -34,7 +34,7 @@ margin-left: 0x;
     opacity: 0.5;
   }
 
-  /* Style for blue lines - NOT CURRENTLY USED */
+  /* Style for lines */
   /**/  #line-cg-blue{
   /**/    width:100%;
   /**/    height:10px;
@@ -53,7 +53,16 @@ margin-left: 0x;
   /**/    position: relative;
   /**/    top: 15px;
   /**/  }
-  /* Style for blue lines - NOT CURRENTLY USED */
+  /**/
+  /**/  #ed-line-777{
+  /**/    width:100%;
+  /**/    height: 1px;
+  /**/    background-color: #777;
+  /**/    margin: 15px auto;
+  /**/    position: relative;
+  /**/  }
+  /**/
+  /* Style for lines */
 
 
 
@@ -298,11 +307,16 @@ margin-left: 0x;
 /* cont-3-X-X level ALL */
 .cont-3-1-1, .cont-3-1-2, .cont-3-1-3, 
 .cont-3-2-1, .cont-3-2-2,.cont-3-2-3, .cont-3-2-4, 
-.cont-3-3-1, .cont-3-3-2, .cont-3-3-3, 
+.cont-3-3-1, .cont-3-3-2, /*.cont-3-3-3,*/ 
 .cont-3-4-1, .cont-3-4-2, .cont-3-4-3{
   margin: 0 5px;
-
 }
+
+.cont-3-3-3{
+  margin-top: 15px;
+}
+
+
 
 /* cont-3-X-X-X level */
 
@@ -375,7 +389,18 @@ margin-left: 0x;
 #ed-course{
   font-style: italic;
   /*text-align: center;*/
- 
+}
+
+#ed-date-expand{
+  display: none;
+}
+
+#ed-GPA-show-on-desktop{
+  display: inline;
+}
+
+#ed-GPA-show-on-mobile{
+  display: none;
 }
 
 
@@ -408,7 +433,7 @@ margin-left: 0x;
 
 
 
-  /* Responsive layout - when the screen is less than 905px wide, make course names stack and center*/
+  /* Responsive layout - when the screen is less than 905px wide, make course names stack and center, make "coursework:" center, too*/
 @media screen and (max-width: 905px) {
 
   /*Used for two column effect in course list*/ 
@@ -419,6 +444,10 @@ margin-left: 0x;
    
   }
   
+  .cont-3-3-1{
+    text-align: center;
+  }
+
   }
 
   /* Responsive layout - when the screen is less than 560px wide, reduce text size of course names*/
@@ -451,8 +480,34 @@ margin-left: 0x;
   margin: 0 auto;
 }
 
-.cont-3-1-2 {
+.cont-3-1-2, .cont-3-3-3 {
   text-align: center;
+}
+
+.cont-3-2-1, .cont-3-2-2{
+  flex-direction: column;
+}
+
+.cont-3-2-1-1, .cont-3-2-1-2,
+.cont-3-2-2-1, .cont-3-2-2-2{
+  text-align: center;
+}
+
+#ed-date-expand{
+  display: inline;
+}
+
+#ed-GPA-show-on-desktop{
+  display: none;
+}
+
+#ed-GPA-show-on-mobile{
+  display: inline;
+  font-size: 1.1333333333333333em;
+}
+
+#ed-date{
+  font-size: 1.1333333333333333em;
 }
   }
 
