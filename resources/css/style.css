@@ -154,12 +154,16 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 /* "cont" level styling */
 /*----------------------*/
 
-/* cont-X level */
+/* cont-3 level */
 
 .cont-3 {
   max-width: 946px;
-  margin: auto;
-
+  margin: 50px auto;
+  padding: 35px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.43);
+  box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.43);
+  border-radius: 10px;
 }
 
 
@@ -279,27 +283,27 @@ are added so that the flaticon styling matches that of the font-awesome icons in
   
 }
 #ed-university-name{
-  font-size: 30px;
+  font-size: 1.666667em;
 }
 
 #ed-degree-title{
-  font-size: 24px;
+  font-size: 1.6em;
 }
 
 #ed-gpa{
-  font-size: 20px;
+  font-size: 1.33333em;
 }
 
 #ed-location{
-  font-size: 20px;
+  font-size: 1.33333em;
 }
 
 #ed-date{
-  font-size: 20px;
+  font-size: 1.33333em;
 }
 
 #ed-highlights{
-  font-size: 16px;
+  font-size: 1.066667em;
 }
 
 
@@ -309,7 +313,14 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 }
 
 
+/* Responsive layout - when the screen is less than 950px wide, reduce font-size of ed */
+@media screen and (max-width: 950px) {
+      #ed-logo {
+        width: auto;
+        max-height: 40px;
+    }
 
+}
 
 
 
