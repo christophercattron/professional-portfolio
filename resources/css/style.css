@@ -251,16 +251,6 @@ margin-left: 0x;
 }
 
 
-/* THIS IS COMMENTED OUT TO TEST NEW COURSE NAME ALIGNMENT
-.cont-3-3-2{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  align-content: flex-start;
-}
-*/
 
 /* Clear floats after the cont-3-3-2 columns (needed for two column effect) */
 .cont-3-3-2:after{
@@ -276,11 +266,6 @@ margin-left: 0x;
 .cont-3-3-3{
   font-size: 0.8em!important;
 }
-
-
-
-
-
 
 
 .cont-3-4-1{
@@ -420,6 +405,35 @@ margin-left: 0x;
   }
   
   }
+
+
+
+  /* Responsive layout - when the screen is less than 905px wide, make course names stack and center*/
+@media screen and (max-width: 905px) {
+
+  /*Used for two column effect in course list*/ 
+  .cont-3-3-2-1, .cont-3-3-2-2{
+    float: left;
+    width: 100%;
+    text-align:center;
+   
+  }
+  
+  }
+
+  /* Responsive layout - when the screen is less than 560px wide, reduce text size of course names*/
+  @media screen and (max-width: 560px) {
+
+    /*Used for two column effect in course list*/ 
+    .cont-3-3-2-1, .cont-3-3-2-2{
+    font-size: 0.8em;
+     
+    }
+    
+    }
+  
+
+
 
 
 
