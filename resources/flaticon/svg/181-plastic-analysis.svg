@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="512px" height="512px">
+  <defs>
+    <path d="M626.86 320L12.57 320" id="cTCwo1Kei" fill="#null"/>
+    <path d="M320 626.86L320 12.57" id="al7EiyrhR" fill="#null"/>
+    <path d="M246.86 584C297.91 565.44 329.81 553.83 342.57 549.19C382.85 534.55 418.71 509.83 446.72 477.39C449.03 474.71 438.18 487.28 446.72 477.39C454.35 468.56 460.09 458.25 463.58 447.12C481.16 391.08 525.11 251 595.43 26.86C547.74 34.81 517.93 39.77 506.01 41.76C474.84 46.96 445.78 60.9 422.23 81.97C418.59 85.24 429.44 75.52 422.23 81.97C410.25 92.69 401.03 106.13 395.33 121.16C385.29 147.67 360.18 213.95 320 320" id="b1jaV9JQAi" fill="#null"/>
+    <path d="M266.76 53.88C266.76 65.14 255.1 74.29 240.73 74.29C226.37 74.29 214.71 65.14 214.71 53.88C214.71 42.61 226.37 33.47 240.73 33.47C255.1 33.47 266.76 42.61 266.76 53.88Z" id="ah9t30TNr" fill="#null"/>
+    <path d="M283.34 33.98C258.26 30.33 240.05 30.34 228.72 34C217.39 37.65 212.93 44.97 215.35 55.94" id="bD033qi1N" fill="#null"/>
+    <path d="M635.07 295.78C635.07 295.78 635.07 295.78 635.07 295.78C624.54 302.09 612.5 305.43 600.22 305.43C600.14 305.43 599.93 305.43 599.59 305.43C599.33 305.24 599.16 305.12 599.1 305.07C592.36 300.17 588.37 292.33 588.37 284C588.37 284 588.37 284 588.37 284C590 282.12 591.02 280.94 591.42 280.47C593.72 277.81 593.72 273.86 591.42 271.21C590.81 270.5 592.22 272.13 591.42 271.21C589.51 268.99 588.79 265.98 589.5 263.14C589.76 262.11 590.4 259.54 591.43 255.43C591.43 255.43 591.43 255.43 591.43 255.43C601.13 250.33 612.59 249.81 622.71 254.01C623.16 254.2 624.3 254.67 626.12 255.43" id="agGirBZpU" fill="#null"/>
+    <path d="M626.86 278.31L593.18 278.31" id="a1lscifEBq" fill="#null"/>
+  </defs>
+  <g>
+    <g>
+      <g>
+        <g>
+          <use xlink:href="#cTCwo1Kei" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="9" stroke-opacity="1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use xlink:href="#al7EiyrhR" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="9" stroke-opacity="1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use xlink:href="#b1jaV9JQAi" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="16" stroke-opacity="1"/>
+        </g>
+      </g>
+      <g>
+        <use xlink:href="#ah9t30TNr" opacity="1" fill="#0b2d4d" fill-opacity="0"/>
+        <g>
+          <use xlink:href="#ah9t30TNr" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="7" stroke-opacity="1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use xlink:href="#bD033qi1N" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="9" stroke-opacity="1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use xlink:href="#agGirBZpU" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="6" stroke-opacity="1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use xlink:href="#a1lscifEBq" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-opacity="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
