@@ -397,7 +397,7 @@ are added so that the flaticon styling matches that of the font-awesome icons in
   font-style: italic;
 }
 
-/*START test new code*/
+
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on 
   top of each other instead of next to each other and reduce font size */
@@ -419,8 +419,6 @@ are added so that the flaticon styling matches that of the font-awesome icons in
       justify-content: space-between;
       flex-direction: row;
       margin-top: 0;
-
-      text-align: center; /*added this to test mobile responsive */
     }
     
     
@@ -449,7 +447,7 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 
 
   }
-  /*END test new code*/
+
   
 
 .cont-1-2-2 ul li { padding: 5px 0px; }
@@ -505,6 +503,29 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 #xp-job-highlights{
   font-size: 14px;
 }
+
+/* Responsive layout - when the screen is less than 850px wide, center text for xp-location & xp-date */
+  @media screen and (max-width: 850px) {
+    
+    #xp-location, #xp-date{
+      text-align: center;
+    }
+
+  }
+
+  /* Responsive layout - when the screen is less than 720px wide, center text for xp-employer-name & xp-job-title */
+  @media screen and (max-width: 850px) {
+    
+    #xp-employer-name, #xp-job-title{
+    
+      text-align: center;
+    
+    }
+    
+  }
+
+
+
 
 /*----------------*/
 /* Slideshow code */
