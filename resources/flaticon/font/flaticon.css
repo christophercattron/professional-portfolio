@@ -209,3 +209,22 @@ margin-left: 20px;
 .flaticon-column-stability-thick:before { content: "\f1b0"; }
 .flaticon-plastic-analysis:before { content: "\f1b1"; }
 .flaticon-bridge-6:before { content: "\f1b2"; }
+
+
+/*This section of code must be added to the flaticon css whenever more icons 
+are added so that the flaticon styling matches that of the font-awesome icons in the navbars*/
+.flaticon-party:before{
+  font-family: Flaticon;
+        font-size: 15px;
+font-style: normal;
+margin-left: 0px;
+}
+
+.flaticon-party{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+} 
+/*---------------------------------------------------------*/
