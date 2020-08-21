@@ -375,7 +375,7 @@ margin-left: 0x;
 #ed-course{
   font-style: italic;
   /*text-align: center;*/
-  height: 36px;
+ 
 }
 
 
@@ -427,9 +427,12 @@ margin-left: 0x;
     /*Used for two column effect in course list*/ 
     .cont-3-3-2-1, .cont-3-3-2-2{
     font-size: 0.8em;
-     
     }
     
+    #ed-course{
+     line-height: 1.25;
+     
+    }
     }
   
 
