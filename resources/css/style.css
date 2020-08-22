@@ -926,7 +926,7 @@ input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=subm
 
 .cont-2-1 {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   
   /*border: 1px solid blue; /*display outline*/
@@ -988,13 +988,14 @@ input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=subm
 
 
 /* Responsive layout - when the screen is less than 1175px wide, make the two columns stack on 
-  top of each other instead of next to each other*/
+  top of each other instead of next to each other and center text*/
   @media screen and (max-width: 1175px) {
     
     /* For elements in cont-2-1 */
 
     .cont-2-1{
       flex-wrap: wrap;
+      text-align: center;
     }
   
     .cont-2-1-1{
