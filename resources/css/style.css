@@ -25,7 +25,19 @@ margin-left: 0x;
 
 /*---------------------------------------------------------*/
 
- 
+   /* Style for logo in the about the logo section */
+   #about-the-logo {
+    width: 50px;
+    margin: 15px auto;
+    display: block;
+    opacity: 0.5;
+  }
+  #about-the-logo:hover {
+    width: 150px;
+    opacity: 1;
+    transition: width 1s ease-in-out 100ms, opacity 1s ease-in-out 100ms;
+  }
+
   /* Style for logo "line" between sections */
   #end-line-logo {
     width: 50px;
