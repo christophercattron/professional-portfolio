@@ -34,28 +34,35 @@ margin-left: 0x;
     opacity: 0.5;
   }
 
-  /* Style for lines */
-  /**/  #line-cg-blue{
-  /**/    width:100%;
-  /**/    height:10px;
-  /**/    background-color: #007ea7;
-  /**/    border-radius: 5px;
-  /**/    margin: 0 auto;
-  /**/    position: relative;
-  /**/  }
-  /**/  
-  /**/  #line-prussian-blue{
-  /**/    width:95%;
-  /**/    height:8px;
-  /**/    background-color: #003249;
-  /**/    border-radius: 4px;
-  /**/    margin: 0 auto;
-  /**/    position: relative;
-  /**/    top: 15px;
-  /**/  }
-  /**/
-  /**/
-  /* Style for lines */
+  /* START Style for lines */
+    #line-cg-blue{
+      width:100%;
+      height:10px;
+      background-color: #007ea7;
+      border-radius: 5px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    #line-prussian-blue{
+      width:95%;
+      height:8px;
+      background-color: #003249;
+      border-radius: 4px;
+      margin: 0 auto;
+      position: relative;
+      top: 15px;
+    }
+    
+    #line-777{
+      width:100%;
+      height: 1px;
+      background-color: #777;
+      margin: 15px auto;
+      position: relative;
+    }
+  
+  /* END Style for lines */
 
 
 
@@ -276,12 +283,7 @@ margin-left: 0x;
 
 
 .cont-3-4-2{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  align-content: flex-start;
+
 
   font-size: 1.066666667em;
 }
@@ -686,7 +688,7 @@ display: block;
 /* cont-X-X-X-X level */
 
 .cont-1-1-1-1{
-
+  display: flex;
 }
 
 .cont-1-1-1-2{
@@ -704,6 +706,11 @@ display: block;
 /* cont-X-X-X-X level ALL */
 .cont-1-1-1-1, .cont-1-1-1-2, .cont-1-1-2-1, .cont-1-1-2-2 {
   /*margin: 5px;*/
+}
+
+/* cont-1-X-X-X-X level */
+.cont-1-1-1-1-1, .cont-1-1-1-1-2{
+  /*border: 1px solid black; /*display outline*/
 }
 
 
@@ -729,6 +736,15 @@ display: block;
 #xp-job-highlights{
   font-size: 14px;
 }
+
+#xp-logo{
+  width: auto;
+  max-height:50px;
+  margin-right: 20px;
+  
+  
+}
+
 
 /* Responsive layout - when the screen is less than 850px wide, center text for xp-location & xp-date */
   @media screen and (max-width: 850px) {
