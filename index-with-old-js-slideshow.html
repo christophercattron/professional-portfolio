@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Christopher Cattron | Professional Portfolio</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />   <!--W3.CSS stylesheet-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />   <!--Lato font stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!--Font Awesome 4.7.0-->
+        <link rel="stylesheet" href="resources/css/style.css" type="text/css" />    <!--My stylesheet-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">   <!--Montserrat & Roboto font stylesheet-->
+        <link rel="stylesheet" type="text/css" href="./resources/flaticon/font/flaticon.css"> <!--Flaticon stylesheet-->
+        <link rel="stylesheet/scss" href="./resources/css/palette.scss" type="text/css"> <!--Color palette SCSS stylesheet-->
+        <link rel="shortcut icon" href="./resources/favicon/favicon-cc-arrows.ico" type="image/x-icon">  <!--Favicon CC Logo (1of2)-->
+        <link rel="icon" href="./resources/favicon/favicon-cc-arrows.ico" type="image/x-icon">  <!--Favicon CC Logo (2of2)-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> <!--links to jquery 3.1.0 (required for slideshow in experience section to work-->
+        <!--<script src="./resources/js/xp-slideshow.js"></script> js for xp-slideshow-->
+
+
+        <!--The five lines below (two elements) are required for the "Read more" button JavaScript to work-->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin="anonymous">
+        </script>
+        <script src="./resources/js/Read-More-Less-Buttons/src/readmore.js"></script>
+        <!-------------------------------------------------------------------------------------------------->
+
+
+
+    </head>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar" id="myNavbar">
+                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#home" class="w3-bar-item w3-button">HOME</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+                <a href="#education-banner" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-graduation-cap"></i> EDUCATION</a>
+                <a href="#experience-banner" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> EXPERIENCE</a>
+                <a href="#fun-stuff-banner" class="w3-bar-item w3-button w3-hide-small"><i class="fa flaticon-party"></i> FUN STUFF</a>
+                <a href="#contact-banner" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+           
+            </div>
+            
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+                <a href="#education-banner" class="w3-bar-item w3-button" onclick="toggleFunction()">EDUCATION</a>
+                <a href="#experience-banner" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
+                <a href="#fun-stuff-banner" class="w3-bar-item w3-button" onclick="toggleFunction()">FUN STUFF</a>
+                <a href="#contact-banner" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            </div>
+        </div>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space: nowrap;">
+                <img class="w3-auto w3-center w3-margin w3-padding-large w3-animate-opacity" style="animation: opac 2s;" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
+            </div>
+        </div>
+
+
+
+        <!-- Container (About Section) -->
+        
+
+        <div class="w3-content w3-container" id="about"> <!--Removed w3-padding-64 from class of this div-->
+            
+            <!-----------------------------logo section divider--------------------------------->
+            <img id="end-line-logo" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
+            <!---------------------------------------------------------------------------------->           
+            
+            <h3 class="w3-center">ABOUT ME</h3>
+            <p class="w3-center"><em>I'm a professional engineer with a quirky sense of humor and a relentless drive for adventure, exploration, discovery, and creation.</em></p>
+            <p>
+                With the COVID-19 pandemic, we are certainly living in unique times. After graduating with my M.S. in Civil Engineering in December 2019, 
+                I applied and was accepted to my dream graduate program: the <a href="http://msc-sahc.org/" target="_blank"> SAHC Advanced Masters in Structural Analysis of Monuments and Historical 
+                    Constructions</a>—an advanced education program on the engineering of conservation of structures, with a focus on architectural heritage and 
+                buildings with cultural value. In September 2020, I was to begin coursework at the University of Minho in Portugal, after which I would 
+                complete a dissertation at the University of Padua in Italy. Unfortunately, due to circumstances surrounding the COVID-19 pandemic, I had 
+                to defer my enrollment to fall 2021. Between now and then, I am seeking a coop, internship, or temporary employment as a civil/structural engineer.
+            </p>
+            <div class="w3-row">
+            
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <img src="./resources/images/headshot-001-christopher-cattron-square.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333" />
+                </div>
+            
+
+
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <p>
+                        I was born and grew up in Saint Charles, Missouri, just 25 miles west of Saint Louis. I have a thoughtful, caring, 
+                        intelligent wife named Maria, and together we have a mischievous cat named Daisy. In my spare time I have been learning HTML/CSS and JavaScript 
+                         in part to build this website, and in part to gain computer and programming skills and understanding that I can apply in my professional career.
+
+
+                    </p>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <!-- Container (Interests, Skills, Abilities Section) -->
+            <div class="cont-2-1">
+                <div class="cont-2-1-2">
+                    <p class="w3-xlarge w3-padding-16">Professional Interests</p>
+                    <p id="isa"><i class="flaticon-coliseum"></i> Historic Preservation</p>
+                    <p id="isa"><i class="flaticon-engineer-2"></i> Structural Investigation</p>
+                    <p id="isa"><i class="flaticon-earthquake"></i> Seismic Rehabilition</p>
+                    <p id="isa"><i class="flaticon-graph"></i> Analysis/Design Software</p>                    
+                    <p id="isa"><i class="flaticon-problem-solving"></i> Solving Unique Problems</p>
+                </div>
+                <div class="cont-2-1-1">
+                    <p class="w3-xlarge w3-padding-16">Skills & Abilities</p>
+                    <p id="isa"><i class="flaticon-model"></i> Analysis & Design</p>
+                    <p id="isa"><i class="flaticon-maths"></i> Structural Calculations</p>
+                    <p id="isa"><i class="flaticon-3d-model"></i> 3D Modelling</p>
+                    <p id="isa"><i class="flaticon-report-1"></i> Producing Reports</p>
+                    <p id="isa"><i class="flaticon-education"></i> Collaboration</p>
+                </div>
+              </div>
+
+
+
+                <!--
+                <div class="column-3">
+                    <p class="w3-large w3-center w3-padding-16">Traits</p>
+                    <p class="w3-wide"><i class="fa fa-camera"></i>Curious Learner</p>
+                    <p class="w3-wide"><i class="fa fa-photo"></i>Attention to Detail</p>
+                    <p class="w3-wide"><i class="fa fa-bridge"></i>Effective Communication</p>
+                    <p class="w3-wide"><i class="fa fa-bridge"></i>Team Player</p>
+                    <p class="w3-wide"><i class="fa fa-laptop"></i>Motivated / Enthusiastic</p>
+                    <p class="w3-wide"><i class="fa fa-photo"></i>Effective Communicator</p>
+                    <p class="w3-wide"><i class="fa fa-bridge"></i>Creative Problem Solver</p>
+                </div>
+                -->
+
+    <!--
+                <div class="column-3">
+                    <p class="w3-large w3-center w3-padding-16">Traits</p>
+                    <p class="w3-wide"><i class="fa fa-camera"></i>Calculations</p>
+                    <p class="w3-wide"><i class="fa fa-laptop"></i>Modelling</p>
+                    <p class="w3-wide"><i class="fa fa-photo"></i>Reports</p>
+                    <p class="w3-wide"><i class="fa fa-bridge"></i>Collaboration</p>
+                </div>
+
+                -->
+
+                <div class="w3-content w3-container"><!--New div for LOGO section of ABOUT ME section-->
+            <!--------------solid-1px-#777-line-------------->
+            <div id="ed-line-777"></div>
+            <!--------------solid-1px-#777-line-------------->
+            <!-----------------------------logo section divider--------------------------------->
+            <img id="about-the-logo" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
+            <!---------------------------------------------------------------------------------->     
+
+                    <h3 class="w3-center">ABOUT THE LOGO</h3>
+                    <p class="w3-center"><em>You may have noticed the blue “CC” logo in a few places on the website. Here’s a little more about
+                         the meaning behind the design.</em></p>
+                    <p>
+                        The letters: CC is my initials—Christopher Cattron. 
+                        The colors: the color palette is inspired by TRON. This is solely because you can’t spell Cattron without TRON. And blue is my favorite color :)
+                        The form: the CC is in the shape of a keystone, which is one of the most essential components of a voussoir arch. I chose the keystone shape due to my interest in historic structures. Since reading Jacques Heyman’s Stone Skeleton, I have been intrigued at the unique principles underlying the stability and safety/adequacy of unreinforced stone structures.
+    
+                    </p>
+            <!--------------solid-1px-#777-line-------------->
+            <div id="ed-line-777"></div>
+            <!--------------solid-1px-#777-line-------------->
+                </div>
+
+
+
+
+        <!-- Second Parallax Image with Education Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="education-banner">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">EDUCATION</span>
+            </div>
+        </div>
+
+
+        <div class="w3-row w3-center w3-padding-16" style="background-color: #007EA7; color: white;">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">2</span><br />
+                Degrees Attained
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">3</span><br />
+                Internships Completed
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">60+</span><br />
+                Courses Taken
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">750+</span><br /> <!--400 purchased from my amazon account, zero from mom's amazon, at least 500 from s&t store-->
+                Sheets of Computation Paper Used
+            </div>
+        </div>
+
+
+        <!-- Container (Education Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="education">
+        
+
+
+        <!-----------------------------logo section topper--------------------------------->
+        <img id="end-line-logo" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
+        <!---------------------------------------------------------------------------------->
+        
+            <h3 class="w3-center">MY EDUCATION</h3>
+            <p class="w3-center">
+                <em>
+                    My undergraduate and graduate experiences offered opportunities for me to gain knowledge, make connections, 
+                    develop professionally, and grow personally. Here is a summary of my educational background.
+                </em>
+            </p>
+            <br />
+
+            <div class="cont-3">
+                <div class="cont-3-1">
+                  <div class="cont-3-1-1" id="ed-logo"><!--logo-->
+                    <a href="https://www.mst.edu/" target="_blank"><img id="ed-logo" src="./resources/images/s&t/sandt_primary_digital_png/Missouri-S&T_PrimaryLogo_DigitalMinerGreen.png"></a>
+                  </div>
+                  <div class="cont-3-1-2"><!--uni-name-->
+                    <p id="ed-university-name">Missouri University of Science and Technology</p>
+                  </div>
+                  <div class="cont-3-1-3"><!--uni-location-->
+                     <p id="ed-location">Rolla, Missouri, USA</p>
+                  </div><!--/cont-3-1-3-->
+                </div><!--/cont-3-1-->
+               
+                <!--------------solid-1px-#777-line-------------->
+                <div id="ed-line-777"></div>
+                <!--------------solid-1px-#777-line-------------->
+
+                
+                <div class="cont-3-2">
+                  <div class="cont-3-2-1">
+                    <div class="cont-3-2-1-1">
+                      <p id="ed-degree-title"><em>Master of Science in Civil Engineering</em><span id="ed-GPA-show-on-desktop">, 3.9 GPA</span></p>
+                      <p id="ed-GPA-show-on-mobile">3.9 GPA</p>
+                    </div><!--/cont-3-2-1-1-->
+                    <div class="cont-3-2-1-2">
+                      <p id="ed-date"><span id="ed-date-expand">Graduated </span>Dec<span id="ed-date-expand">ember</span> 2019</p>
+                    </div><!--/cont-3-2-1-2-->
+                  </div><!--/cont-3-2-1-->
+                  
+                <!--------------solid-1px-#777-line-------------->
+                <div id="ed-line-777-appear-on-mobile"></div>
+                <!--------------solid-1px-#777-line-------------->
+
+
+                  <div class="cont-3-2-2">
+                    <div class="cont-3-2-2-1">
+                      <p id="ed-degree-title"><em>Bachelor of Science in Civil Engineering</em><span id="ed-GPA-show-on-desktop">, 3.3 GPA</span></p>
+                      <p id="ed-GPA-show-on-mobile">3.3 GPA</p>
+                    </div><!--/cont-3-2-2-1-->
+                    <div class="cont-3-2-2-2">
+                      <p id="ed-date"><span id="ed-date-expand">Graduated </span>May 2018</p>
+                    </div><!--/cont-3-2-2-2-->
+                  </div><!--/cont-3-2-2-->
+                </div><!--/cont-3-2-->
+                
+                <!--------------solid-1px-#777-line-------------->
+                <div id="ed-line-777"></div>
+                <!--------------solid-1px-#777-line-------------->
+
+
+
+
+                <div class="cont-3-3"><!--begin Coursework div-->
+                  <div class="cont-3-3-1">
+                    <p>Coursework:</p>
+                  </div><!--/cont-3-3-1-->
+
+                <div class="cont-3-3-2">
+                    <div class="cont-3-3-2-1">
+                        <p id="ed-course"><i class="flaticon-friction" style="padding: 0 5px;"></i>Applied Mechanics in Structural Engineering</p>
+                        <p id="ed-course"><i class="flaticon-bridge-6" style="padding: 0 5px;"></i>Structural Analysis I & II</p>
+                        <p id="ed-course"><i class="flaticon-bauschinger-effect" style="padding: 0 5px;"></i>Plastic Analyis & Design of Metal Structures</p>
+                        <p id="ed-course"><i class="flaticon-block" style="padding: 0 5px;"></i>Structural Masonry Design</p>
+                        <p id="ed-course"><i class="flaticon-office-building" style="padding: 0 5px;"></i>Low Rise Building Analysis & Design</p>
+                        <p id="ed-course"><i class="flaticon-wood-1" style="padding: 0 5px;"></i>Analysis & Design of Wood Structures</p>
+                        <p id="ed-course"><i class="flaticon-architecture-and-city" style="padding: 0 5px;"></i>Wind Engineering</p>
+                    </div><!--/cont-3-3-2-1-->
+                    <div class="cont-3-3-2-2">
+                        <p id="ed-course"><i class="flaticon-cracked-smartphone" style="padding: 0 5px;"></i>Fracture Mechanics</p>
+                        <p id="ed-course"><i class="flaticon-crane" style="padding: 0 5px;"></i>Construction Methods</p>
+                        <p id="ed-course"><i class="flaticon-building" style="padding: 0 5px;"></i>Foundation Engineering</p>
+                        <p id="ed-course"><i class="flaticon-column-stability-thick-777" style="padding: 0 5px;"></i>Stability of Structures</p>
+                        <p id="ed-course"><i class="flaticon-cold-formed-steel" style="padding: 0 5px;"></i>Adv Design in Steel & Lightweight Structures</p>
+                        <p id="ed-course"><i class="flaticon-mesh" style="padding: 0 5px;"></i>Introduction to Finite Element Analysis</p>
+                        <p id="ed-course"><i class="flaticon-reinforced-concrete" style="padding: 0 5px;"></i>Adv Behavior of Reinforced & Prestressed Concrete</p>
+                    </div><!--/cont-3-3-2-2-->
+                </div><!--/cont-3-3-2-->
+
+            
+            
+
+
+                  <div class="cont-3-3-3">
+                    <p>For a comprehensive list of courses taken and course descriptions, click <a href="./resources/docs/Comprehensive Course List with Descriptions - Christopher Cattron.pdf" target="_blank">here.</a></p>
+                  </div><!--/cont-3-3-3-->
+                </div><!--/cont-3-3-->
+                
+                <!--------------solid-1px-#777-line-------------->
+                <div id="ed-line-777"></div>
+                <!--------------solid-1px-#777-line-------------->
+
+
+                <div class="cont-3-4">
+                    <div class="cont-3-4-1">
+                      <p>Extracurriculars & Involvement:</p>
+                    </div><!--/cont-3-4-1-->
+                    <div class="cont-3-4-2 w3-row">
+                        
+                        <div class="cont-3-4-2-1 w3-third w3-mobile">
+                            <div class="cont-3-4-2-X-1"><!--organization logo-->
+                                <!--RESIDENTIAL LIFE-->
+                                <a href="https://reslife.mst.edu/" target="_blank"><img id="ed-logo-extracurricular" src="./resources/images/reslife/residential_life_stacked_logo_horizontal_pms356.png"></a>
+                            </div><!--/cont-3-4-2-1-1-->
+                            <div class="cont-3-4-2-1-2"><!--positions-->
+                                <div class="cont-3-4-2-1-2">
+                                    <p id="ed-position">Head Resident, Senior RA, Resident Assistant (RA)</p>
+                                </div><!--/cont-3-4-2-1-2-->
+                            </div><!--/cont-3-4-2-1-2-->
+                        </div><!--/cont-3-4-2-1-->
+                        
+                        <div class="cont-3-4-2-2 w3-third w3-mobile">
+                            <div class="cont-3-4-2-X-1"><!--organization logo-->
+                                <!--CHI EPSILON-->
+                                <a href="http://web.mst.edu/~chiep/New%20Website/Main.html" target="_blank"><img id="ed-logo-extracurricular" src="./resources/images/xe/xe_logo.png"></a>
+                            </div><!--/cont-3-4-2-2-1-->
+                            <div class="cont-3-4-2-2-2"><!--positions-->
+                                <div class="cont-3-4-2-2-2">
+                                    <p id="ed-position">Alumnus, Initiated Member, Pledge</p>
+                                </div><!--/cont-3-4-2-2-2-->
+                                
+                                <div class="cont-3-4-2-X-3" id="ed-slideshow-2"><!--start of ed-slideshow-2-->
+                                   
+                                
+                                    <!--START SLIDESHOW-->
+                                        <script>
+                                            $("#ed-slideshow-2 > div:gt(0)").hide();
+                                            setInterval(function () {
+                                            $("#ed-slideshow-2 > div:first")
+                                                .fadeOut(1000)
+                                                .next()
+                                                .fadeIn(1000)
+                                                .end()
+                                                .appendTo("#ed-slideshow-2");
+                                            }, 8000);
+                                        </script><!--For some reason it takes a few seconds for this to start working properly...-->
+                
+                                      <div>
+                                        <img src="./resources/images/xe/73361314_2492726307429539_2838036276626587648_n.jpg">
+                                        <h5>caption-1</h5>
+                                      </div>
+                                      <div>
+                                        <img src="./resources/images/xe/75199941_2531540093548160_8644350680884051968_o.jpg" >
+                                        <h5>caption-2</h5>
+                                      </div>
+                                      <div>
+                                        <img src="./resources/images/xe/82407517_2669283423107159_5680999305943449600_o.jpg">
+                                        <h5>caption-3</h5>
+                                      </div>
+                
+                
+                                    <!--END Slideshow div-->
+                            
+
+
+                                 </div><!--/cont-3-4-2-2-3-slideshow-->
+
+
+
+                            </div><!--/cont-3-4-2-2-2-->
+                        </div><!--/cont-3-4-2-2-->
+
+                        <div class="cont-3-4-2-3 w3-third w3-mobile">
+                            <div class="cont-3-4-2-X-1"><!--organization logo-->
+                                <!--S&T CIVIL LAB-->
+                                <a href="https://care.mst.edu/" target="_blank"><img id="ed-logo-extracurricular" src="./resources/images/civil-lab/civil_architectural_and_enviromental_engineering_stacked_logo_horizontal_pms356.png"></a>
+                            </div><!--/cont-3-4-2-3-1-->
+                            <div class="cont-3-4-2-3-2"><!--positions-->
+                                <div class="cont-3-4-2-3-2">
+                                    <p id="ed-position">Research Assistant</p>
+                                </div><!--/cont-3-4-2-3-2-->
+                                <div class="cont-3-4-2-X-3" id="ed-slideshow-3"><!--start of ed-slideshow-3-->
+                                   
+                                
+                                        <!--START SLIDESHOW-->
+                                            <script>
+                                                $("#ed-slideshow-3 > div:gt(0)").hide();
+                                                setInterval(function () {
+                                                $("#ed-slideshow-3 > div:first")
+                                                    .fadeOut(1000)
+                                                    .next()
+                                                    .fadeIn(1000)
+                                                    .end()
+                                                    .appendTo("#ed-slideshow-3");
+                                                }, 8000);
+                                            </script><!--For some reason it takes a few seconds for this to start working properly...-->
+                    
+                                          <div>
+                                            <img src="./resources/images/civil-lab/civil-1.jpg">
+                                            <h5>caption-1</h5>
+                                          </div>
+                                          <div>
+                                            <img src="./resources/images/civil-lab/civil-2.jpg" >
+                                            <h5>caption-2</h5>
+                                          </div>
+                                          <div>
+                                            <img src="./resources/images/civil-lab/civil-3.jpg">
+                                            <h5>caption-3</h5>
+                                          </div>
+                    
+                    
+                                        <!--END Slideshow div-->
+                                
+
+
+                                </div><!--/cont-3-4-2-3-3-slideshow-->
+                            </div><!--/cont-3-4-2-3-2-->
+                        </div><!--/cont-3-4-2-3-->
+
+
+                    </div><!--/cont-3-4-2-->
+                    <div class="cont-3-4-3">
+                      <p>For a comprehensive ........., click <a href="#" target="_blank">here.</a></p>
+                    </div><!--/cont-3-4-3-->
+                  </div><!--/cont-3-4-->
+                  
+                <!--------------solid-1px-#777-line-------------->
+                <div id="ed-line-777"></div>
+                <!--------------solid-1px-#777-line-------------->
+
+
+
+<!--START AWARDS & HONORS SECTION - 3-5-->
+
+                  <div class="cont-3-5"><!--begin Coursework div-->
+                    <div class="cont-3-5-1">
+                      <p>Awards & Honors:</p>
+                    </div><!--/cont-3-5-1-->
+  
+                  <div class="cont-3-5-2">
+                      <div class="cont-3-5-2-1">
+                          <p id="ed-award">&#x25cf; Best Presentation – Missouri S&T Chapter of Chi Epsilon National Honor Society – <em>“Seismic Vulnerability and Retrofitting of Unreinforced Masonry Buildings”</em></p>
+                          <p id="ed-award">&#x25cf; Initiated Member - Missouri S&T Chapter of Chi Epsilon National Honor Society</p> 
+                          <p id="ed-award">&#x25cf; Bronze Pin – National Residence Hall Honorary – Shamrock Chapter</p>
+                          <p id="ed-award">&#x25cf; Distinguished Service Award – Missouri S&T Residential Life</p> 
+                          <p id="ed-award">&#x25cf; 4 Year Award – Missouri S&T Residential Life</p>
+                          <p id="ed-award">&#x25cf; Dean’s List – Missouri S&T Department of Civil, Architectural, and Environmental Engineering</p> 
+                          <p id="ed-award">&#x25cf; Aaron and Zelda Greenberg Scholars Program - Missouri S&T Department of Civil, Architectural, and Environmental Engineering</p>
+                          <p id="ed-award">&#x25cf; Joseph Senne, Civil Engineering Scholarship - Missouri S&T Department of Civil, Architectural, and Environmental Engineering</p> 
+                          <p id="ed-award">&#x25cf; Excellence Scholarship – Missouri S&T</p>
+                          <p id="ed-award">&#x25cf; Curators Scholar Scholarship – Missouri S&T</p> 
+                          <p id="ed-award">&#x25cf; Karl Hasselmann Scholarship – Missouri S&T</p>
+                          <p id="ed-award">&#x25cf; Bright Flight Scholarship – Missouri Higher Education Academic Scholarship</p> 
+                       
+                      </div><!--/cont-3-5-2-1-->
+
+                  </div><!--/cont-3-5-2-->
+  
+              
+              
+  
+  
+                    <div class="cont-3-5-3">
+                      <p>For a comprehensive list of honors and awards (including those not associated with my time at Misssouri S&T), 
+                          see the Honors & Awards section of <a href="./resources/docs/CV - Christopher Cattron.pdf" target="_blank">my CV</a>.</p>
+                    </div><!--/cont-3-5-3-->
+                  </div><!--/cont-3-5-->
+
+
+
+
+
+
+              </div><!--/cont-3-->
+
+
+
+
+           
+        
+        </div><!--Ends div for id="education"-->
+
+
+
+        <!-- Third Parallax Image with Experience Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min" id="experience-banner">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">EXPERIENCE</span>
+            </div>
+        </div>
+
+        <!-- Container (Experience Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="experience">
+            
+            <!-----------------------------logo section topper--------------------------------->
+            <img id="end-line-logo" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
+            <!---------------------------------------------------------------------------------->
+
+            <h3 class="w3-center">ENGINEERING EXPERIENCE</h3>
+            <p class="w3-center">
+                <em>
+                    Though I have yet to obtain a full-time engineering job, I have been fortunate to 
+                    have had a broad range of professional engineering experiences between my internships 
+                    and involvment at my university. Here is a summary of my engineering experience.
+                </em>
+            </p>
+            <br>
+            
+
+            <!--START Larson Engineering experience container-->
+
+            <div class="cont-1">
+                <div class="cont-1-1">
+                  <div class="cont-1-1-1">
+                    <div class="cont-1-1-1-1">
+                        <div class="cont-1-1-1-1-1">
+                            <a href="http://www.larsonengr.com/" target="_blank"><img id="xp-logo" src="./resources/images/larson/larson-engineering-logo-transparent.png"></a>
+                        </div><!--/cont-1-1-1-1-1-->
+                        <div class="cont-1-1-1-1-2">
+                            <p id="xp-employer-name">Larson Engineering, Inc.</p>                           
+                        </div><!--/cont-1-1-1-1-2-->
+                    </div>
+                    <div class="cont-1-1-1-2">
+                      <p id="xp-job-title">Engineer Intern</p>
+                    </div>
+                  </div>
+                  <div class="cont-1-1-2">
+                    <div class="cont-1-1-2-1">
+                      <p id="xp-location">St. Louis, Missouri</p>
+                    </div>
+                    <div class="cont-1-1-2-2">
+                      <p id="xp-date">Summer 2019</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont-1-2">
+                  <div class="cont-1-2-1" id="xp-slideshow-1"> <!--start of xp-slideshow-->
+                    <!--START SLIDESHOW-->
+                    <script>
+                        $("#xp-slideshow-1 > div:gt(0)").hide();
+                        setInterval(function () {
+                        $("#xp-slideshow-1 > div:first")
+                            .fadeOut(1000)
+                            .next()
+                            .fadeIn(1000)
+                            .end()
+                            .appendTo("#xp-slideshow-1");
+                        }, 8000);
+                    </script><!--For some reason it takes a few seconds for this to start working properly...-->
+
+                      <div>
+                        <img src="./resources/images/larson/larson-1.png"> <!--I used to use class="w3-opacity w3-hover-opacity-off" for the img divs-->
+                        <h5>Got to get out of the office a few times—I didn't forget my PPE!</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/larson/larson-2.JPG" >
+                        <h5>Posing with calc books I produced over the summer.</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/larson/larson-3.jpg">
+                        <h5>My workspace complete with nametag and adjustable height desk.</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/larson/larson-4.jpg">
+                        <h5>I used MathCAD extensively to perform calculations, check designs, and produce reports.</h5>
+                      </div>
+                    
+                    <!--END Slideshow div-->
+                  </div><!--end of xp-slideshow div-->
+                  <div class="cont-1-2-2">
+                    <ul id="xp-job-highlights">
+                      <li>Prepared structural design calculations and drawings for pre-fabricated steel and 
+                          aluminum buildings including guard booths, equipment enclosures, and other structures.</li> 
+                      <li>Designed using the latest American codes and standards.</li> 
+                      <li>Utilized RISA-3D to model structural systems and analyze static loads</li> 
+                      <li>Created and revised MathCAD calculation templates for use in the design of aluminum facade 
+                          structural members and curtain-wall systems per the latest codes and standards.</li> 
+                    </ul>
+                  </div>
+                </div>
+                <div class="cont-1-3">
+                    <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum metus ac semper finibus. Praesent vulputate augue ac tempus congue.
+                        Curabitur in sapien semper, tristique arcu eget, pharetra risus. Donec tempus aliquet purus eu lobortis.
+                        Etiam ac finibus felis. Integer congue sit amet neque sit amet pellentesque. Donec cursus interdum rutrum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p class="read-more">Praesent luctus at erat at sagittis.
+                        Etiam posuere, erat nec laoreet ornare, odio dui mattis nisl, convallis semper ligula lectus eu turpis.
+                        Phasellus pharetra risus tortor, eget fringilla tortor laoreet at. Quisque egestas tristique dui. Mauris non iaculis ex.
+                        Ut pellentesque, massa ut molestie egestas, tortor leo imperdiet sem, vitae malesuada nibh dolor in magna. Etiam pulvinar pharetra dolor, vel dapibus ipsum commodo eget.
+                        Praesent turpis odio, suscipit ut ullamcorper vel, finibus at ligula. Phasellus dolor lectus, molestie a velit sed, iaculis rhoncus risus.
+                        Ut id pellentesque erat, quis elementum ligula. Donec dignissim diam sem, a bibendum erat mattis quis. Vivamus id erat dui. Vestibulum sollicitudin ac justo at lacinia.
+                    </p>
+                    <script>
+                        $(function(){
+                            $(".read-more").readmore({
+                                buttonClasses: "btn-read-more",
+                            });
+                        });
+                
+                        /* *I don't know why this is commented out*
+                            $(function(){
+                                $(".read-more").readmore({
+                                    hideText: "Any text",
+                                    readText: "New text",
+                                    isTextShown: true,
+                                    effect: true,
+                                    effectOption: "slow",
+                                    buttonClasses: "btn-primary opacity-rollover",
+                                    id: "read-more-action"
+                                });
+                            })
+                
+                        */
+                    </script>
+                    <!--END 'Read more read less' code-->
+                </div><!--END cont-1-3 div-->
+            </div><!--END Larson cont-1 div-->
+
+            <!--END Larson Engineering experience container-->
+
+
+
+            <!--START Missouri S&T Department of Civil Engineering (S&T Civil) experience container-->
+
+            <div class="cont-1">
+                <div class="cont-1-1">
+                  <div class="cont-1-1-1">
+                    <div class="cont-1-1-1-1">
+                        <div class="cont-1-1-1-1-1">
+                            <a href="https://care.mst.edu/" target="_blank"><img id="xp-logo" src="./resources/images/civil-lab/civil_architectural_and_enviromental_engineering_stacked_logo_horizontal_pms356.png"></a>
+                        </div><!--/cont-1-1-1-1-1-->
+                        <div class="cont-1-1-1-1-2">
+                            <p id="xp-employer-name">Missouri S&T Dept. of Civil Engineering</p>                           
+                        </div><!--/cont-1-1-1-1-2-->                     
+                    </div>
+                    <div class="cont-1-1-1-2">
+                      <p id="xp-job-title">Research Assistant</p>
+                    </div>
+                  </div>
+                  <div class="cont-1-1-2">
+                    <div class="cont-1-1-2-1">
+                      <p id="xp-location">Rolla, Missouri</p>
+                    </div>
+                    <div class="cont-1-1-2-2">
+                      <p id="xp-date">Jul 2018 – Aug 2018</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont-1-2">
+                    <div class="cont-1-2-2">
+                        <ul id="xp-job-highlights">
+                          <li>Prepare test specimens and perform tests in accordance with ASTM standards.</li> 
+                          <li>Collect and prepare data for submission to research team lead.</li> 
+                          <li>Maintain condition of laboratory station and laboratory equipment.</li> 
+                        </ul>
+                    </div>
+                    <div class="cont-1-2-1" id="xp-slideshow-2"> <!--start of xp-slideshow-2-->
+                    <!--START SLIDESHOW-->
+                        <script>
+                            $("#xp-slideshow-2 > div:gt(0)").hide();
+                            setInterval(function () {
+                            $("#xp-slideshow-2 > div:first")
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo("#xp-slideshow-2");
+                            }, 8000);
+                        </script><!--For some reason it takes a few seconds for this to start working properly...-->
+
+                      <div>
+                        <img src="./resources/images/civil-lab/civil-1.jpg">
+                        <h5>caption-1</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/civil-lab/civil-2.jpg" >
+                        <h5>caption-2</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/civil-lab/civil-3.jpg">
+                        <h5>caption-3</h5>
+                      </div>
+
+
+                    <!--END Slideshow div-->
+                    </div><!--end of xp-slideshow-2 div-->
+
+                </div>
+                <div class="cont-1-3">
+                    <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum metus ac semper finibus. Praesent vulputate augue ac tempus congue.
+                        Curabitur in sapien semper, tristique arcu eget, pharetra risus. Donec tempus aliquet purus eu lobortis.
+                        Etiam ac finibus felis. Integer congue sit amet neque sit amet pellentesque. Donec cursus interdum rutrum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p class="read-more">Praesent luctus at erat at sagittis.
+                        Etiam posuere, erat nec laoreet ornare, odio dui mattis nisl, convallis semper ligula lectus eu turpis.
+                        Phasellus pharetra risus tortor, eget fringilla tortor laoreet at. Quisque egestas tristique dui. Mauris non iaculis ex.
+                        Ut pellentesque, massa ut molestie egestas, tortor leo imperdiet sem, vitae malesuada nibh dolor in magna. Etiam pulvinar pharetra dolor, vel dapibus ipsum commodo eget.
+                        Praesent turpis odio, suscipit ut ullamcorper vel, finibus at ligula. Phasellus dolor lectus, molestie a velit sed, iaculis rhoncus risus.
+                        Ut id pellentesque erat, quis elementum ligula. Donec dignissim diam sem, a bibendum erat mattis quis. Vivamus id erat dui. Vestibulum sollicitudin ac justo at lacinia.
+                    </p>
+                    <!--END 'Read more read less' code-->
+                </div><!--END S&T Civil cont-1-3 div-->
+            </div><!--END S&T Civil cont-1 div-->
+
+            <!--END Missouri S&T Dept. of Civil Engineering experience container-->
+
+
+
+            <!--START Great Rivers Greenway (GRG) experience container-->
+
+            <div class="cont-1">
+                <div class="cont-1-1">
+                  <div class="cont-1-1-1">
+                    <div class="cont-1-1-1-1">
+                     
+                        <div class="cont-1-1-1-1-1">
+                            <a href="https://greatriversgreenway.org/" target="_blank"><img id="xp-logo" src="./resources/images/grg/GRG-logo-text.png"></a>
+                        </div><!--/cont-1-1-1-1-1-->
+                        <div class="cont-1-1-1-1-2">
+                            <p id="xp-employer-name">Great Rivers Greenway</p>                           
+                        </div><!--/cont-1-1-1-1-2-->                        
+               
+                    </div>
+                    <div class="cont-1-1-1-2">
+                      <p id="xp-job-title">Structural Engineer Intern</p>
+                    </div>
+                  </div>
+                  <div class="cont-1-1-2">
+                    <div class="cont-1-1-2-1">
+                      <p id="xp-location">St. Louis, Missouri</p>
+                    </div>
+                    <div class="cont-1-1-2-2">
+                      <p id="xp-date">Summer 2017</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont-1-2">
+                    <div class="cont-1-2-1" id="xp-slideshow-3"> <!--start of xp-slideshow-3-->
+                    <!--START SLIDESHOW-->
+                        <script>
+                            $("#xp-slideshow-3 > div:gt(0)").hide();
+                            setInterval(function () {
+                            $("#xp-slideshow-3 > div:first")
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo("#xp-slideshow-3");
+                            }, 8000);
+                        </script><!--For some reason it takes a few seconds for this to start working properly...-->
+
+                      <div>
+                        <img src="./resources/images/grg/grg-1.jpg">
+                        <h5>Taking a look under a steel plate girder bridge on Grant's Trail.</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/grg/grg-2.jpg" >
+                        <h5>I became familiar with engineering drawings, specifications, and other documents.</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/grg/grg-3.jpg">
+                        <h5>Posing near a prefabricated steel bowstring pratt truss bridge.</h5>
+                      </div>
+                      <div>
+                        <img src="./resources/images/grg/grg-4.png">
+                        <h5>I was exposed to a variety of bridges, box-culverts, tunnels, boardwalks, & more.</h5>
+                      </div>
+                      <!--
+                      <div>
+                        <img src="./resources/images/grg/grg-5.png">
+                        <h5>GRG let me sit in on construction meetings, join site visits, and network with engineers.</h5>
+                      </div>
+                      -->
+
+                    <!--END Slideshow div-->
+                    </div><!--end of xp-slideshow-3 div-->
+                    <div class="cont-1-2-2">
+                        <ul id="xp-job-highlights">
+                          <li>Performed field visits to each bridge & structural asset on greenways to gather data, 
+                              record observations, collect measurements, and take photographs.</li> 
+                          <li>Collected and uploaded relevant plans, drawings, and other documents for each bridge as was available.</li> 
+                          <li>Modified bridge layer in GIS to better organize available data.</li> 
+                          <li>Drafted a <a target="_blank" href="./resources/docs/grg/GRG Bridge Layer Guide - July 2017.pdf">guide</a> on the use and organization of the GIS bridge layer.</li> 
+                          <li>Presented summary of findings in an oral <a target="_blank" href="./resources/docs/grg/GRG Bridge Inventory Presentation - July 2017.pdf">presentation</a> and 
+                            detailed findings in a written <a target="_blank" href="./resources/docs/grg/GRG Bridge Inventory Report - July 2017 (FULL).pdf">report</a>.</li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="cont-1-3">
+                    <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum metus ac semper finibus. Praesent vulputate augue ac tempus congue.
+                        Curabitur in sapien semper, tristique arcu eget, pharetra risus. Donec tempus aliquet purus eu lobortis.
+                        Etiam ac finibus felis. Integer congue sit amet neque sit amet pellentesque. Donec cursus interdum rutrum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p class="read-more">Praesent luctus at erat at sagittis.
+                        Etiam posuere, erat nec laoreet ornare, odio dui mattis nisl, convallis semper ligula lectus eu turpis.
+                        Phasellus pharetra risus tortor, eget fringilla tortor laoreet at. Quisque egestas tristique dui. Mauris non iaculis ex.
+                        Ut pellentesque, massa ut molestie egestas, tortor leo imperdiet sem, vitae malesuada nibh dolor in magna. Etiam pulvinar pharetra dolor, vel dapibus ipsum commodo eget.
+                        Praesent turpis odio, suscipit ut ullamcorper vel, finibus at ligula. Phasellus dolor lectus, molestie a velit sed, iaculis rhoncus risus.
+                        Ut id pellentesque erat, quis elementum ligula. Donec dignissim diam sem, a bibendum erat mattis quis. Vivamus id erat dui. Vestibulum sollicitudin ac justo at lacinia.
+                    </p>
+                    <!--END 'Read more read less' code-->
+                </div><!--END GRG cont-1-3 div-->
+            </div><!--END GRG cont-1 div-->
+
+            <!--END Great Rivers Greenway (GRG) experience container-->
+
+            
+
+
+            <!--START Concrete Strategies (CSI) experience container-->
+
+            <div class="cont-1">
+                <div class="cont-1-1">
+                <div class="cont-1-1-1">
+                    <div class="cont-1-1-1-1">
+
+                        <div class="cont-1-1-1-1-1">
+                            <a href="https://concretestrategies.com/" target="_blank"><img id="xp-logo" src="./resources/images/csi/csi-logo-text-old.png"></a>
+                        </div><!--/cont-1-1-1-1-1-->
+                        <div class="cont-1-1-1-1-2">
+                            <p id="xp-employer-name">Concrete Strategies, Inc.</p>                           
+                        </div><!--/cont-1-1-1-1-2-->                        
+               
+                    </div>
+                    <div class="cont-1-1-1-2">
+                    <p id="xp-job-title">Project Engineer Intern</p>
+                    </div>
+                </div>
+                <div class="cont-1-1-2">
+                    <div class="cont-1-1-2-1">
+                    <p id="xp-location">St. Louis, Missouri</p>
+                    </div>
+                    <div class="cont-1-1-2-2">
+                    <p id="xp-date">Summer 2015</p>
+                    </div>
+                </div>
+                </div>
+                <div class="cont-1-2">
+                    <div class="cont-1-2-2">
+                        <ul id="xp-job-highlights">
+                        <li>Oversaw site work for a concrete restoration project in St. Charles, Missouri.</li> 
+                        <li>Detailed project objectives and timeline, with assistance of Project Manager.</li> 
+                        <li>Tracked amount of removal, grading, and pouring that occurred daily.</li> 
+                        <li>Interacted with public, city inspector, and sub-contractors courteously and professionally.</li> 
+                        </ul>
+                    </div>
+                    <div class="cont-1-2-1" id="xp-slideshow-4"> <!--start of xp-slideshow-4-->
+                    <!--START SLIDESHOW-->
+                        <script>
+                            $("#xp-slideshow-4 > div:gt(0)").hide();
+                            setInterval(function () {
+                            $("#xp-slideshow-4 > div:first")
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo("#xp-slideshow-4");
+                            }, 8000);
+                        </script><!--For some reason it takes a few seconds for this to start working properly...-->
+
+                    <div>
+                        <img src="./resources/images/csi/csi-1.jpg">
+                        <h5>caption-1</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/csi/csi-2.jpg" >
+                        <h5>caption-2</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/csi/csi-3.jpg">
+                        <h5>caption-3</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/csi/csi-4.jpg">
+                        <h5>caption-4</h5>
+                    </div>
+
+                    <!--END Slideshow div-->
+                    </div><!--end of xp-slideshow-4 div-->
+
+                </div>
+                <div class="cont-1-3">
+                    <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum metus ac semper finibus. Praesent vulputate augue ac tempus congue.
+                        Curabitur in sapien semper, tristique arcu eget, pharetra risus. Donec tempus aliquet purus eu lobortis.
+                        Etiam ac finibus felis. Integer congue sit amet neque sit amet pellentesque. Donec cursus interdum rutrum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p class="read-more">Praesent luctus at erat at sagittis.
+                        Etiam posuere, erat nec laoreet ornare, odio dui mattis nisl, convallis semper ligula lectus eu turpis.
+                        Phasellus pharetra risus tortor, eget fringilla tortor laoreet at. Quisque egestas tristique dui. Mauris non iaculis ex.
+                        Ut pellentesque, massa ut molestie egestas, tortor leo imperdiet sem, vitae malesuada nibh dolor in magna. Etiam pulvinar pharetra dolor, vel dapibus ipsum commodo eget.
+                        Praesent turpis odio, suscipit ut ullamcorper vel, finibus at ligula. Phasellus dolor lectus, molestie a velit sed, iaculis rhoncus risus.
+                        Ut id pellentesque erat, quis elementum ligula. Donec dignissim diam sem, a bibendum erat mattis quis. Vivamus id erat dui. Vestibulum sollicitudin ac justo at lacinia.
+                    </p>
+                    <!--END 'Read more read less' code-->
+                </div><!--END CSI cont-1-3 div-->
+            </div><!--END CSI cont-1 div-->
+
+
+            <!--END Concrete Strategies (CSI) experience container-->
+
+            
+
+            <!--------------solid-1px-#777-line-------------->
+            <div id="ed-line-777"></div>
+            <!--------------solid-1px-#777-line-------------->
+             
+            <!-----------------------------logo section divider--------------------------------->
+            <img id="end-line-logo" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
+            <!---------------------------------------------------------------------------------->
+
+            
+                <h3 class="w3-center">OTHER WORK EXPERIENCE</h3>
+                <p class="w3-center">
+                    <em>
+                        My experience isn't limited to just engineering. Here are a few  
+                        non-engineering work experiences that have shaped my personal and professional growth.
+                    </em>
+                </p>
+                <br>
+
+
+            <!--START Missouri S&T Residential Life (ResLife) experience container-->
+
+            <div class="cont-1">
+                <div class="cont-1-1">
+                <div class="cont-1-1-1">
+                    <div class="cont-1-1-1-1">
+
+                        <div class="cont-1-1-1-1-1">
+                            <a href="https://reslife.mst.edu/" target="_blank"><img id="xp-logo" src="./resources/images/reslife/residential_life_stacked_logo_horizontal_pms356.png"></a>
+                        </div><!--/cont-1-1-1-1-1-->
+                        <div class="cont-1-1-1-1-2">
+                            <p id="xp-employer-name">Missouri S&T - Dept. of Residential Life</p>                           
+                        </div><!--/cont-1-1-1-1-2-->     
+
+
+                    </div>
+                    <div class="cont-1-1-1-2">
+                    <p id="xp-job-title">Resident Director</p>
+                    </div>
+                </div>
+                <div class="cont-1-1-2">
+                    <div class="cont-1-1-2-1">
+                    <p id="xp-location">Rolla, Missouri</p>
+                    </div>
+                    <div class="cont-1-1-2-2">
+                    <p id="xp-date">Sept 2019 - May 2020</p>
+                    </div>
+                </div>
+                </div>
+                <div class="cont-1-2">
+                    <div class="cont-1-2-1" id="xp-slideshow-5"> <!--start of xp-slideshow-5-->
+                    <!--START SLIDESHOW-->
+                        <script>
+                            $("#xp-slideshow-5 > div:gt(0)").hide();
+                            setInterval(function () {
+                            $("#xp-slideshow-5 > div:first")
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo("#xp-slideshow-5");
+                            }, 8000);
+                        </script><!--For some reason it takes a few seconds for this to start working properly...-->
+
+                    <div>
+                        <img src="./resources/images/reslife/reslife-1.jpg">
+                        <h5>caption-1</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/reslife/reslife-2.jpg" >
+                        <h5>caption-2</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/reslife/reslife-3.png">
+                        <h5>caption-3</h5>
+                    </div>
+
+
+
+                    <!--END Slideshow div-->
+                    </div><!--end of xp-slideshow-5 div-->
+                    <div class="cont-1-2-2">
+                        <ul id="xp-job-highlights">
+                        <li>Supervise a staff of 20 student leaders, including 15 Resident Assistants (RAs), 
+                            four Senior RAs, and one Head Resident.</li> 
+                        <li>Oversee the operations of a residence hall with an occupancy capacity of almost 
+                            700 residents that predominantly houses first and second-year college students.</li> 
+                        <li>Implement a residential curriculum for student development in the residence halls.</li> 
+                        <li>Respond to emergency and crisis situations working cooperatively with University 
+                            Police, Counseling Services, and other campus staffs.</li> 
+                        <li>Serve as a Conduct Officer and an Advisor to local student hall government.</li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="cont-1-3">
+                    <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum metus ac semper finibus. Praesent vulputate augue ac tempus congue.
+                        Curabitur in sapien semper, tristique arcu eget, pharetra risus. Donec tempus aliquet purus eu lobortis.
+                        Etiam ac finibus felis. Integer congue sit amet neque sit amet pellentesque. Donec cursus interdum rutrum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p class="read-more">Praesent luctus at erat at sagittis.
+                        Etiam posuere, erat nec laoreet ornare, odio dui mattis nisl, convallis semper ligula lectus eu turpis.
+                        Phasellus pharetra risus tortor, eget fringilla tortor laoreet at. Quisque egestas tristique dui. Mauris non iaculis ex.
+                        Ut pellentesque, massa ut molestie egestas, tortor leo imperdiet sem, vitae malesuada nibh dolor in magna. Etiam pulvinar pharetra dolor, vel dapibus ipsum commodo eget.
+                        Praesent turpis odio, suscipit ut ullamcorper vel, finibus at ligula. Phasellus dolor lectus, molestie a velit sed, iaculis rhoncus risus.
+                        Ut id pellentesque erat, quis elementum ligula. Donec dignissim diam sem, a bibendum erat mattis quis. Vivamus id erat dui. Vestibulum sollicitudin ac justo at lacinia.
+                    </p>
+                    <!--END 'Read more read less' code-->
+                </div><!--END ResLife cont-1-3 div-->
+            </div><!--END ResLife cont-1 div-->
+
+
+            <!--END Missouri S&T Residential Life (ResLife) experience container-->
+
+            
+
+
+            <!--START The Community Partnership (TCP) experience container-->
+
+            <div class="cont-1">
+                <div class="cont-1-1">
+                <div class="cont-1-1-1">
+                    <div class="cont-1-1-1-1">
+
+                        <div class="cont-1-1-1-1-1">
+                            <a href="https://www.thecommunitypartnership.org/" target="_blank"><img id="xp-logo" src="./resources/images/tcp/tcp-logo-transparent.png"></a>
+                        </div><!--/cont-1-1-1-1-1-->
+                        <div class="cont-1-1-1-1-2">
+                            <p id="xp-employer-name">The Community Partnership</p>                           
+                        </div><!--/cont-1-1-1-1-2-->     
+
+
+
+                    </div>
+                    <div class="cont-1-1-1-2">
+                    <p id="xp-job-title">Recycling Coordinator</p>
+                    </div>
+                </div>
+                <div class="cont-1-1-2">
+                    <div class="cont-1-1-2-1">
+                    <p id="xp-location">Rolla, Missouri</p>
+                    </div>
+                    <div class="cont-1-1-2-2">
+                    <p id="xp-date">July 2018 - Sept 2019</p>
+                    </div>
+                </div>
+                </div>
+                <div class="cont-1-2">
+                    <div class="cont-1-2-2">
+                        <ul id="xp-job-highlights">
+                            <li>Managed a textile and salvage clothing recycling program for a not-for-profit thrift store.</li> 
+                            <li>Oversaw a waste reduction program responsible for diverting over 45 tons of salvage textiles from the landfill.</li> 
+                            <li>Recruited, trained, and supervised volunteer groups of up to 50 volunteers.</li>
+                            <li>Processed clothing donations and prepared salvage clothing for baling.</li> 
+                            <li>Reduced the amount of textile waste that goes to the landfill by baling and selling salvage clothing and increasing clothing sales in-store.</li> 
+                            <li>Coordinated the spending of grant-acquired funds to purchase shelving, bins, and storage structures to contain off-season clothing.</li>
+                        </ul>
+                    </div>
+                    <div class="cont-1-2-1" id="xp-slideshow-6"> <!--start of xp-slideshow-6-->
+                    <!--START SLIDESHOW-->
+                        <script>
+                            $("#xp-slideshow-6 > div:gt(0)").hide();
+                            setInterval(function () {
+                            $("#xp-slideshow-6 > div:first")
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo("#xp-slideshow-6");
+                            }, 8000);
+                        </script><!--For some reason it takes a few seconds for this to start working properly...-->
+
+                    <div>
+                        <img src="./resources/images/tcp/tcp-1.jpg">
+                        <h5>caption-1</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/tcp/tcp-2.jpg">
+                        <h5>caption-2</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/tcp/tcp-3.jpg">
+                        <h5>caption-3</h5>
+                    </div>
+                    <div>
+                        <img src="./resources/images/tcp/tcp-4.jpg">
+                        <h5>caption-4</h5>
+                    </div>
+
+                    <!--END Slideshow div-->
+                    </div><!--end of xp-slideshow-6 div-->
+                </div>
+                <div class="cont-1-3">
+                    <!--START 'Read more read less code' (also see two <script> elements in <head>)-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum metus ac semper finibus. Praesent vulputate augue ac tempus congue.
+                        Curabitur in sapien semper, tristique arcu eget, pharetra risus. Donec tempus aliquet purus eu lobortis.
+                        Etiam ac finibus felis. Integer congue sit amet neque sit amet pellentesque. Donec cursus interdum rutrum.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p class="read-more">Praesent luctus at erat at sagittis.
+                        Etiam posuere, erat nec laoreet ornare, odio dui mattis nisl, convallis semper ligula lectus eu turpis.
+                        Phasellus pharetra risus tortor, eget fringilla tortor laoreet at. Quisque egestas tristique dui. Mauris non iaculis ex.
+                        Ut pellentesque, massa ut molestie egestas, tortor leo imperdiet sem, vitae malesuada nibh dolor in magna. Etiam pulvinar pharetra dolor, vel dapibus ipsum commodo eget.
+                        Praesent turpis odio, suscipit ut ullamcorper vel, finibus at ligula. Phasellus dolor lectus, molestie a velit sed, iaculis rhoncus risus.
+                        Ut id pellentesque erat, quis elementum ligula. Donec dignissim diam sem, a bibendum erat mattis quis. Vivamus id erat dui. Vestibulum sollicitudin ac justo at lacinia.
+                    </p>
+                    <!--END 'Read more read less' code-->
+                </div><!--END TCP cont-1-3 div-->
+            </div><!--END TCP cont-1 div-->
+
+
+            <!--END The Community Partnership (TCP) experience container-->
+           
+           
+
+
+
+
+
+        </div><!--Ends id="experience" div-->
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image" />
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+
+        
+        <!-- Fourth Parallax Image with Fun Stuff Text -->
+        <div class="bgimg-4 w3-display-container w3-opacity-min" id="fun-stuff-banner">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">FUN STUFF</span>
+            </div>
+        </div>
+
+
+
+        <!-- Fifth Parallax Image with Contact Text -->
+        <div class="bgimg-5 w3-display-container w3-opacity-min" id="contact-banner">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+            </div>
+        </div>
+
+
+        <!-- Container (Contact Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="contact"><!--STARTS div for id="contact"-->
+            
+            <!-----------------------------logo section divider--------------------------------->
+            <img id="end-line-logo" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
+            <!---------------------------------------------------------------------------------->
+            
+            <h3 class="w3-center">LET'S CHAT</h3>
+            <p class="w3-center"><em>Leave me a message below, send me an email, or give me a ring. My contact information is below. 
+                I look forward to getting in touch!
+            </em></p>
+
+            <div class="w3-row w3-padding-32 w3-section">
+                <div class="w3-col m4 w3-container">
+                    <img src="/w3images/map.jpg" class="w3-image w3-round" style="width: 100%;" />
+                </div>
+                <div class="w3-col m8 w3-panel">
+                    <div class="w3-large w3-margin-bottom">
+                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> St. Louis, MO - United States<br />
+                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 636-795-5677<br />
+                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: christophercattron@mail.com<br />
+                    </div>
+                    <p>Set up a time for a videochat <i class="fa fa-video-camera"></i>, or leave me a note:</p>
+                    <form action="/action_page.php" target="_blank">
+                        <div class="w3-row-padding" style="margin: 0 -16px 8px -16px;">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" />
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" />
+                            </div>
+                        </div>
+                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" />
+                        <button class="w3-button w3-black w3-right w3-section" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div><!--ENDS div for id="contact"-->
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-padding-64 " style="background-color: #003249">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+                <a href="https://open.spotify.com/user/12165154942?si=8Oc7aJBOTI-npAU1NfSWdg" target="_blank"><i class="fa fa-spotify w3-hover-opacity"></i></a>
+                
+            </div>
+            <p>Copyright &copy; 2020 All Rights Reserved by <a href="https://www.linkedin.com/in/christopher-cattron/">Christopher Cattron</a>.</p>
+        </footer>
+
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Change style of navbar on scroll
+            window.onscroll = function () {
+                myFunction();
+            };
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                }
+            }
+
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function toggleFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+    </body>
+    
+</html>
