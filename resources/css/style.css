@@ -726,6 +726,14 @@ display: block;
 }
 
 
+@media screen and (max-width: 720px){
+  .cont-1-1-1-1 {
+    text-align: center;
+    flex-direction: column;
+}
+}
+
+
 /*-----------*/
 /* ID Styles */
 /*-----------*/
