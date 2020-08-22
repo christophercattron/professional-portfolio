@@ -296,6 +296,8 @@ margin-left: 0x;
 
 .cont-3-4-2{
 
+  width: 100%;
+  
 
   font-size: 1.066666667em;
 }
@@ -358,16 +360,34 @@ margin-left: 0x;
 
 }
 
+
+.cont-3-4-2-1, .cont-3-4-2-2, .cont-3-4-2-3{
+  width:33.33333%;
+  float:left;
+}
+
+
 /*-----------*/
 /* ID Styles */
 /*-----------*/
+
+
 
 #ed-logo{
   width: auto;
   max-height:50px;
   
-  
 }
+
+#ed-logo-extracurricular{
+  width: 100%;
+  height: auto;
+  padding: 5px 20px;
+
+}
+
+
+
 #ed-university-name{
   font-size: 1.666667em;
 }
