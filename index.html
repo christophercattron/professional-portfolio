@@ -550,39 +550,215 @@
                   </div>
                 </div>
                 <div class="cont-1-2">
-                  <div class="cont-1-2-1" id="xp-slideshow-1"> <!--start of xp-slideshow-->
-                    <!--START SLIDESHOW-->
-                    <script>
-                        $("#xp-slideshow-1 > div:gt(0)").hide();
-                        setInterval(function () {
-                        $("#xp-slideshow-1 > div:first")
-                            .fadeOut(1000)
-                            .next()
-                            .fadeIn(1000)
-                            .end()
-                            .appendTo("#xp-slideshow-1");
-                        }, 8000);
-                    </script><!--For some reason it takes a few seconds for this to start working properly...-->
+                
 
-                      <div>
-                        <img src="./resources/images/larson/larson-1.png"> <!--I used to use class="w3-opacity w3-hover-opacity-off" for the img divs-->
-                        <h5>Got to get out of the office a few times—I didn't forget my PPE!</h5>
-                      </div>
-                      <div>
-                        <img src="./resources/images/larson/larson-2.JPG" >
-                        <h5>Posing with calc books I produced over the summer.</h5>
-                      </div>
-                      <div>
-                        <img src="./resources/images/larson/larson-3.jpg">
-                        <h5>My workspace complete with nametag and adjustable height desk.</h5>
-                      </div>
-                      <div>
-                        <img src="./resources/images/larson/larson-4.jpg">
-                        <h5>I used MathCAD extensively to perform calculations, check designs, and produce reports.</h5>
-                      </div>
-                    
-                    <!--END Slideshow div-->
-                  </div><!--end of xp-slideshow div-->
+                    <!--START style for slideshow-->
+                    <style>
+
+
+                        .outer-wrapper {
+                        width: 80%;
+                        margin: 50px auto;
+                        }
+
+                        .s-wrap {
+                        width: 100%;
+                        /* margin-bottom: 50px; */
+                        /* padding-bottom: 55%; */
+                        margin: 15px;
+                        position: relative;
+                        /* border: 10px solid #fff; */
+                        background-color: #efefe8;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                        overflow: hidden;
+                        border-radius: 3%;
+                        max-width: 450px;
+                        }
+                        .s-wrap > input {
+                        display: none;
+                        }
+                        .s-wrap .s-content {
+                        margin: 0;
+                        padding: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 500%;
+                        height: 100%;
+                        font-size: 0;
+                        list-style: none;
+                        transition: transform 1s;
+                        }
+                        .s-wrap .s-item {
+                        display: inline-block;
+                        width: 20%;
+                        height: 100%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        }
+                        .s-wrap .s-item-1 {
+                        background-image: url("./resources/images/larson/larson-1.png");
+                        }
+                        .s-wrap .s-item-2 {
+                        background-image: url("./resources/images/larson/larson-2.JPG");
+                        }
+                        .s-wrap .s-item-3 {
+                        background-image: url("./resources/images/larson/larson-3.jpg");
+                        }
+                        .s-wrap .s-item-4 {
+                        background-image: url("./resources/images/larson/larson-4.jpg");
+                        }
+                        .s-wrap .s-item-5 {
+                        background-image: url("./resources/images/larson/larson\ \(2\).jpg");
+                        }
+
+                        .s-type-1 .s-control {
+                        position: absolute;
+                        bottom: 18px;
+                        left: 50%;
+                        text-align: center;
+                        transform: translateX(-50%);
+                        transition-timing-function: ease-out;
+                        }
+                        .s-type-1 .s-control > label[class^="s-c-"] {
+                        display: inline-block;
+                        width: 12px;
+                        height: 12px;
+                        margin-right: 10px;
+                        border-radius: 50%;
+                        border: 1px solid #999;
+                        background-color: #efefe8;
+                        cursor: pointer;
+                        }
+                        .s-type-1 .s-nav label {
+                        display: none;
+                        position: absolute;
+                        top: 50%;
+                        padding: 5px 10px;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                        }
+                        .s-type-1 .s-nav label::before, .s-type-1 .s-nav label::after {
+                        content: "";
+                        display: block;
+                        width: 8px;
+                        height: 24px;
+                        background-color: #fff;
+                        }
+                        .s-type-1 .s-nav label::before {
+                        margin-bottom: -12px;
+                        }
+                        .s-type-1 .s-nav label.left {
+                        left: 20px;
+                        }
+                        .s-type-1 .s-nav label.left::before {
+                        transform: rotate(45deg);
+                        }
+                        .s-type-1 .s-nav label.left::after {
+                        transform: rotate(-45deg);
+                        }
+                        .s-type-1 .s-nav label.right {
+                        right: 20px;
+                        }
+                        .s-type-1 .s-nav label.right::before {
+                        transform: rotate(-45deg);
+                        }
+                        .s-type-1 .s-nav label.right::after {
+                        transform: rotate(45deg);
+                        }
+                        .s-type-1 #s-1:checked ~ .s-content {
+                        transform: translateX(0%);
+                        }
+                        .s-type-1 #s-1:checked ~ .s-control .s-c-1 {
+                        background-color: #333;
+                        }
+                        .s-type-1 #s-1:checked ~ .s-nav .s-nav-1 {
+                        display: block;
+                        }
+                        .s-type-1 #s-2:checked ~ .s-content {
+                        transform: translateX(-20%);
+                        }
+                        .s-type-1 #s-2:checked ~ .s-control .s-c-2 {
+                        background-color: #333;
+                        }
+                        .s-type-1 #s-2:checked ~ .s-nav .s-nav-2 {
+                        display: block;
+                        }
+                        .s-type-1 #s-3:checked ~ .s-content {
+                        transform: translateX(-40%);
+                        }
+                        .s-type-1 #s-3:checked ~ .s-control .s-c-3 {
+                        background-color: #333;
+                        }
+                        .s-type-1 #s-3:checked ~ .s-nav .s-nav-3 {
+                        display: block;
+                        }
+                        .s-type-1 #s-4:checked ~ .s-content {
+                        transform: translateX(-60%);
+                        }
+                        .s-type-1 #s-4:checked ~ .s-control .s-c-4 {
+                        background-color: #333;
+                        }
+                        .s-type-1 #s-4:checked ~ .s-nav .s-nav-4 {
+                        display: block;
+                        }
+                        .s-type-1 #s-5:checked ~ .s-content {
+                        transform: translateX(-80%);
+                        }
+                        .s-type-1 #s-5:checked ~ .s-control .s-c-5 {
+                        background-color: #333;
+                        }
+                        .s-type-1 #s-5:checked ~ .s-nav .s-nav-5 {
+                        display: block;
+                        }
+
+                        .s-type-2 .s-content {
+                        animation: slider-animation 25s ease-in-out infinite; 
+                        }
+                        .s-type-2 .s-content:hover {
+                        animation-play-state: paused;
+      
+                        }
+
+                        @keyframes slider-animation {
+                        0%,
+                            11.2% {
+                            transform: translateX(0%); /*img 1*/
+                        }
+                        20%,
+                            31.2% {
+                            transform: translateX(-20%); /*img 2*/
+                        }
+                        40%,
+                            51.2% {
+                            transform: translateX(-40%); /*img 3*/
+                        }
+                        60%,
+                            71.2% {
+                            transform: translateX(-60%); /*img 4*/
+                        }
+                        80%,
+                            91.2% {
+                            transform: translateX(-80%); /*img 5*/
+                        }
+                        }
+
+                    </style>
+                    <!--END style for slideshow-->
+
+                    <div class="s-wrap s-type-2" role="slider">
+                      <ul class="s-content">
+                        <li class="s-item s-item-1"></li>
+                        <li class="s-item s-item-2"></li>
+                        <li class="s-item s-item-3"></li>
+                        <li class="s-item s-item-4"></li>
+                        <li class="s-item s-item-5"></li>
+                      </ul>
+                    </div>
+                  
+              
+                  
+                  
                   <div class="cont-1-2-2">
                     <ul id="xp-job-highlights">
                       <li>Prepared structural design calculations and drawings for pre-fabricated steel and 
