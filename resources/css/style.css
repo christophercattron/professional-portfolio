@@ -223,6 +223,12 @@ margin-left: 0x;
   padding: 15px;
 }
 
+.cont-3-5{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
 
 /* cont-3-X level ALL */
 .cont-3-1, .cont-3-2, .cont-3-3, .cont-3-4{
@@ -271,6 +277,9 @@ margin-left: 0x;
   font-size: 1.2em!important;
 }
 
+.cont-3-5-1{
+  font-size: 1.2em!important;
+}
 
 
 /* Clear floats after the cont-3-3-2 columns (needed for two column effect) */
@@ -310,6 +319,10 @@ margin-left: 0x;
   font-size: 0.8em!important;
 }
 
+.cont-3-5-3{
+  font-size: 0.8em!important;
+  margin-top: 15px;
+}
 
 
 
@@ -354,7 +367,7 @@ margin-left: 0x;
 
 
 
-/* cont-X-X-X-X level ALL */
+/* cont-3-X-X-X level ALL */
 .cont-3-1-1-1, .cont-3-1-1-2, .cont-3-1-2-1, .cont-3-1-2-2, .cont-3-2-1-1, .cont-3-2-1-2, .cont-3-2-2-1, .cont-3-2-2-2{
   /*margin: 5px;*/
 
@@ -366,6 +379,20 @@ margin-left: 0x;
   float:left;
 }
 
+
+/*cont-3-X-X-X-X level */
+
+.cont-3-4-2-X-1{
+  height: 86px;
+}
+
+.cont-3-4-2-X-3{
+  width: 100%;
+  max-height: 200px;
+  border-radius: 2px;
+  height: 200px;
+
+}
 
 /*-----------*/
 /* ID Styles */
@@ -386,6 +413,13 @@ margin-left: 0x;
 
 }
 
+#ed-position{
+  display: none;
+}
+
+#ed-slideshow{
+
+}
 
 
 #ed-university-name{
@@ -565,6 +599,86 @@ display: block;
 }
   
   }
+
+
+
+
+
+/*----------------*/
+/* Slideshow code */
+/*----------------*/
+
+
+#ed-slideshow-1, 
+#ed-slideshow-2,
+#ed-slideshow-3, 
+#ed-slideshow-4,
+#ed-slideshow-5, 
+#ed-slideshow-6,
+#ed-slideshow-7, 
+#ed-slideshow-8 {
+  position: relative;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+  text-align: center;
+
+}
+
+#ed-slideshow-1 > div ,
+#ed-slideshow-2 > div ,
+#ed-slideshow-3 > div , 
+#ed-slideshow-4 > div ,
+#ed-slideshow-5 > div ,
+#ed-slideshow-6 > div ,
+#ed-slideshow-7 > div , 
+#ed-slideshow-8 > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ 
+
+  
+}
+
+#ed-slideshow-1 img , 
+#ed-slideshow-2 img , 
+#ed-slideshow-3 img , 
+#ed-slideshow-4 img, 
+#ed-slideshow-5 img , 
+#ed-slideshow-6 img , 
+#ed-slideshow-7 img , 
+#ed-slideshow-8 img {
+  border-radius: 2px;
+/*my code for responsive image sizing*/
+  max-width: 100%;
+
+  display: block;
+  width: 90%;
+  height: 100%;
+  object-fit:cover;
+}
+
+
+/* testing new code below: */
+
+#ed-slideshow-1 > div > img , 
+#ed-slideshow-2 > div > img , 
+#ed-slideshow-3 > div > img ,
+#ed-slideshow-4 > div > img ,
+#ed-slideshow-5 > div > img , 
+#ed-slideshow-6 > div > img , 
+#ed-slideshow-7 > div > img ,
+#ed-slideshow-8 > div > img {
+
+  position: absolute;
+}
+
+
+
+
 
 
 
