@@ -774,14 +774,20 @@ display: block;
   }
 
 
+  /* Responsive layout - when the screen is less than 475px wide, reduce width/height of xp slideshow*/
 
   @media screen and (max-width: 475px){
 
-
     .s-wrap-ex-1{
-      height: 308.333px;
-      width: 370px;
+      height: 237.5px!important;
+      width: 285px!important;
     }
+
+    .s-type-2 .s-content{
+      height: 237.5px!important;
+      
+    }
+
   }
 
 
