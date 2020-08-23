@@ -778,7 +778,9 @@ display: block;
 
   @media screen and (max-width: 475px){
 
-    .s-wrap-ex-1{
+    .s-wrap-ex-1, .s-wrap-ex-2, .s-wrap-ex-3, .s-wrap-ex-4,
+    .s-wrap-ex-5, .s-wrap-ex-6, .s-wrap-ex-7, .s-wrap-ex-8,
+    .s-wrap-ex-9, .s-wrap-ex-10, .s-wrap-ex-11, .s-wrap-ex-12{
       height: 237.5px!important;
       width: 285px!important;
     }
