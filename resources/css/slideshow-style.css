@@ -113,7 +113,10 @@
 
     .s-wrap-ex-1, .s-wrap-ex-2, .s-wrap-ex-3, .s-wrap-ex-4,
     .s-wrap-ex-5, .s-wrap-ex-6, .s-wrap-ex-7, .s-wrap-ex-8,
-    .s-wrap-ex-9, .s-wrap-ex-10, .s-wrap-ex-11, .s-wrap-ex-12{
+    .s-wrap-ex-9, .s-wrap-ex-10, .s-wrap-ex-11, .s-wrap-ex-12,
+    .s-wrap-ed-1, .s-wrap-ed-2, .s-wrap-ed-3, .s-wrap-ed-4,
+    .s-wrap-ed-5, .s-wrap-ed-6, .s-wrap-ed-7, .s-wrap-ed-8,
+    .s-wrap-ed-9, .s-wrap-ed-10, .s-wrap-ed-11, .s-wrap-ed-12{
       height: 237.5px!important;
       width: 285px!important;
     }
@@ -129,16 +132,42 @@
     .s-type-2-ex-9 .s-content, 
     .s-type-2-ex-10 .s-content,     
     .s-type-2-ex-11 .s-content, 
-    .s-type-2-ex-12 .s-content {
+    .s-type-2-ex-12 .s-content 
+    .s-type-2-ed-1 .s-content, 
+    .s-type-2-ed-2 .s-content,     
+    .s-type-2-ed-3 .s-content, 
+    .s-type-2-ed-4 .s-content,     
+    .s-type-2-ed-5 .s-content, 
+    .s-type-2-ed-6 .s-content,     
+    .s-type-2-ed-7 .s-content, 
+    .s-type-2-ed-8 .s-content,     
+    .s-type-2-ed-9 .s-content, 
+    .s-type-2-ed-10 .s-content,     
+    .s-type-2-ed-11 .s-content, 
+    .s-type-2-ed-12 .s-content {
 
       height: 237.5px!important;
-      
+
     }
 
+
+
+
+
+
+
+
+
+    
   }
 
 
   
+
+
+
+
+
 
 
 
@@ -148,21 +177,29 @@
 /*--------------------Residential Life------------------*/
 /*------------------------------------------------------*/
 
-    /* ed-slideshow 1 (Reslife) */
+    /* ed-slideshow 1 (Larson) */
     .s-wrap-ed-1 {
         width: 100%;
         /* margin-bottom: 50px; */
         /* padding-bottom: 55%; */
-        margin: 15px;
+        /* margin: 15px; */
         position: relative;
         /* border: 10px solid #fff; */
         background-color: #efefe8;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         overflow: hidden;
         border-radius: 3%;
-        max-width: 450px;
-        max-height: 375px;
-        height: 375px;
+        /* max-width: 450px; */ /*I don't think I need this?*/
+        /* max-height: 375px; */ /*I don't think I need this?*/
+
+        height: 216.6666666px;
+        width: 260px;
+        margin: 0 auto;
+
+
+
+
+
     }
     .s-wrap-ed-1 > input {
         display: none;
@@ -187,24 +224,24 @@
         background-size: cover;
     }
     .s-wrap-ed-1 .s-item-1 {
-        background-image: url("../images/larson/slideshow/larson-1.jpg");
+        background-image: url("../images/reslife/undergrad/slideshow/reslife-1.jpg");
     }
     .s-wrap-ed-1 .s-item-2 {
-        background-image: url("../images/larson/slideshow/larson-2.jpg");
+        background-image: url("../images/reslife/undergrad/slideshow/reslife-2.jpg");
     }
     .s-wrap-ed-1 .s-item-3 {
-        background-image: url("../images/larson/slideshow/larson-3.jpg");
+        background-image: url("../images/reslife/undergrad/slideshow/reslife-3.jpg");
     }
     .s-wrap-ed-1 .s-item-4 {
-        background-image: url("../images/larson/slideshow/larson-4.jpg");         
+        background-image: url("../images/reslife/undergrad/slideshow/reslife-4.jpg");    
     }
     .s-wrap-ed-1 .s-item-5 {
-        background-image: url("../images/larson/slideshow/larson-5.gif");
+        background-image: url("../images/reslife/undergrad/slideshow/reslife-5.jpg");
     }
     
     .s-type-2-ed-1 .s-content {
         animation: slider-animation-ed-1 25s ease-in-out infinite; 
-        height: 375px; /*I added this, not sure if needed or not */
+        height: 216.6666666px; 
         }
     
     .s-type-2-ed-1 .s-content:hover {
@@ -234,7 +271,6 @@
             transform: translateX(-80%); /*img 5*/
         }
         }
-
 
 
 
