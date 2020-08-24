@@ -210,7 +210,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 500%;
+        width: 300%; /* change based on number of photos = #photos times 100% */
         height: 100%;
         font-size: 0;
         list-style: none;
@@ -218,29 +218,24 @@
     }
     .s-wrap-ed-1 .s-item {
         display: inline-block;
-        width: 20%;
+        width: 33.3333%;  /* change based on number of photos = 100% divided by # photos */
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .s-wrap-ed-1 .s-item-1 {
-        background-image: url("../images/reslife/undergrad/slideshow/reslife-1.jpg");
+        background-image: url("../images/reslife/undergrad/slideshow/reslife-1.png");
     }
     .s-wrap-ed-1 .s-item-2 {
-        background-image: url("../images/reslife/undergrad/slideshow/reslife-2.jpg");
+        background-image: url("../images/reslife/undergrad/slideshow/reslife-2.png");
     }
     .s-wrap-ed-1 .s-item-3 {
         background-image: url("../images/reslife/undergrad/slideshow/reslife-3.jpg");
     }
-    .s-wrap-ed-1 .s-item-4 {
-        background-image: url("../images/reslife/undergrad/slideshow/reslife-4.jpg");    
-    }
-    .s-wrap-ed-1 .s-item-5 {
-        background-image: url("../images/reslife/undergrad/slideshow/reslife-5.jpg");
-    }
+
     
     .s-type-2-ed-1 .s-content {
-        animation: slider-animation-ed-1 25s ease-in-out infinite; 
+        animation: slider-animation-ed-1 15s ease-in-out infinite; 
         height: 216.6666666px; 
         }
     
@@ -251,28 +246,197 @@
     
         @keyframes slider-animation-ed-1 {
         0%,
-            11.2% {
+        18.6666666667% {
             transform: translateX(0%); /*img 1*/
         }
-        20%,
-            31.2% {
-            transform: translateX(-20%); /*img 2*/
+        33.3333333333%,
+            52% {
+            transform: translateX(-33.3333%); /*img 2*/
         }
-        40%,
-            51.2% {
-            transform: translateX(-40%); /*img 3*/
-        }
-        60%,
-            71.2% {
-            transform: translateX(-60%); /*img 4*/
-        }
-        80%,
-            91.2% {
-            transform: translateX(-80%); /*img 5*/
+        66.6667%,
+            85.3333% {
+            transform: translateX(-66.6667%); /*img 3*/
         }
         }
 
 
+
+/*------------------------------------------------------*/
+/*--------------------ed-slideshow-2--------------------*/
+/*------------------------------------------------------*/
+/*----------------------Chi Epsilon---------------------*/
+/*------------------------------------------------------*/
+
+    /* ed-slideshow 2 (XE) */
+    .s-wrap-ed-2 {
+        width: 100%;
+        /* margin-bottom: 50px; */
+        /* padding-bottom: 55%; */
+        /* margin: 15px; */
+        position: relative;
+        /* border: 10px solid #fff; */
+        background-color: #efefe8;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        border-radius: 3%;
+        /* max-width: 450px; */ /*I don't think I need this?*/
+        /* max-height: 375px; */ /*I don't think I need this?*/
+
+        height: 216.6666666px;
+        width: 260px;
+        margin: 0 auto;
+
+
+
+
+
+    }
+    .s-wrap-ed-2 > input {
+        display: none;
+    }
+    .s-wrap-ed-2 .s-content {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300%; /* change based on number of photos = #photos times 100% */
+        height: 100%;
+        font-size: 0;
+        list-style: none;
+        transition: transform 1s;
+    }
+    .s-wrap-ed-2 .s-item {
+        display: inline-block;
+        width: 33.3333%;  /* change based on number of photos = 100% divided by # photos */
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .s-wrap-ed-2 .s-item-1 {
+        background-image: url("../images/xe/slideshow/xe-1.png");
+    }
+    .s-wrap-ed-2 .s-item-2 {
+        background-image: url("../images/xe/slideshow/xe-2.jpg");
+    }
+    .s-wrap-ed-2 .s-item-3 {
+        background-image: url("../images/xe/slideshow/xe-3.jpg");
+    }
+
+    
+    .s-type-2-ed-2 .s-content {
+        animation: slider-animation-ed-2 15s ease-in-out infinite; 
+        height: 216.6666666px; 
+        }
+    
+    .s-type-2-ed-2 .s-content:hover {
+        animation-play-state: paused;
+    
+        }
+    
+        @keyframes slider-animation-ed-2 {
+        0%,
+        18.6666666667% {
+            transform: translateX(0%); /*img 1*/
+        }
+        33.3333333333%,
+            52% {
+            transform: translateX(-33.3333%); /*img 2*/
+        }
+        66.6667%,
+            85.3333% {
+            transform: translateX(-66.6667%); /*img 3*/
+        }
+        }
+
+
+/*----------------------------------------------------*/
+/*--------------------ed-slideshow-3------------------*/
+/*----------------------------------------------------*/
+/*----------------------Civil Lab---------------------*/
+/*----------------------------------------------------*/
+
+    /* ed-slideshow 3 (Civil) */
+    .s-wrap-ed-3 {
+        width: 100%;
+        /* margin-bottom: 50px; */
+        /* padding-bottom: 55%; */
+        /* margin: 15px; */
+        position: relative;
+        /* border: 10px solid #fff; */
+        background-color: #efefe8;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        border-radius: 3%;
+        /* max-width: 450px; */ /*I don't think I need this?*/
+        /* max-height: 375px; */ /*I don't think I need this?*/
+
+        height: 216.6666666px;
+        width: 260px;
+        margin: 0 auto;
+
+
+
+
+
+    }
+    .s-wrap-ed-3 > input {
+        display: none;
+    }
+    .s-wrap-ed-3 .s-content {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300%; /* change based on number of photos = #photos times 100% */
+        height: 100%;
+        font-size: 0;
+        list-style: none;
+        transition: transform 1s;
+    }
+    .s-wrap-ed-3 .s-item {
+        display: inline-block;
+        width: 33.3333%;  /* change based on number of photos = 100% divided by # photos */
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .s-wrap-ed-3 .s-item-1 {
+        background-image: url("../images/civil-lab/slideshow/civil-1.jpg");
+    }
+    .s-wrap-ed-3 .s-item-2 {
+        background-image: url("../images/civil-lab/slideshow/civil-2.jpg");
+    }
+    .s-wrap-ed-3 .s-item-3 {
+        background-image: url("../images/civil-lab/slideshow/civil-3.jpg");
+    }
+
+    
+    .s-type-2-ed-3 .s-content {
+        animation: slider-animation-ed-3 15s ease-in-out infinite; 
+        height: 216.6666666px; 
+        }
+    
+    .s-type-2-ed-3 .s-content:hover {
+        animation-play-state: paused;
+    
+        }
+    
+        @keyframes slider-animation-ed-3 {
+        0%,
+        18.6666666667% {
+            transform: translateX(0%); /*img 1*/
+        }
+        33.3333333333%,
+            52% {
+            transform: translateX(-33.3333%); /*img 2*/
+        }
+        66.6667%,
+            85.3333% {
+            transform: translateX(-66.6667%); /*img 3*/
+        }
+        }
 
 
 

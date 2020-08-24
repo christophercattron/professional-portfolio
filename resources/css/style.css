@@ -610,78 +610,23 @@ display: block;
 
 
 
+ /* Responsive layout - when the screen is less than 950px wide, fix column widths */
 
-/*----------------*/
-/* Slideshow code */
-/*----------------*/
+ @media (max-width: 950px){
 
-
-#ed-slideshow-1, 
-#ed-slideshow-2,
-#ed-slideshow-3, 
-#ed-slideshow-4,
-#ed-slideshow-5, 
-#ed-slideshow-6,
-#ed-slideshow-7, 
-#ed-slideshow-8 {
-  position: relative;
-  padding: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-
-  text-align: center;
-
-}
-
-#ed-slideshow-1 > div ,
-#ed-slideshow-2 > div ,
-#ed-slideshow-3 > div , 
-#ed-slideshow-4 > div ,
-#ed-slideshow-5 > div ,
-#ed-slideshow-6 > div ,
-#ed-slideshow-7 > div , 
-#ed-slideshow-8 > div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
- 
-
+  .w3-mobile {
+      display: block;
+      width: 100%!important;
+  }
   
-}
+  #ed-logo-extracurricular{
+  
+  width: 180px!imporant;
+  height: auto!important;
 
-#ed-slideshow-1 img , 
-#ed-slideshow-2 img , 
-#ed-slideshow-3 img , 
-#ed-slideshow-4 img, 
-#ed-slideshow-5 img , 
-#ed-slideshow-6 img , 
-#ed-slideshow-7 img , 
-#ed-slideshow-8 img {
-  border-radius: 2px;
-/*my code for responsive image sizing*/
-  max-width: 100%;
-
-  display: block;
-  width: 90%;
-  height: 100%;
-  object-fit:cover;
-}
-
-
-/* testing new code below: */
-
-#ed-slideshow-1 > div > img , 
-#ed-slideshow-2 > div > img , 
-#ed-slideshow-3 > div > img ,
-#ed-slideshow-4 > div > img ,
-#ed-slideshow-5 > div > img , 
-#ed-slideshow-6 > div > img , 
-#ed-slideshow-7 > div > img ,
-#ed-slideshow-8 > div > img {
-
-  position: absolute;
-}
+  }
+  
+  }
 
 
 
@@ -780,7 +725,7 @@ display: block;
     }
   }
 
-
+    
 
 
 
