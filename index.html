@@ -993,7 +993,7 @@
 
             
             <h2 class="w3-center">PROJECTS, HOBBIES, & MORE</h2>
-            <p class="w3-center"><em>There's more to me than my educational and professional background. Here's what life looks like for me outside of the office and classroom. </em></p>
+            <p class="w3-center"><em>There's more to me than my educational and professional background. Here's a glimpse of what life looks like for me outside of the office and classroom.</em></p>
       
 
             <p class="w3-xlarge w3-padding-16">Projects</p>
@@ -1037,26 +1037,77 @@
 
 
                 <!-- First Photo Grid-->
+<style>
+
+@media (min-width: 601px){
+
+    .project-item h4 {
+    height: 72px;
+}   
+
+} 
+
+.project-gallery-img{
+    transition: 1000ms ease-in-out;
+    width: 100%;
+}
+
+
+.project-gallery-img:hover{
+    filter: brightness(1.05);
+    transform: scale(1.05);
+}
+
+</style>
+
+
+
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="./resources/images/projects/playhouse.jpg" alt="Pasta and Wine" style="width:100%">
-      <h3 style="font-size: 18px;">Mini McMansion</h3>
-      <p>Currently under construction! There is a little nook under the stairs in the basement of my sister's house. Since she has two little girls, I thought I would take it upon myself to build them a secret playspace under the stairs! I have finished the framing, electric, and lighting. Up next: drywall, painting, and finishing!</p>
+    <div class="w3-quarter project-item">
+        <img class="project-gallery-img" src="./resources/images/projects/playhouse.jpg" alt="Pasta and Wine" style="width:100%">
+        <h4>Mini McMansion</h4>
+        <p>Currently under construction! There is a little nook under the stairs in the basement of my 
+            sister's house. Since she has two little girls, I thought I would take it upon myself to build 
+            them a secret playspace under the stairs! I have finished the framing, electric, and lighting. 
+            Up next: drywall, painting, and finishing!</p>
+        <!--------------solid-1px-#777-line-------------->
+        <div id="ed-line-777"></div>
+        <!--------------solid-1px-#777-line-------------->
     </div>   
-    <div class="w3-quarter">
-      <img src="./resources/images/projects/jdm.jpg" alt="" style="width:100%">
-      <h3>JoeDannyMan website</h3>
-      <p>After being let go from my job in May 2020, I had a lot of spare time on my hands. I began learning how to code by following tutorials online. For my friend Joe's birthday I put my coding skills to the test and built him a website to showcase some of his video game level designs.</p>
+
+    
+    <div class="w3-quarter project-item">
+        <img class="project-gallery-img" src="./resources/images/projects/jdm.jpg" alt="" style="width:100%">
+        <h4>JoeDannyMan website</h4>
+        <p>After being let go from my job in May 2020, I had a lot of spare time on my hands. 
+            I began learning how to code by following tutorials online. For my friend Joe's birthday 
+            I put my coding skills to the test and built him a <a href="https://joedannyman.com" target="_blank">website</a> to showcase some of his video game level designs.</p>
+        <!--------------solid-1px-#777-line-------------->
+        <div id="ed-line-777"></div>
+        <!--------------solid-1px-#777-line-------------->    
     </div>
-    <div class="w3-quarter">
-      <img src="./resources/images/projects/planter-box.jpg" alt="" style="width:100%">
-      <h3>Planter boxes for mom</h3>
-      <p>My mom wanted some big pretty planter boxes to put outside the home. She didn't like any of the ones she found online or in stores, so she described what she wanted and I designed and built two of them. She did the painting and the planting though!</p>
+    <div class="w3-quarter project-item">
+        <img class="project-gallery-img" src="./resources/images/projects/planter-box.jpg" alt="" style="width:100%">
+        <h4>Planter boxes for mom</h4>
+        <p>My mom wanted some big pretty planter boxes to put outside the home. She didn't like
+             any of the ones she found online or in stores, so she described what she wanted and 
+             I designed and built two of them. She did the painting and the planting though!</p>
+        <!--------------solid-1px-#777-line-------------->
+        <div id="ed-line-777"></div>
+        <!--------------solid-1px-#777-line-------------->   
     </div>
-    <div class="w3-quarter">
-      <img src="./resources/images/projects/coffee-table.jpg" alt="" style="width:100%">
-      <h3>Bachelor pad coffee table</h3>
-      <p>My junior year of college I was finally moving off-campus and into my own apartment. I wanted to build a unique coffee table to accent my new space. I repurposed an old door and some old hinges to make a dual chest/table. After getting married to my lovely wife, the table was temporarily relocated to Joe's place at The Den.</p>
+    <div class="w3-quarter project-item">
+        <img class="project-gallery-img" src="./resources/images/projects/coffee-table.jpg" alt="" style="width:100%">
+        <h4>Bachelor pad coffee table</h4>
+        <p>My junior year of college I was finally moving off-campus and into my own apartment. 
+            I wanted to build a unique coffee table to accent my new space. I repurposed an old door 
+            and some old hinges to make a dual chest/table. After getting married to my lovely wife, 
+            the table was temporarily relocated to <a href="https://joedannyman.com" target="_blank">Joe</a>'s place at The Den.</p>
+        <!--------------solid-1px-#777-line-------------->
+        <div id="ed-line-777"></div>
+        <!--------------solid-1px-#777-line-------------->   
+    
+        
     </div>
  
 
@@ -1161,16 +1212,19 @@
         <footer class="w3-center w3-padding-64 " style="background-color: #003249">
             <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
             <div class="w3-xlarge w3-section">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-snapchat w3-hover-opacity"></i>
-                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
+                <a href="https://www.facebook.com/chris.cattron" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/chris.cattron/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                <a href="https://www.snapchat.com/add/chris_cattron" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+                <!--<a href="https://www.pinterest.com/christophercattron/boards/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>-->
+                <a href="https://twitter.com/TheCatTron" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/christopher-cattron/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                 <a href="https://open.spotify.com/user/12165154942?si=8Oc7aJBOTI-npAU1NfSWdg" target="_blank"><i class="fa fa-spotify w3-hover-opacity"></i></a>
                 
+                
+
+
             </div>
-            <p>Copyright &copy; 2020 All Rights Reserved by <a href="https://www.linkedin.com/in/christopher-cattron/">Christopher Cattron</a>.</p>
+            <p>Copyright &copy; 2020 All Rights Reserved by <a href="https://www.linkedin.com/in/christopher-cattron/" target="_blank">Christopher Cattron</a>.</p>
         </footer>
 
         <script>
