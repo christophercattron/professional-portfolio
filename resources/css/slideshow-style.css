@@ -236,7 +236,7 @@
     
     .s-type-2-ed-1 .s-content {
         animation: slider-animation-ed-1 15s ease-in-out infinite; 
-        height: 216.6666666px; 
+        /*height: 216.6666666px; */
         }
     
     .s-type-2-ed-1 .s-content:hover {

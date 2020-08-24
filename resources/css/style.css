@@ -421,7 +421,9 @@ margin-left: 0x;
 
 
 #ed-position{
-  display: none;
+ /* display: none; */
+  font-size: 13px;
+  text-align: center;
 }
 
 #ed-slideshow{
@@ -620,12 +622,28 @@ display: block;
   }
   
   #ed-logo-extracurricular{
-  
-  width: 180px!imporant;
+
+  width: 180px!important;
   height: auto!important;
 
   }
   
+
+  .cont-3-4-2-X-1 {
+    height: auto;
+
+  }
+
+
+  .cont-3-4-2-1, .cont-3-4-2-2, .cont-3-4-2-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+
+
   }
 
 
