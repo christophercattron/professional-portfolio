@@ -1096,3 +1096,34 @@ input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=subm
 /*----------------------------------*/
 /* END   INTERESTS/SKILLS/ABILITIES */
 /*----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+  /* -------------------------------------------------------------------- */
+  /*                                                                      */
+  /*                       FUN ZONE Container Styling                     */
+  /*                                                                      */
+  /* -------------------------------------------------------------------- */
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
