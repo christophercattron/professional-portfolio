@@ -26,6 +26,15 @@
         </script>
         <script src="./resources/js/Read-More-Less-Buttons/src/readmore.js"></script>
         <!-------------------------------------------------------------------------------------------------->
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script><!--Used for sound on hover-->
+
+
+
+
+
+
+
 
 
 
@@ -1037,7 +1046,8 @@
 
             
             <h2 class="w3-center">PROJECTS, HOBBIES, & MORE</h2>
-            <h4 class="w3-center"><em>There's more to me than my educational and professional background. Here's a glimpse of what life looks like for me outside of the office and classroom.</em></h4>
+            <h4 class="w3-center"><em>There's more to me than my educational and professional background. Here's a glimpse of what life looks like 
+                for me outside the office and classroom.</em></h4>
       
         <!--------------solid-1px-#777-line-------------->
         <div id="ed-line-777"></div>
@@ -1173,7 +1183,8 @@
         <h4>JoeDannyMan website</h4>
         <p>After being let go from my job in May 2020, I had a lot of spare time on my hands. 
             I began learning how to code by following tutorials online. For my friend Joe's birthday 
-            I put my coding skills to the test and built him a <a href="https://joedannyman.com" target="_blank">website</a> to showcase some of his video game level designs.</p>
+            I put my coding skills to the test and built a <a href="https://joedannyman.com" target="_blank">website</a> 
+            to showcase some of his video game level designs.</p>
         <!--------------solid-1px-#777-line-------------->
         <div id="ed-line-777"></div>
         <!--------------solid-1px-#777-line-------------->    
@@ -1238,11 +1249,19 @@
 
 <style>
     #bookshelf {
-      position: relative;
-      box-sizing: border-box;
-      vertical-align: bottom;
-      padding-bottom: 10px;
-      display: table;
+        position: relative;
+        box-sizing: border-box;
+        vertical-align: bottom;
+        padding-bottom: 10px;
+        /*display: table; I changed display to flex for easier centering*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+
+
     }
     #bookshelf img {
         position: relative;
@@ -1260,6 +1279,9 @@
         bottom: 20px;
     }
 
+
+
+
     #bookshelf a {
       position: relative;
       display: inline-block;
@@ -1267,6 +1289,7 @@
       margin-right: -0.25em;
       padding: 0 10px;
       text-decoration: none;
+      margin-bottom: 25px;
     }
     #bookshelf a:after {
       content:"";
@@ -1277,13 +1300,6 @@
       height: 10px;
       background-color: #777;
     }
-    
-
-    
-
-    
-
-
 
 
 
@@ -1292,63 +1308,103 @@
 
 
 <div id="bookshelf">
-    
-    <a href="">
+    <a>
+        <img src="./resources/images/bookshelf/advanced-engineering-mathematics-kreyszig.jpg" alt="Advanced Engineering Mathematics, 6th Edition by Erwin Kreyszig" />
+    </a>
+
+    <a>
         <img src="./resources/images/bookshelf/formulas-for-stress-and-strain-roark.jpg" alt="Formulas for Stress and Strain, 5th Edition by Roark and Young" />
     </a>
 
+    <a>
+        <img src="./resources/images/bookshelf/stone-skeleton-heyman.png" alt="The Stone Skeleton: Structural Engineering of Masonry Architecture by Jacques Heyman" />
+    </a>
 
-    <a href="https://www.amazon.com/Kachka-Russian-Bonnie-Frumkin-Morales/dp/1250087600" target="_blank">
-      <img src="./resources/images/bookshelf/kachka.jpg" alt="Kachka - A Return to Russian Cooking" />
+    <a>
+        <img src="./resources/images/bookshelf/kachka.jpg" alt="Kachka - A Return to Russian Cooking" />
     </a>
-    <a href="">
-      <img src="./resources/images/bookshelf/dwight-shrute-bobblehead.png" alt="Dwight Schrute bobblehead" />
-    </a>
-    <a href="">
-        <img src="./resources/images/bookshelf/starwars.jpg" alt="Star Wars Heir to the Empire by Timothy Zahn" />
-    </a>
-    <a href="">
+
+    <a>
         <img src="./resources/images/bookshelf/picture-frame.png" alt="Picture of me and my wife" />
     </a>
-    <a href="">
-        <img src="./resources/images/bookshelf/buckling.jpg" alt="Buckling of Bars, Plates, and Shells by Robert M. Jones" />
-      </a>
-      <a href="">
-          <img src="./resources/images/bookshelf/engineering-in-the-ancient-world-j-g-landels.jpg" alt="Engineering in the Ancient World by J. G. Landels" />
-      </a>
-      <a href="">
+
+    <a>
+        <img src="./resources/images/bookshelf/buckling-of-bars-plates-and-shells-jones.jpg" alt="Buckling of Bars, Plates, and Shells by Robert M. Jones" />
+    </a>
+
+    <a>
+        <img src="./resources/images/bookshelf/engineering-in-the-ancient-world-j-g-landels.jpg" alt="Engineering in the Ancient World by J. G. Landels" />
+    </a>
+
+    <a>
+        <img id="daisy" src="./resources/images/bookshelf/daisy-big.png" alt="My cat, Daisy" />
+    </a>
+    
+    <a>
         <img src="./resources/images/bookshelf/zelda.jpg" alt="The Legend Of Zelda Encyclopedia" />
     </a>
-    <a href="">
+
+    <a>
         <img src="./resources/images/bookshelf/structural-analysis-leet.jpg" alt="Fundamentals of Structural Analysis by Kenneth M. Leet, Joel T. Lanning, Chia-Ming Uang, and Anne M. Gilbert" />
     </a>
-    <a href="">
-        <img src="./resources/images/bookshelf/51fWHzZoj0L._SY291_BO1,204,203,200_QL40_.jpg" alt="Advanced Engineering Mathematics, 6th Edition by Erwin Kreyszig" />
-    </a>
-    <a href="">
+
+    <a>
         <img src="./resources/images/bookshelf/vitruvius-on-wish-list.png" alt="Vitruvius' Ten Books on Architecture" />
     </a>
 
+    <a>
+        <img src="./resources/images/bookshelf/dwight-shrute-bobblehead.png" alt="Dwight Schrute bobblehead" />
+    </a>
+
+    <a>
+        <img src="./resources/images/bookshelf/concrete.jpg" alt="Reinforced Concrete Mechanics and Design by James K. Wight" />
+    </a>
     
+    <a>
+        <img src="./resources/images/bookshelf/chi-epsilon-plaque.png" alt="Chi Epsilon key plaque - Christopher Cattron - December 2019" />
+    </a>
 
+    <a>
+        <img src="./resources/images/bookshelf/starwars.jpg" alt="Star Wars Heir to the Empire by Timothy Zahn" />
+    </a>
 
+    <a>
+        <img src="./resources/images/bookshelf/steel-manual.png" alt="AISC Steel Construction Manual - Fifteenth Edition" />
+    </a>
 
+    <a>
+        <img src="./resources/images/bookshelf/caves-of-mo-on-wish-list.png" alt="Caves of Missouri by J. Harlen Bretz" />
+    </a>
 
-
-
+    <a>
+        <img src="./resources/images/bookshelf/mechanics-of-materials-boresi.jpg" alt="Advanced Mechanics of Materials by Arthur P. Boresi and Richard J. Schmidt" />
+    </a>
 
   </div><!--end of bookshelf-->
 
 
 
 
-  
+        <!--START meow noise on hover code-->
+            <audio id="meow" preload="auto">
+                <source src="./resources/SoundOnHover/audio/meow.mp3"></source>
+                <source src="./resources/SoundOnHover/audio/meow.ogg"></source>
+            </audio>
+
+                <script>
+                    var beepOne = $("#meow")[0];
+                        $("#bookshelf a #daisy")
+                            .mouseenter(function() {
+                                beepOne.play();
+                            });    
+                </script>
+        <!--END meow noise on hover code-->
 
 
         
 
 
-        </div>
+        </div><!--I have no idea what div this ends, but bad shit happens if you delete it-->
 
 
 
