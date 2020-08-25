@@ -29,8 +29,86 @@
         
     
 
-
-
+        <!--START script for responsive tooltips-->
+        <script>
+                        $( function()
+            {
+                var targets = $( '[rel~=tooltip]' ),
+                    target  = false,
+                    tooltip = false,
+                    title   = false;
+            
+                targets.bind( 'mouseenter', function()
+                {
+                    target  = $( this );
+                    tip     = target.attr( 'title' );
+                    tooltip = $( '<div id="tooltip"></div>' );
+            
+                    if( !tip || tip == '' )
+                        return false;
+            
+                    target.removeAttr( 'title' );
+                    tooltip.css( 'opacity', 0 )
+                        .html( tip )
+                        .appendTo( 'body' );
+            
+                    var init_tooltip = function()
+                    {
+                        if( $( window ).width() < tooltip.outerWidth() * 1.5 )
+                            tooltip.css( 'max-width', $( window ).width() / 2 );
+                        else
+                            tooltip.css( 'max-width', 340 );
+            
+                        var pos_left = target.offset().left + ( target.outerWidth() / 2 ) - ( tooltip.outerWidth() / 2 ),
+                            pos_top  = target.offset().top - tooltip.outerHeight() - 20;
+            
+                        if( pos_left < 0 )
+                        {
+                            pos_left = target.offset().left + target.outerWidth() / 2 - 20;
+                            tooltip.addClass( 'left' );
+                        }
+                        else
+                            tooltip.removeClass( 'left' );
+            
+                        if( pos_left + tooltip.outerWidth() > $( window ).width() )
+                        {
+                            pos_left = target.offset().left - tooltip.outerWidth() + target.outerWidth() / 2 + 20;
+                            tooltip.addClass( 'right' );
+                        }
+                        else
+                            tooltip.removeClass( 'right' );
+            
+                        if( pos_top < 0 )
+                        {
+                            var pos_top  = target.offset().top + target.outerHeight();
+                            tooltip.addClass( 'top' );
+                        }
+                        else
+                            tooltip.removeClass( 'top' );
+            
+                        tooltip.css( { left: pos_left, top: pos_top } )
+                            .animate( { top: '+=10', opacity: 1 }, 50 );
+                    };
+            
+                    init_tooltip();
+                    $( window ).resize( init_tooltip );
+            
+                    var remove_tooltip = function()
+                    {
+                        tooltip.animate( { top: '-=10', opacity: 0 }, 50, function()
+                        {
+                            $( this ).remove();
+                        });
+            
+                        target.attr( 'title', tip );
+                    };
+            
+                    target.bind( 'mouseleave', remove_tooltip );
+                    tooltip.bind( 'click', remove_tooltip );
+                });
+            });
+        </script>
+        <!--END script for responsive tooltips-->
 
 
 
@@ -1355,156 +1433,124 @@
         <p>You can learn a lot about someone from the contents of their bookshelf. Here is a bit of what can be found on mine.</p>
 
 
-<style>
-    #bookshelf {
-        position: relative;
-        box-sizing: border-box;
-        vertical-align: bottom;
-        padding-bottom: 10px;
-        /*display: table; I changed display to flex for easier centering*/
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
 
 
-
-
-    }
-    #bookshelf img {
-        position: relative;
-        display: inline-block;
-        /*width: 150px;*/
-        height: 150px;
-        width: auto;
-        bottom: 0;
-        transition: all 1000ms ease-in-out;
-    }
-
-    #bookshelf img:hover{
-        filter: brightness(1.05);
-        transform: scale(1.05);
-        bottom: 20px;
-    }
-
-
-
-
-    #bookshelf a {
-      position: relative;
-      display: inline-block;
-      margin-top: 1em;
-      margin-right: -0.25em;
-      padding: 0 10px;
-      text-decoration: none;
-      margin-bottom: 25px;
-    }
-    #bookshelf a:after {
-      content:"";
-      position: absolute;
-      bottom: -6px;
-      left: 0;
-      right: 0;
-      height: 10px;
-      background-color: #777;
-    }
-
-
-
-
-</style>
 
 
 <div id="bookshelf">
     <a>
-        <img src="./resources/images/bookshelf/advanced-engineering-mathematics-kreyszig.jpg" alt="Advanced Engineering Mathematics, 6th Edition by Erwin Kreyszig" />
+        <img title="I picked this book up at a thrift store early on during my college years. It is a comprehensive, accessible read on applied mathematics for engineering problems." rel="tooltip" src="./resources/images/bookshelf/advanced-engineering-mathematics-kreyszig.jpg" alt="Advanced Engineering Mathematics, 6th Edition by Erwin Kreyszig" />
+        
     </a>
 
-    <a>
-        <img src="./resources/images/bookshelf/formulas-for-stress-and-strain-roark.jpg" alt="Formulas for Stress and Strain, 5th Edition by Roark and Young" />
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/formulas-for-stress-and-strain-roark.jpg" alt="Formulas for Stress and Strain, 5th Edition by Roark and Young" />
+        
     </a>
 
-    <a>
-        <img src="./resources/images/bookshelf/stone-skeleton-heyman.png" alt="The Stone Skeleton: Structural Engineering of Masonry Architecture by Jacques Heyman" />
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/stone-skeleton-heyman.png" alt="The Stone Skeleton: Structural Engineering of Masonry Architecture by Jacques Heyman" />
+        
     </a>
 
-    <a>
-        <img src="./resources/images/bookshelf/kachka.jpg" alt="Kachka - A Return to Russian Cooking" />
+    <a class=tooltip>
+        <img title="This Russian cookbook was a gift my wife received from her best friend. My wife is from Russia, so this cookbook has been an indispensible source of recreating the authentic cuisine of her homeland!" rel="tooltip" src="./resources/images/bookshelf/kachka.jpg" alt="Kachka - A Return to Russian Cooking" />
+        
     </a>
 
-    <a>
-        <img src="./resources/images/bookshelf/picture-frame.png" alt="Picture of me and my wife" />
+    <a class=tooltip>
+        <img title="What bookshelf would be complete without pictures of your dearest loved ones? This is a photo of my wife and I just before we got married." rel="tooltip" src="./resources/images/bookshelf/picture-frame.png" alt="Picture of me and my wife" />
+        
     </a>
 
-    <a>
-        <img src="./resources/images/bookshelf/buckling-of-bars-plates-and-shells-jones.jpg" alt="Buckling of Bars, Plates, and Shells by Robert M. Jones" />
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/buckling-of-bars-plates-and-shells-jones.jpg" alt="Buckling of Bars, Plates, and Shells by Robert M. Jones" />
+        
     </a>
 
-    <a>
-        <img src="./resources/images/bookshelf/engineering-in-the-ancient-world-j-g-landels.jpg" alt="Engineering in the Ancient World by J. G. Landels" />
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/engineering-in-the-ancient-world-j-g-landels.jpg" alt="Engineering in the Ancient World by J. G. Landels" />
+        
     </a>
 
-    <a>
-        <img id="daisy" src="./resources/images/bookshelf/daisy-big.png" alt="My cat, Daisy" />
+    <a class=tooltip>
+        <img title="This is my cat, Daisy. She shouldn't be up here, but, well, here we are." rel="tooltip" id="daisy" src="./resources/images/bookshelf/daisy-big.png" alt="My cat, Daisy" />
+        
     </a>
     
-    <a>
-        <img src="./resources/images/bookshelf/zelda.jpg" alt="The Legend Of Zelda Encyclopedia" />
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/zelda.jpg" alt="The Legend Of Zelda Encyclopedia" />
+        
     </a>
 
-    <a>
-        <img src="./resources/images/bookshelf/structural-analysis-leet.jpg" alt="Fundamentals of Structural Analysis by Kenneth M. Leet, Joel T. Lanning, Chia-Ming Uang, and Anne M. Gilbert" />
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/structural-analysis-leet.jpg" alt="Fundamentals of Structural Analysis by Kenneth M. Leet, Joel T. Lanning, Chia-Ming Uang, and Anne M. Gilbert" />
+        
     </a>
 
-    <a>
-        <img src="./resources/images/bookshelf/Philosophy_An_Introduction_to_the_Art_of_Wondering_9thEd.jpg" alt="Philosophy: An Introduction to the Art of Wondering by James L. Christian" />
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/Philosophy_An_Introduction_to_the_Art_of_Wondering_9thEd.jpg" alt="Philosophy: An Introduction to the Art of Wondering by James L. Christian" />
+        
+    </a>
+
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/vitruvius-on-wish-list.png" alt="Vitruvius' Ten Books on Architecture" />
+        
+    </a>
+
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/dwight-shrute-bobblehead.png" alt="Dwight Schrute bobblehead" />
+        
+    </a>
+
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/concrete.jpg" alt="Reinforced Concrete Mechanics and Design by James K. Wight" />
+        
+    </a>    
+
+
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/bullfinch-mythology-illustrated.jpg" alt="Bulfinch's Mythology by Thomas Bulfinch" />
+        
+    </a>
+
+    
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/chi-epsilon-plaque.png" alt="Chi Epsilon key plaque - Christopher Cattron - December 2019" />
+        
+    </a>
+
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/starwars.jpg" alt="Star Wars Heir to the Empire by Timothy Zahn" />
+        
+    </a>
+
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/Le-Petit-Prince.jpg" alt="Le Petit Prince by Antoine de Saint-Exupéry" />
+        
+    </a>
+
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/steel-manual.png" alt="AISC Steel Construction Manual - Fifteenth Edition" />
+        
+    </a>
+
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/caves-of-mo-on-wish-list.png" alt="Caves of Missouri by J. Harlen Bretz" />
+        
+    </a>
+
+    <a class=tooltip>
+        <img title="This is on my bookshelf." rel="tooltip" src="./resources/images/bookshelf/mechanics-of-materials-boresi.jpg" alt="Advanced Mechanics of Materials by Arthur P. Boresi and Richard J. Schmidt" />
+        
     </a>
     
-    <a>
-        <img src="./resources/images/bookshelf/vitruvius-on-wish-list.png" alt="Vitruvius' Ten Books on Architecture" />
-    </a>
-
-    <a>
-        <img src="./resources/images/bookshelf/dwight-shrute-bobblehead.png" alt="Dwight Schrute bobblehead" />
-    </a>
-
-    <a>
-        <img src="./resources/images/bookshelf/concrete.jpg" alt="Reinforced Concrete Mechanics and Design by James K. Wight" />
-    </a>
-    
-
-
-    <a>
-        <img src="./resources/images/bookshelf/bullfinch-mythology-illustrated.jpg" alt="Bulfinch's Mythology by Thomas Bulfinch" />
-    </a>
-
-
-    
-    <a>
-        <img src="./resources/images/bookshelf/chi-epsilon-plaque.png" alt="Chi Epsilon key plaque - Christopher Cattron - December 2019" />
-    </a>
-
-    <a>
-        <img src="./resources/images/bookshelf/starwars.jpg" alt="Star Wars Heir to the Empire by Timothy Zahn" />
-    </a>
-
-    <a>
-        <img src="./resources/images/bookshelf/Le-Petit-Prince.jpg" alt="Le Petit Prince by Antoine de Saint-Exupéry" />
-    </a>
-    
-    <a>
-        <img src="./resources/images/bookshelf/steel-manual.png" alt="AISC Steel Construction Manual - Fifteenth Edition" />
-    </a>
-
-    <a>
-        <img src="./resources/images/bookshelf/caves-of-mo-on-wish-list.png" alt="Caves of Missouri by J. Harlen Bretz" />
-    </a>
-
-    <a>
-        <img src="./resources/images/bookshelf/mechanics-of-materials-boresi.jpg" alt="Advanced Mechanics of Materials by Arthur P. Boresi and Richard J. Schmidt" />
-    </a>
-
   </div><!--end of bookshelf-->
+
+
+<!--START style for tooltips-->
+
+
 
 
 

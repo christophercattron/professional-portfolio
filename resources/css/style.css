@@ -1128,3 +1128,119 @@ input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=subm
   clear: both;
 }
   
+
+
+
+
+/*-----------------------------------------------*/
+/*-------------------BOOKSHELF-------------------*/
+/*-----------------------------------------------*/
+
+#bookshelf {
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  padding-bottom: 10px;
+  /*display: table; I changed display to flex for easier centering*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+
+
+}
+#bookshelf img {
+  position: relative;
+  display: inline-block;
+  /*width: 150px;*/
+  height: 150px;
+  width: auto;
+  bottom: 0;
+  transition: all 1000ms ease-in-out;
+}
+
+#bookshelf img:hover{
+  filter: brightness(1.05);
+  transform: scale(1.05);
+  bottom: 20px;
+}
+
+
+
+
+#bookshelf a {
+position: relative;
+display: inline-block;
+margin-top: 1em;
+margin-right: -0.25em;
+padding: 0 10px;
+text-decoration: none;
+margin-bottom: 25px;
+}
+#bookshelf a:after {
+content:"";
+position: absolute;
+bottom: -6px;
+left: 0;
+right: 0;
+height: 10px;
+background-color: #777;
+}
+
+
+
+
+
+/*-----------------------------------------------*/
+/*--------------------TOOLTIP--------------------*/
+/*-----------------------------------------------*/
+#tooltip
+{
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 50, 73, 0.95);
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+}
+ 
+    #tooltip:after /* triangle decoration */
+    {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid rgba(0, 50, 73, 0.95);
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -10px;
+    }
+ 
+        #tooltip.top:after
+        {
+            border-top-color: transparent;
+            border-bottom: 10px solid rgba(0, 50, 73, 0.95);
+            top: -20px;
+            bottom: auto;
+        }
+ 
+        #tooltip.left:after
+        {
+            left: 10px;
+            margin: 0;
+        }
+ 
+        #tooltip.right:after
+        {
+            right: 10px;
+            left: auto;
+            margin: 0;
+        }
+
+
+
+
