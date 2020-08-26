@@ -1633,8 +1633,22 @@
 -->
 
 
+<style>
+
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-device-width: 1338px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+</style>
+
+
         <h2 class="w3-padding-16">What's on my bookshelf?</h2>
-        <p>You can learn a lot about someone from the contents of their bookshelf. Here is a bit of what can be found on mine.</p>
+        <p>You can learn a lot about someone from the contents of their bookshelf. Here is a bit of what can be found on mine. <span id="content-mobile">Tap to learn more about each item!</span></p>
 
 
 
