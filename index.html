@@ -147,11 +147,38 @@
 
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-            <div class="w3-display-middle" style="white-space: nowrap;">
-                <img class="w3-auto w3-center w3-margin w3-padding-large w3-animate-opacity" style="animation: opac 2s;" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
-            </div>
+            <div class="centered"><h1 id="cc-name">CHRISTOPHER CATTRON</h1></div>
         </div>
+      
 
+            <style>
+
+                .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
+
+                #cc-name{
+                    font-size: 8vw;
+                    text-align: center;
+                }
+
+                /* currently not used*/
+                .cc-animate-opacity{
+                    animation:opac 0.8s
+                }
+                @keyframes opac{
+                    from{
+                        opacity:0
+                    }
+                    to{
+                        opacity:0.8
+                    }
+                }
+
+            </style>
 
 
         <!-- Container (About Section) -->
@@ -1433,7 +1460,7 @@
             
 
             <h2 class="w3-padding-16">Projects</h2>
-            <p>Here are some projects blah blah blah</p>
+            <p>I love a good side project. Here are a few projects that showcase my amateur handiwork.</p>
             
 
     
@@ -1600,7 +1627,7 @@
     <a class=tooltip>
         <img title="I purchased this reference book from a book sale at Missouri S&T library while in graduate school. The thoroughly tabulated solutions to
          common and uncommon mechanics problems harken back to a time before the ease and accessibility of computer solutions to engineering problems. 
-        The book served as an inspiration for a website I am developing: 'Stress Elementary', a website dedicated to making structural analysis tools, solvers, 
+        The book served as an inspiration for a website I am developing: 'Stress Elementary', an online hub dedicated to making structural analysis tools, solvers, 
         and design aids more accessible to students of engineering." rel="tooltip" src="./resources/images/bookshelf/formulas-for-stress-and-strain-roark.jpg" alt="Formulas for Stress and Strain, 5th Edition by Roark and Young" />
         
     </a>

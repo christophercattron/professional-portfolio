@@ -116,8 +116,8 @@ margin-left: 0x;
       width: 100%;
       position: absolute;
       display: block;
-      background: -webkit-linear-gradient(to bottom, rgba(204, 219, 220, 0.85), rgba(154, 209, 212, 0.85), rgba(128, 206, 215, 0.85), rgba(0, 126, 167, 0.85)/*, rgba(0, 50, 73, 0.85)*/); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to bottom, rgba(204, 219, 220, 0.85), rgba(154, 209, 212, 0.85), rgba(128, 206, 215, 0.85), rgba(0, 126, 167, 0.85)/*, rgba(0, 50, 73, 0.85)*/); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: -webkit-linear-gradient(to bottom, rgba(204, 219, 220, 0.75), rgba(154, 209, 212, 0.75), rgba(128, 206, 215, 0.75), rgba(0, 126, 167, 0.75)/*, rgba(0, 50, 73, 0.85)*/); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, rgba(204, 219, 220, 0.75), rgba(154, 209, 212, 0.75), rgba(128, 206, 215, 0.75), rgba(0, 126, 167, 0.75)/*, rgba(0, 50, 73, 0.85)*/); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
     /* Second image (Education) */
