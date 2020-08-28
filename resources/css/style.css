@@ -729,6 +729,10 @@ display: block;
 }
 
 
+.xp-misc{
+  font-size: 12px;
+}
+
 /*----------------------*/
 /* "cont" level styling */
 /*----------------------*/
@@ -984,6 +988,8 @@ display: block;
 /* Read More Read Less button */
 /*----------------------------*/
 
+/*standard read more read less button*/
+
 .btn-read-more{
   margin-left:0;
   display:block;
@@ -1038,6 +1044,70 @@ display: block;
 input[type=button].btn-read-more,input[type=reset].btn-read-more,input[type=submit].btn-read-more{
   width:100%
 }
+
+
+/*Read more button for xp-misc section*/
+
+.btn-read-more-xp-misc{
+  margin-left:0;
+  display:block;
+  margin: 0 auto;
+  width: 90%;
+  font-size: 12px;
+  /*color:#333; */
+  /*background-color:#fff; */ 
+  border-color:#ccc
+}
+
+[data-toggle=buttons]>..btn-read-more-xp-misc input[type=checkbox],[data-toggle=buttons]>..btn-read-more-xp-misc input[type=radio]{
+  position:absolute;
+  clip:rect(0,0,0,0);
+  pointer-events:none
+}
+
+..btn-read-more-xp-misc.focus,..btn-read-more-xp-misc:focus{
+  color:#333;
+  background-color:#e6e6e6;
+  border-color:#8c8c8c
+}
+..btn-read-more-xp-misc:hover{
+  color:#333;
+  background-color:#e6e6e6;
+  border-color:#adadad
+}
+..btn-read-more-xp-misc.active,..btn-read-more-xp-misc:active,.open>.dropdown-toggle..btn-read-more-xp-misc{
+  color:#333;
+  background-color:#e6e6e6;
+  background-image:none;
+  border-color:#adadad
+}
+..btn-read-more-xp-misc.active.focus,..btn-read-more-xp-misc.active:focus,..btn-read-more-xp-misc.active:hover,..btn-read-more-xp-misc:active.focus,..btn-read-more-xp-misc:active:focus,..btn-read-more-xp-misc:active:hover,.open>.dropdown-toggle..btn-read-more-xp-misc.focus,.open>.dropdown-toggle..btn-read-more-xp-misc:focus,.open>.dropdown-toggle..btn-read-more-xp-misc:hover{
+  color:#333;
+  background-color:#d4d4d4;
+  border-color:#8c8c8c
+}
+..btn-read-more-xp-misc.disabled.focus,..btn-read-more-xp-misc.disabled:focus,..btn-read-more-xp-misc.disabled:hover,..btn-read-more-xp-misc[disabled].focus,..btn-read-more-xp-misc[disabled]:focus,..btn-read-more-xp-misc[disabled]:hover,fieldset[disabled] ..btn-read-more-xp-misc.focus,fieldset[disabled] ..btn-read-more-xp-misc:focus,fieldset[disabled] ..btn-read-more-xp-misc:hover{
+  background-color:#fff;
+  border-color:#ccc
+}
+..btn-read-more-xp-misc .badge{
+  color:#fff;
+  background-color:#333
+}
+
+..btn-read-more-xp-misc+..btn-read-more-xp-misc{
+  margin-top:5px
+}
+
+input[type=button]..btn-read-more-xp-misc,input[type=reset]..btn-read-more-xp-misc,input[type=submit]..btn-read-more-xp-misc{
+  width:100%
+}
+
+
+
+
+
+
 
 
 /*-----------------------------*/
