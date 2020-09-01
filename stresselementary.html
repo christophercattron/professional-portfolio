@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Stress Elementary Preview</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />   <!--W3.CSS stylesheet-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />   <!--Lato font stylesheet-->
+        <link rel="stylesheet" href="resources/css/style.css" type="text/css" />    <!--My stylesheet-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">   <!--Montserrat & Roboto font stylesheet-->
+        <link rel="shortcut icon" href="./resources/favicon/favicon-cc-arrows.ico" type="image/x-icon">  <!--Favicon CC Logo (1of2)-->
+        <link rel="icon" href="./resources/favicon/favicon-cc-arrows.ico" type="image/x-icon">  <!--Favicon CC Logo (2of2)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!--Font Awesome 4.7.0-->
+        <link rel="stylesheet" type="text/css" href="./resources/flaticon/font/flaticon.css"> <!--Flaticon stylesheet-->
+
+
+
+        <!--This script is for the plotter in mohr's-circle section-->
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+        <!--END plotter script-->
+
+        <style>
+            h2{
+            text-align: center;
+            }
+            .layer{
+            width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+            }
+
+            section {
+            border:4px solid grey;
+            border-radius:15px;
+            box-shadow: 5px 5px 5px grey;
+            float:left;
+            height:360px;
+            padding: 20px;
+            margin:10px;
+            }
+
+            #plotSettings {
+            width:160px;
+            }
+
+            #plot {
+            width:550px;
+            }
+        </style>
+
+
+
+
+
+    </head>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar" id="myNavbar">
+                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#home" class="w3-bar-item w3-button">HOME</a>
+                <a href="#mohrs-circle" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-circle"></i> MOHRS CIRCLE</a>
+
+           
+            </div>
+            
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+                <a href="#mohrs-circle" class="w3-bar-item w3-button" onclick="toggleFunction()">EDUCATION</a>
+
+
+            </div>
+        </div>
+
+
+
+        <!-- Container (Mohr's Circle Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="mohrs-circle">
+        
+
+
+        <!-----------------------------logo section topper--------------------------------->
+        <img id="end-line-logo" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
+        <!---------------------------------------------------------------------------------->
+        
+            <h2 class="w3-center">Mohr's Circle for Plane Stress - Plotter</h2>
+            <h4 class="w3-center">
+                <em>
+                    Try my mohr's circle plotter!
+                </em>
+            </h4>
+            <br />
+
+            <div class="cont-3">
+                <div class="cont-3-1">
+                  <div class="cont-3-1-2"><!--uni-name-->
+                    <p id="ed-university-name">Mohr's Circle</p>
+                  </div>
+                  <div class="cont-3-1-3"><!--uni-location-->
+                     <p id="ed-location"></p>
+                  </div><!--/cont-3-1-3-->\
+                  
+
+<!--START PLOTTER CODE-->
+
+                    <div onload="plot();">
+                        <h2>Interactive function plotter</h2>
+                        <div class="layer">
+                        <section id="plotSettings">
+                        <label for="xMin">xMin: </label> value: <input type=number id="xMin" value=-5 step=0.5 oninput="plot();">
+                        <p></p>
+                        <label for="xMin">xMax: </label> value: <input type=number id="xMax" value=6.28 step=0.5 oninput="plot();">
+                    
+                        <p></p>
+                        <label for="yMin">yMin: </label> value: <input type=number id="yMin" value=-6 step=0.5 oninput="plot();">
+                        <p></p>
+                        <label for="yMax">yMax: </label> value: <input type=number id="yMax" value=6 step=0.5 oninput="plot();">
+                        <p></p>
+                        <label for="color">Color: </label> value: <input type=color id="color" onchange="plot();">
+                        <p></p>
+                        <label for="function">Function to plot: </label>
+                        <input id="function" type="text" value="sin(x)" onchange="plot();">
+                        <p></p>
+                        <button onclick="plot();">Plot it!</button>
+                    
+                        </section>
+                    
+                        <section id="plot">
+                        <div id="myFunction"></div>
+                        </section>
+                        </div>
+                    </div>
+
+
+
+<script>
+    var parameters = {
+  target: '#myFunction',
+  data: [{
+    fn: 'sin(x)', 
+    color: 'red'
+ }],
+  grid: true,
+  yAxis: {domain: [-1, 1]},
+  xAxis: {domain: [0, 2*Math.PI]}
+};
+
+function plot() {
+  var f = document.querySelector("#function").value;
+  var xMin = document.querySelector("#xMin").value;
+  var xMax = document.querySelector("#xMax").value;
+  var yMin = document.querySelector("#yMin").value;
+  var yMax = document.querySelector("#yMax").value;
+  var color = document.querySelector("#color").value;
+  
+  parameters.data[0].fn = f;
+  parameters.xAxis.domain = [xMin, xMax];
+  parameters.yAxis.domain = [yMin, yMax];
+  parameters.data[0].color = color;
+  
+  functionPlot(parameters);
+}
+
+
+</script>
+
+
+
+<!--END PLOTTER CODE-->
+
+
+
+
+
+                </div><!--/cont-3-1-->
+               
+                <!--------------solid-1px-#777-line-------------->
+                <div id="ed-line-777"></div>
+                <!--------------solid-1px-#777-line-------------->
+</div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-padding-64 " style="background-color: #003249">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <div class="w3-xlarge w3-section">
+                <p class="w3-small" style="margin: 0;">Find me on social media:</p>
+                <a href="https://www.facebook.com/chris.cattron" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/chris.cattron/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                <!--<a href="https://www.snapchat.com/add/chris_cattron" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>-->
+                <!--<a href="https://www.pinterest.com/christophercattron/boards/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>-->
+                <a href="https://twitter.com/TheCatTron" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/christopher-cattron/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+                <a href="https://open.spotify.com/user/12165154942?si=8Oc7aJBOTI-npAU1NfSWdg" target="_blank"><i class="fa fa-spotify w3-hover-opacity"></i></a>
+                <!--<a href="https://my.indeed.com/p/christopherc-su0504w" target="_blank"></a>-->
+
+                
+
+            </div>
+            <p>Copyright &copy; 2020 All Rights Reserved by <a href="https://www.christophercattron.com/" target="_blank">Christopher Cattron</a>.</p>
+        </footer>
+
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Change style of navbar on scroll
+            window.onscroll = function () {
+                myFunction();
+            };
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                }
+            }
+
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function toggleFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+    </body>
+    
+</html>
