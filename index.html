@@ -162,6 +162,7 @@
                 <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
                 <a href="#education-banner" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-graduation-cap"></i> EDUCATION</a>
                 <a href="#experience-banner" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> EXPERIENCE</a>
+                <a href="#covid-19-banner" class="w3-bar-item w3-button w3-hide-small"><i class="fa flaticon-virus"></i> COVID-19</a>
                 <a href="#fun-stuff-banner" class="w3-bar-item w3-button w3-hide-small"><i class="fa flaticon-party"></i> FUN STUFF</a>
                 <a href="#contact-banner" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
            
@@ -173,6 +174,7 @@
                 <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
                 <a href="#education-banner" class="w3-bar-item w3-button" onclick="toggleFunction()">EDUCATION</a>
                 <a href="#experience-banner" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
+                <a href="#covid-19-banner" class="w3-bar-item w3-button" onclick="toggleFunction()">COVID-19</a>
                 <a href="#fun-stuff-banner" class="w3-bar-item w3-button" onclick="toggleFunction()">FUN STUFF</a>
                 <a href="#contact-banner" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
             </div>
@@ -1605,17 +1607,39 @@
 
 
 
-
-
-
-
-
-
-
-
         </div><!--Ends id="experience" div-->
 
+
+
+        <!-- Temporary COVID Parallax Image with COVID-19 Text -->
+        <div class="bgimg-covid w3-display-container w3-opacity-min" id="covid-19-banner">
+            <div class="w3-display-middle" style="text-align: center;">
+                <span class="w3-xxlarge w3-text-white w3-wide" >COVID-19</span>
+            </div>
+        </div>
+
+        <!-- Container (COVID-19 Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="experience">
+                    
+            <!-----------------------------logo section topper--------------------------------->
+            <img id="end-line-logo" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
+            <!---------------------------------------------------------------------------------->
+
+            <h2 class="w3-center">COVID-19</h2>
+            <h4 class="w3-center">
+                <em>
+                    My current circumstances and where I am at in my professional career cannot be separated from 
+                    the story of how COVID-19 has impacted my life. Continue reading to see how my life changed during the COVID-19 pandemic,
+                    and how I responded to the rapidly changing circumstances. 
+                </em>
+            </h4>
+        </div>
+
+
+
+
         <!-- Modal for full size images on click-->
+        <!--As of 1/29/2021 I don't know what this does? Not sure what it is used for or why it is here specifically-->
         <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
             <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
             <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
@@ -2084,15 +2108,6 @@
 
 
         </div><!--I have no idea what div this ends, but bad shit happens if you delete it-->
-
-
-
-
-
-
-
-
-
 
 
 

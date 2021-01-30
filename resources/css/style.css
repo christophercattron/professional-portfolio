@@ -186,7 +186,7 @@ margin-left: 0x;
     }
 
     /* Create a Parallax Effect */
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-covid {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -237,13 +237,19 @@ margin-left: 0x;
       min-height: 500px;
     }
 
+    /* COVID image (COVID-19) */
+    .bgimg-covid {
+      background-image: url("../images/covid-banner.png");
+      min-height: 500px;
+    }
+
 
     .w3-wide {letter-spacing: 10px;}
     .w3-hover-opacity {cursor: pointer;}
 
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1024px) {
-      .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+      .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-covid {
           background-attachment: scroll;
           min-height: 400px;
       }
