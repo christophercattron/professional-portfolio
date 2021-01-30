@@ -325,7 +325,7 @@
                 </div>
                 -->
 
-                <div class="w3-content w3-container"><!--New div for LOGO section of ABOUT ME section-->
+                <div class="w3-content w3-container" style="padding-bottom: 64px"><!--START div for MY LOGO section of ABOUT ME section-->
             <!--------------solid-1px-#777-line-------------->
             <div id="ed-line-777"></div>
             <!--------------solid-1px-#777-line-------------->
@@ -354,7 +354,7 @@
             <!--------------solid-1px-#777-line-------------->
             <div id="ed-line-777"></div>
             <!--------------solid-1px-#777-line-------------->
-                </div>
+                </div><!--END div for MY LOGO section of ABOUT ME section-->
 
 
 
@@ -1741,34 +1741,9 @@
 
 
 
-                <!-- First Photo Grid-->
-<style>
+  <!-- First Photo Grid-->
 
-@media (min-width: 601px){
-
-    .project-item h4 {
-    height: 72px;
-}   
-
-} 
-
-.project-gallery-img{
-    transition: 1000ms ease-in-out;
-    width: 100%;
-    border-radius: 15px;
-}
-
-
-.project-gallery-img:hover{
-    filter: brightness(1.05);
-    transform: scale(1.05);
-}
-
-</style>
-
-
-
-  <div class="w3-row-padding w3-padding-16 w3-center">
+  <div class="w3-row-padding w3-padding-16 w3-center"><!--START First Photo Grid div-->
     <div class="w3-quarter project-item">
         <img class="project-gallery-img" src="./resources/images/projects/mini-mcmansion.jpg" alt="Playroom under stairs" style="width:100%">
         <h4>Mini McMansion</h4>
@@ -1820,7 +1795,7 @@
  
 
 
-  </div>
+  </div><!--END First Photo Grid div-->
   
   <!-- Second Photo Grid-->
   <!--
@@ -1848,23 +1823,28 @@
   </div>
 -->
 
-
+<!--The style here below is to make things disappear on 
+    mobile or on desktop (depending on which class="" you use)
+    These id's are only used in the <p> child of the h2 
+    parent "What's on my bookshelf?"-->
 <style>
 
-#content-desktop {display: block;}
-#content-mobile {display: none;}
+.content-desktop {display: block;}
+.content-mobile {display: none;}
 
 @media screen and (max-device-width: 1338px) {
 
-#content-desktop {display: none;}
-#content-mobile {display: block;}
+.content-desktop {display: none;}
+.content-mobile {display: block;}
 
 }
-</style>
+</style><!--See note above this style section-->
 
 
         <h2 class="w3-padding-16">What's on my bookshelf?</h2>
-        <p>You can learn a lot about someone from the contents of their bookshelf. Here is a bit of what can be found on mine. <span id="content-mobile">Tap to learn more about each item!</span></p>
+        <p>You can learn a lot about someone from the contents of their bookshelf. 
+            Here is a bit of what can be found on mine. <span class="content-mobile">Tap to learn more about each item!</span></p>
+            <!--the class="content-mobile" makes the "Tap to learn more..." dissappear unless the screen resolution is mobile-->
 
 
 
