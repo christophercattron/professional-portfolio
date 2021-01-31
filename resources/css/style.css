@@ -36,12 +36,27 @@
 are added so that the flaticon styling matches that of the font-awesome icons in the navbars*/
 .flaticon-party:before{
   font-family: Flaticon;
-  font-size: 15px;
+  font-size: 16px; /*I originally had 15px, but I don't know why. I like 16px better for now.*/
   font-style: normal;
   margin-left: 0px;
 }
 
 .flaticon-party{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+} 
+
+.flaticon-virus-1:before{
+  font-family: Flaticon;
+  font-size: 16px; /*I originally had 15px, but I don't know why. I like 16px better for now.*/
+  font-style: normal;
+  margin-left: 0px;
+}
+
+.flaticon-virus-1{
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -55,6 +70,17 @@ are added so that the flaticon styling matches that of the font-awesome icons in
 margin-left: 0x;
 }
 
+/* ALSO FOR FLATICON CSS: delete the margin-left: 20px in the [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after { } section. It will look like this instead: 
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+      font-family: Flaticon;
+            font-size: 20px;
+    font-style: normal;
+    }
+
+*/
 
 
 

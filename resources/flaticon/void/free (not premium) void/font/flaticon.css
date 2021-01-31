@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 31/01/2021 22:59
+  	Creation date: 30/01/2021 04:17
   	*/
 
 @font-face {
@@ -27,6 +27,7 @@
   font-family: Flaticon;
         font-size: 20px;
 font-style: normal;
+margin-left: 20px;
 }
 
 .flaticon-mosque:before { content: "\f100"; }
@@ -138,91 +139,76 @@ font-style: normal;
 .flaticon-analytics:before { content: "\f16a"; }
 .flaticon-education:before { content: "\f16b"; }
 .flaticon-business:before { content: "\f16c"; }
-.flaticon-mapping:before { content: "\f16d"; }
+.flaticon-model:before { content: "\f16d"; }
 .flaticon-engineer:before { content: "\f16e"; }
-.flaticon-model:before { content: "\f16f"; }
+.flaticon-work:before { content: "\f16f"; }
 .flaticon-engineer-1:before { content: "\f170"; }
-.flaticon-work:before { content: "\f171"; }
-.flaticon-engineer-2:before { content: "\f172"; }
-.flaticon-mapping-1:before { content: "\f173"; }
-.flaticon-equipment:before { content: "\f174"; }
-.flaticon-construction:before { content: "\f175"; }
-.flaticon-worker:before { content: "\f176"; }
-.flaticon-compass:before { content: "\f177"; }
-.flaticon-clipboard:before { content: "\f178"; }
-.flaticon-clipboard-1:before { content: "\f179"; }
-.flaticon-maths:before { content: "\f17a"; }
-.flaticon-formula:before { content: "\f17b"; }
-.flaticon-triangle:before { content: "\f17c"; }
-.flaticon-board-1:before { content: "\f17d"; }
-.flaticon-analytics-1:before { content: "\f17e"; }
-.flaticon-3d-modeling:before { content: "\f17f"; }
-.flaticon-3d-model:before { content: "\f180"; }
-.flaticon-edit:before { content: "\f181"; }
-.flaticon-business-plan:before { content: "\f182"; }
-.flaticon-report:before { content: "\f183"; }
-.flaticon-laptop:before { content: "\f184"; }
-.flaticon-report-1:before { content: "\f185"; }
-.flaticon-confetti:before { content: "\f186"; }
-.flaticon-live-music:before { content: "\f187"; }
-.flaticon-fireworks:before { content: "\f188"; }
-.flaticon-celebration:before { content: "\f189"; }
-.flaticon-party:before { content: "\f18a"; }
-.flaticon-crack:before { content: "\f18b"; }
-.flaticon-geological:before { content: "\f18c"; }
-.flaticon-broken-house:before { content: "\f18d"; }
-.flaticon-cracked-smartphone:before { content: "\f18e"; }
-.flaticon-building:before { content: "\f18f"; }
-.flaticon-foundation:before { content: "\f190"; }
-.flaticon-crane:before { content: "\f191"; }
-.flaticon-hurricane:before { content: "\f192"; }
-.flaticon-broken-roof:before { content: "\f193"; }
-.flaticon-hurricane-1:before { content: "\f194"; }
-.flaticon-architecture-and-city:before { content: "\f195"; }
-.flaticon-hurricane-2:before { content: "\f196"; }
-.flaticon-column:before { content: "\f197"; }
-.flaticon-columns:before { content: "\f198"; }
-.flaticon-pendulum:before { content: "\f199"; }
-.flaticon-ruins:before { content: "\f19a"; }
-.flaticon-formula-1:before { content: "\f19b"; }
-.flaticon-ruins-1:before { content: "\f19c"; }
-.flaticon-sigma:before { content: "\f19d"; }
-.flaticon-friction:before { content: "\f19e"; }
-.flaticon-physics:before { content: "\f19f"; }
-.flaticon-monitor:before { content: "\f1a0"; }
-.flaticon-computer:before { content: "\f1a1"; }
-.flaticon-3d-printing-software:before { content: "\f1a2"; }
-.flaticon-engineering:before { content: "\f1a3"; }
-.flaticon-3d-printer:before { content: "\f1a4"; }
-.flaticon-mechanics:before { content: "\f1a5"; }
-.flaticon-selection:before { content: "\f1a6"; }
-.flaticon-mesh:before { content: "\f1a7"; }
-.flaticon-mesh-1:before { content: "\f1a8"; }
-.flaticon-buildings:before { content: "\f1a9"; }
-.flaticon-appartment:before { content: "\f1aa"; }
-.flaticon-home:before { content: "\f1ab"; }
-.flaticon-office-building:before { content: "\f1ac"; }
-.flaticon-measure:before { content: "\f1ad"; }
-.flaticon-metal:before { content: "\f1ae"; }
-.flaticon-flow:before { content: "\f1af"; }
-.flaticon-bridge-6:before { content: "\f1b0"; }
-.flaticon-column-stability-thick-777:before { content: "\f1b1"; }
-.flaticon-bauschinger-effect:before { content: "\f1b2"; }
-.flaticon-reinforced-concrete:before { content: "\f1b3"; }
-.flaticon-cold-formed-steel:before { content: "\f1b4"; }
-.flaticon-mask:before { content: "\f1b5"; }
-.flaticon-coronavirus:before { content: "\f1b6"; }
-.flaticon-virus:before { content: "\f1b7"; }
-.flaticon-virus-1:before { content: "\f1b8"; }
+.flaticon-equipment:before { content: "\f171"; }
+.flaticon-worker:before { content: "\f172"; }
+.flaticon-compass:before { content: "\f173"; }
+.flaticon-clipboard:before { content: "\f174"; }
+.flaticon-clipboard-1:before { content: "\f175"; }
+.flaticon-maths:before { content: "\f176"; }
+.flaticon-formula:before { content: "\f177"; }
+.flaticon-triangle:before { content: "\f178"; }
+.flaticon-board-1:before { content: "\f179"; }
+.flaticon-analytics-1:before { content: "\f17a"; }
+.flaticon-3d-modeling:before { content: "\f17b"; }
+.flaticon-3d-model:before { content: "\f17c"; }
+.flaticon-edit:before { content: "\f17d"; }
+.flaticon-report:before { content: "\f17e"; }
+.flaticon-laptop:before { content: "\f17f"; }
+.flaticon-report-1:before { content: "\f180"; }
+.flaticon-confetti:before { content: "\f181"; }
+.flaticon-live-music:before { content: "\f182"; }
+.flaticon-fireworks:before { content: "\f183"; }
+.flaticon-party:before { content: "\f184"; }
+.flaticon-crack:before { content: "\f185"; }
+.flaticon-geological:before { content: "\f186"; }
+.flaticon-broken-house:before { content: "\f187"; }
+.flaticon-cracked-smartphone:before { content: "\f188"; }
+.flaticon-foundation:before { content: "\f189"; }
+.flaticon-crane:before { content: "\f18a"; }
+.flaticon-hurricane:before { content: "\f18b"; }
+.flaticon-broken-roof:before { content: "\f18c"; }
+.flaticon-hurricane-1:before { content: "\f18d"; }
+.flaticon-architecture-and-city:before { content: "\f18e"; }
+.flaticon-hurricane-2:before { content: "\f18f"; }
+.flaticon-column:before { content: "\f190"; }
+.flaticon-columns:before { content: "\f191"; }
+.flaticon-pendulum:before { content: "\f192"; }
+.flaticon-ruins:before { content: "\f193"; }
+.flaticon-formula-1:before { content: "\f194"; }
+.flaticon-ruins-1:before { content: "\f195"; }
+.flaticon-sigma:before { content: "\f196"; }
+.flaticon-friction:before { content: "\f197"; }
+.flaticon-physics:before { content: "\f198"; }
+.flaticon-computer:before { content: "\f199"; }
+.flaticon-3d-printing-software:before { content: "\f19a"; }
+.flaticon-engineering:before { content: "\f19b"; }
+.flaticon-3d-printer:before { content: "\f19c"; }
+.flaticon-mechanics:before { content: "\f19d"; }
+.flaticon-selection:before { content: "\f19e"; }
+.flaticon-mesh:before { content: "\f19f"; }
+.flaticon-buildings:before { content: "\f1a0"; }
+.flaticon-appartment:before { content: "\f1a1"; }
+.flaticon-home:before { content: "\f1a2"; }
+.flaticon-office-building:before { content: "\f1a3"; }
+.flaticon-measure:before { content: "\f1a4"; }
+.flaticon-metal:before { content: "\f1a5"; }
+.flaticon-flow:before { content: "\f1a6"; }
+.flaticon-bridge-6:before { content: "\f1a7"; }
+.flaticon-column-stability-thick-777:before { content: "\f1a8"; }
+.flaticon-bauschinger-effect:before { content: "\f1a9"; }
+.flaticon-reinforced-concrete:before { content: "\f1aa"; }
+.flaticon-cold-formed-steel:before { content: "\f1ab"; }
+.flaticon-mask:before { content: "\f1ac"; }
+.flaticon-coronavirus:before { content: "\f1ad"; }
+.flaticon-virus:before { content: "\f1ae"; }
 
-
-
-
-/*This section of code must be added to the flaticon css whenever more icons 
-are added so that the flaticon styling matches that of the font-awesome icons in the navbars*/
 .flaticon-party:before{
   font-family: Flaticon;
-  font-size: 16px; /*I originally had 15px, but I don't know why. I like 16px better for now.*/
+  font-size: 15px;
   font-style: normal;
   margin-left: 0px;
 }
@@ -235,20 +221,21 @@ are added so that the flaticon styling matches that of the font-awesome icons in
   -webkit-font-smoothing: antialiased;
 } 
 
-.flaticon-virus-1:before{
+.flaticon-virus:before{
   font-family: Flaticon;
-  font-size: 16px; /*I originally had 15px, but I don't know why. I like 16px better for now.*/
+  font-size: 15px;
   font-style: normal;
   margin-left: 0px;
 }
 
-.flaticon-virus-1{
+.flaticon-virus{
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 } 
+
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
