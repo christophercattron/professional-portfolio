@@ -1662,10 +1662,21 @@
                     }
                 }
 
+                function myFunction_expand_3() {
+                    var moreText = document.getElementById("expand_3");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
             </script>
 
             <style> /*This style is used to style the click-to-expand buttons in the COVID-19 section*/
-                #expand_1, #expand_2 {
+                #expand_1, #expand_2, #expand_3 {
                     display: none;
                 }
 
@@ -1688,6 +1699,29 @@
                     outline: none;
                 }
 
+
+                button.covid-button-2{
+                    border: none; /*This removes the default border styling of the button HTML tag to match the style of the cont-X elements*/
+                    width: 100%;
+                    max-width: 946px;
+                    margin: 0 auto;
+                    padding: 0;
+                    color: #777;
+                    background-color: whitesmoke;
+                    display: block;
+                    text-align: left;
+                }
+                    
+                button.covid-button-2:focus { /*This type selector removes the default border and outline styles of buttons when you click on them*/
+                    border: none;
+                    outline: none;
+                }
+
+
+
+
+
+
             </style>
 
 
@@ -1709,16 +1743,17 @@
             <!--END New COVID-19 timeline click to expand buttons-->
 
             <!--START New COVID-19 Timeline-->
+            
             <style>/*style for timeline*/
-                /* The actual timeline (the vertical ruler) */
                 
-
+                /* The actual timeline (the vertical ruler) */
                 .timeline {
                   position: relative;
                   max-width: 1200px;
                   margin: 0 auto;
-                  background-color: #003249;
                   box-sizing: border-box !important; /*Must have this set to border-box otherwise timeline circle and other content is not aligned properly*/
+
+                 
                 }
                 
                 /* The actual timeline (the vertical ruler) */
@@ -1726,11 +1761,16 @@
                   content: '';
                   position: absolute;
                   width: 6px;
-                  background-color: white;
+                  background-color: whitesmoke;
                   top: 0;
                   bottom: 0;
                   left: 50%;
                   margin-left: -3px;
+
+                  -webkit-box-shadow: 3px 3px 12px 2px rgb(0 0 0 / 43%);
+                  box-shadow: 3px 3px 12px 2px rgb(0 0 0 / 43%);
+
+
                 }
                 
                 /* Container around timeline box */
@@ -1739,6 +1779,9 @@
                   position: relative;
                   background-color: inherit;
                   width: 50%;
+
+
+
                 }
                 
                 /* The circles on the timeline */
@@ -1748,8 +1791,8 @@
                   width: 25px;
                   height: 25px;
                   right: -12px; /*This centers the circle on the timeline for tl-containers on the left side*/
-                  background-color: white;
-                  border: 4px solid #FF9F55;
+                  background-color: whitesmoke;
+                  border: 4px solid #007EA7;
                   top: 15px;
                   border-radius: 50%;
                   z-index: 1;
@@ -1774,9 +1817,9 @@
                   width: 0;
                   z-index: 1;
                   right: 30px;
-                  border: medium solid white;
+                  border: medium solid whitesmoke;
                   border-width: 10px 0 10px 10px;
-                  border-color: transparent transparent transparent white;
+                  border-color: transparent transparent transparent whitesmoke;
                 }
                 
                 /* Add arrows to the right tl-container (pointing left) */
@@ -1788,9 +1831,11 @@
                   width: 0;
                   z-index: 1;
                   left: 30px;
-                  border: medium solid white;
+                  border: medium solid whitesmoke;
                   border-width: 10px 10px 10px 0;
-                  border-color: transparent white transparent transparent;
+                  border-color: transparent whitesmoke transparent transparent;
+
+
                 }
                 
                 /* Fix the circle for tl-containers on the right side */
@@ -1799,13 +1844,54 @@
                 }
                 
                 /* The actual content */
-                .content {
+                .tl-content {
                   padding: 20px 30px;
-                  background-color: white;
+                  background-color: whitesmoke;
                   position: relative;
                   border-radius: 6px;
+                  -webkit-box-shadow: 3px 3px 12px 2px rgb(0 0 0 / 43%);
+                  box-shadow: 3px 3px 12px 2px rgb(0 0 0 / 43%);
+
                 }
                 
+
+                /*Testing for shaded triangles*/
+                /*
+
+                Using the link below, I think I can get the shaded triangles to work. 
+                It will require modifying the right, left, right::before, and left::before styling
+                https://onaircode.com/html-css-arrow-box-examples/#:~:text=%2012%20CSS%20Arrow%20Box%20Examples%20Source%20Code,made%20this%20structure.%20This%20impact%20has...%20More%20
+                
+                */
+
+                /*
+                MAKE SURE TO EDIT MEDIA QUERIES TO MAKE ARROWS 
+                (AND left::before and right::after RESIZING WHEN PAGE WIDTH DECREASES) 
+                RESPONSIVE!
+
+                For left::before, try this to start with: 
+
+                left::before{
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    margin-left: -0.5em;
+                    /* bottom: -2em; */ /*
+                    left: 89.5%;
+                    box-sizing: border-box;
+                    border: .6em solid black;
+                    border-color: transparent transparent whitesmoke whitesmoke;
+                    /* transform-origin: 0 50px; */ /*
+                    transform: rotate(-135deg);
+                    box-shadow: -3px 3px 3px 0 rgb(0 0 0 / 40%);
+                    z-index: 1;  
+                }
+              
+                /* End of Testing for Shaded Triangles */
+
+
+
                 /* Media queries - Responsive timeline on screens less than 600px wide */
                 @media screen and (max-width: 600px) {
                   /* Place the timelime to the left */
@@ -1818,6 +1904,7 @@
                   width: 100%;
                   padding-left: 70px;
                   padding-right: 25px;
+                  
                   }
                   
                   /* Make sure that all arrows are pointing leftwards */
@@ -1825,7 +1912,7 @@
                   left: 60px;
                   border: medium solid white;
                   border-width: 10px 10px 10px 0;
-                  border-color: transparent white transparent transparent;
+                  border-color: transparent whitesmoke transparent transparent;
                   }
                 
                   /* Make sure all circles are at the same spot */
@@ -1842,21 +1929,38 @@
             
             <div class="timeline">
                 <div class="tl-container left">
-                  <div class="content">
+                  <div class="tl-content">
                     <p>September 2019</p>
                     <h2>Hired in full-time position with S&amp;T Residential Life</h2>
                   </div>
                 </div>
                 <div class="tl-container right">
-                  <div class="content">
+                  <div class="tl-content">
                     <p>Decemeber 2019</p>
                     <h2>Graduated with M.S. in Civil Engineering</h2>
                   </div>
                 </div>
+                <div class="tl-container left">
+                    <div class="tl-content">
+                        <button class="covid-button-2" onclick="myFunction_expand_3()">
+                            <p>September 2019</p>
+                            <h2>Hired in full-time position with S&amp;T Residential Life</h2>
+                            <span id="expand_3">
+                                This is a second sentence.
+                            </span>
+                        </button>
+                    </div>
+                  </div>
               </div><!--END 'timeline' div -->
             <!--END New COVID-19 Timeline-->
 
-
+            <button class="covid-button" onclick="myFunction_expand_3()">
+                <p>September 2019</p>
+                <h2>Hired in full-time position with S&amp;T Residential Life</h2>
+                <span id="expand_3">
+                    This is a second sentence.
+                </span>
+            </button>
 
 
 
