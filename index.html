@@ -2051,15 +2051,36 @@
                   .right {
                   left: 0%;
                   }
+
+
+
                 }
+
+                /* timeline snapshot icon styling (to wrap around h3 text) */
+                .tl-snapshot img { 
+                    float: left;  
+                    margin: 10px; 
+                    height: 66px;
+                    width: auto;
+                    opacity: 51.42857142857142%; /*This matches the black color of the icon to the #777 color of the h3 text. Exact is 51.42857142857142%, determined from https://www.viget.com/articles/equating-color-and-transparency/  */
+                } 
+          
+               
+
+
+
+
                 </style><!--END style for timeline-->
             
             <div class="timeline">
                 <div class="tl-container left">
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_1()">
-                            <p>September 2019</p>
-                            <h3>Hired in full-time position with S&amp;T Residential Life</h3>
+                            <div class="tl-snapshot">
+                                <p>September 2019</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/001-businessman.svg">
+                                <h3>Hired in full-time position with S&amp;T Residential Life</h3>
+                            </div>
                             <span id="expand_1">
                                 While I was finishing up my master's studies at Missouri S&T, I applied for and was hired to fill 
                                 <a href="#reslife_cont" target="_blank" onclick="myFunction_expand_1()">a vacancy</a>
@@ -2073,8 +2094,11 @@
                 <div class="tl-container right">
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_2()">
-                            <p>December 2019</p>
-                            <h3>Graduated with M.S. in Civil Engineering</h3>
+                            <div class="tl-snapshot">
+                                <p>December 2019</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/002-graduated.svg">
+                                <h3>Graduated with M.S. in Civil Engineering</h3>
+                            </div>                          
                             <span id="expand_2">
                                 In December 2019, I completed my <a href="#education" target="_blank" onclick="myFunction_expand_2()">studies</a> at Missouri S&T, graduating with a Master of Science in Civil Engineering
                                 with an emphasis in structural engineering.
