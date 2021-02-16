@@ -233,10 +233,7 @@
             
             <h2 class="w3-center">ABOUT ME</h2>
             <h4 class="w3-center"><em>Motivated entry-level civil/structural engineer seeking full-time employment, preferably in the field of historic preservation or working with existing structures.</em></h4>
-
             
-            
-            <!--<h4 class="w3-center"><em>I'm a engineer with a quirky sense of humor and a relentless drive for adventure, exploration, discovery, and creation.</em></h4>-->
             <p>
                 With the COVID-19 pandemic, we are certainly living in unique times. After graduating with my M.S. in Civil Engineering in December 2019, 
                 I applied and was accepted to my dream graduate program: the <a href="http://msc-sahc.org/" target="_blank"> SAHC Advanced Masters in Structural Analysis of Monuments and Historical 
@@ -336,23 +333,35 @@
             <!---------------------------------------------------------------------------------->     
 
                     <h2 class="w3-center">MY LOGO</h2>
-                    <h4 class="w3-center"><em>You may have seen a blue “CC” logo in a few places on this website. Here’s a little more about
-                         the meaning behind the design.</em></h4>
-                    <p>
-                        The ‘CC’ in the logo is in the shape of a keystone—one of the most important components of a voussoir arch. 
-                        I chose the keystone shape due to my interest in historic structures. I have always daydreamed about being an 
-                        archaeologist and discovering some missing artifact or remnant of an ancient civilization. I strongly believe 
-                        in the value of human art, history, and heritage. Due to my strengths in science, engineering, and mathematics 
-                        rather than history and the humanities, I chose to pursue a degree in civil engineering instead of archaeology. 
-                        However, while job searching during my senior year at university, I began to wonder if there were archaeology jobs 
-                        for civil engineers. After reading an 
-                        <a href="https://archive.archaeology.org/0905/etc/conversation.html" target="_blank">article</a> about John Ochsendorf, 
-                        an engineer and professor at MIT whose work is heavily focused on the mechanics and behavior of historical structures,
-                        my career and professional goals shifted. I now look forward to future opportunities and adventures as I pursue a career 
-                        in the engineering of historic and existing structures
-                        
-                
-                    </p>
+                    <h4 class="w3-center"><em>You may have seen a blue “CC” logo in a few places on this website. Tap or click "Read More..."
+                        to learn about the meaning behind the design.</em></h4>
+                    <div class="read-more-logo">
+                            The ‘CC’ (initials for Christopher Cattron) in the logo is in the shape of a keystone—one of the most important 
+                            components of a voussoir arch. 
+                            I chose the keystone shape due to my interest in historic structures. I have always daydreamed about being an 
+                            archaeologist and discovering some artifact or ruins of an ancient civilization. I strongly believe 
+                            in the value of human art, history, and heritage. Due to my strengths in science, engineering, and mathematics 
+                            rather than history and the humanities, I chose to pursue a degree in civil engineering instead of archaeology. 
+                            However, while job searching during my senior year at university, I began to wonder if there were archaeology jobs 
+                            for civil engineers. After reading an 
+                            <a href="https://archive.archaeology.org/0905/etc/conversation.html" target="_blank">article</a> about John Ochsendorf, 
+                            an engineer and professor at MIT whose work is heavily focused on the mechanics and behavior of historical structures,
+                            my career and professional goals shifted. I now look forward to future opportunities and adventures as I pursue a career 
+                            in the engineering of historic and existing structures
+
+                    </div>
+                       
+                    <!--read more read less script for logo-->
+                    <script>
+                        $(function(){
+                            $(".read-more-logo").readmorelogo({
+                                buttonClasses: "btn-read-more",
+                            });
+                        });
+                    </script>
+
+
+
             <!--------------solid-1px-#777-line-------------->
             <div id="ed-line-777"></div>
             <!--------------solid-1px-#777-line-------------->
@@ -1960,9 +1969,13 @@
                   border-radius: 6px;
                   -webkit-box-shadow: 3px 3px 12px 2px rgb(0 0 0 / 43%);
                   box-shadow: 3px 3px 12px 2px rgb(0 0 0 / 43%);
-
+                
                 }
                 
+                .tl-content p {
+                font-size: 20px;
+                font-style: italic;
+                }
 
                 /*Testing for shaded triangles*/
                 /*
@@ -2041,7 +2054,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_1()">
                             <p>September 2019</p>
-                            <h2>Hired in full-time position with S&amp;T Residential Life</h2>
+                            <h3>Hired in full-time position with S&amp;T Residential Life</h3>
                             <span id="expand_1">
                                 While I was finishing up my master's studies at Missouri S&T, I applied for and was hired to fill 
                                 <a href="#reslife_cont" target="_blank" onclick="myFunction_expand_1()">a vacancy</a>
@@ -2056,7 +2069,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_2()">
                             <p>December 2019</p>
-                            <h2>Graduated with M.S. in Civil Engineering</h2>
+                            <h3>Graduated with M.S. in Civil Engineering</h3>
                             <span id="expand_2">
                                 In December 2019, I completed my <a href="#education" target="_blank" onclick="myFunction_expand_2()">studies</a> at Missouri S&T, graduating with a Master of Science in Civil Engineering
                                 with an emphasis in structural engineering.
@@ -2069,7 +2082,7 @@
                      <!--   <span title="Click to expand">   --><!--This will be added later?? Can delete if want to-->
                             <button class="covid-button-tl" onclick="myFunction_expand_3()">
                                 <p>January 2020</p>
-                                <h2>Begin applying for graduate programs.</h2>
+                                <h3>Begin applying for graduate programs.</h3>
                                 <span id="expand_3">
                                     Beginning just after the winter holiday, I began to ramp up my search for the next step of my academic career.
                                     I considered several options and weighed the outcomes of pursuing a PhD versus getting a second master's degree 
@@ -2088,7 +2101,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_4()">
                             <p>March 2019</p>
-                            <h2>COVID-19 begins to spread exponentially in the U.S.</h2>
+                            <h3>COVID-19 begins to spread exponentially in the U.S.</h3>
                             <span id="expand_4">
                                 While I was waiting to hear back from graduate schools, the rate of spread of the novel Coronavirus COVID-19 began
                                 to increase rapidly, and the entire world began to change in a matter of weeks. 
@@ -2100,7 +2113,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_5()">
                             <p>March 2019</p>
-                            <h2>Accepted to SAHC Advanced Masters.</h2>
+                            <h3>Accepted to SAHC Advanced Masters.</h3>
                             <span id="expand_5">
                                 On March 18, 2020 I was notified that I had been accepted to the 2020/2021 edition of the 
                                 <a href="https://msc-sahc.org/" target="_blank" onclick="myFunction_expand_5()">SAHC Advanced Masters in the 
@@ -2115,7 +2128,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_6()">
                             <p>May 2020</p>
-                            <h2>Let go from job due to COVID-19.</h2>
+                            <h3>Let go from job due to COVID-19.</h3>
                             <span id="expand_6">
                                 The COVID-19 pandemic introduced unprecedented challenges to institutions of higher education, 
                                 including Residential Life. After a few weeks of impromptu and emergency meetings, the university 
@@ -2131,7 +2144,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_7()">
                             <p>June 2020</p>
-                            <h2>Unemployed, homeless, and awaiting schooling</h2>
+                            <h3>Unemployed, homeless, and awaiting schooling</h3>
                             <span id="expand_7">
                                 Recently unemployed, having lost my place of residence, and awaiting travel to Europe for graduate school
                                 in the middle of a global pandemic—this is the interesting situation I found myself in in June 2020.
@@ -2150,7 +2163,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_8()">
                             <p>June 2020</p>
-                            <h2>Decision to delay schooling at SAHC.</h2>
+                            <h3>Decision to delay schooling at SAHC.</h3>
                             <span id="expand_8">
                                 With the uncertainties introduced by the COVID-19 pandemic, and as a European Union ban on travelers from the
                                 United States became more and more likely, I made the difficult decision to not participate in the 2020/2021 edition
@@ -2165,14 +2178,14 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_9()">
                             <p>July 2020</p>
-                            <h2>Begin job searching for temporary position in St. Louis.</h2>
+                            <h3>Begin job searching for temporary position in St. Louis.</h3>
                             <span id="expand_9">
                                 A one-year gap now existed between then and when the 2021/2022 SAHC program was to begin. My priority thus shifted to 
                                 finding full-time (though temporary) employment as a civil/structural engineer in the St. Louis, Missouri area.
                                 I spent my daytime hours applying for jobs, researching opportunities, and networking with other professionals. 
                                 In between applications and interviews, I also began to teach myself how to code. I followed self-paced courses
                                 online to learn HTML/CSS for web development. I put my new coding knowledge to the test by building this 
-                                website—my online professional portfolio christophercattron.com—nearly from scratch.
+                                website nearly from scratch.
                             </span>
                         </button>
                     </div>
@@ -2181,7 +2194,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_10()">
                             <p>September 2020</p>
-                            <h2>Decision to cancel plans to study at SAHC.</h2>
+                            <h3>Decision to cancel plans to study at SAHC.</h3>
                             <span id="expand_10">
                                 After nearly three months of dedicated full-force job-searching, I was unable to secure employment that would
                                 provide the financial resources necessary for me to continue my education at the SAHC Advanced Masters program 
@@ -2194,7 +2207,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_11()">
                             <p>October 2020</p>
-                            <h2>Begin full-time job search - Seattle</h2>
+                            <h3>Begin full-time job search - Seattle</h3>
                             <span id="expand_11">
                                 After deciding to cancel my plans to attend SAHC, my priority shifted to attaining a full-time position in 
                                 Seattle, Washington, where my wife intends to continue her education and where I could begin my career as a 
@@ -2208,7 +2221,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_12()">
                             <p>November 2020</p>
-                            <h2>Job offer at Missouri S&T Residential Life.</h2>
+                            <h3>Job offer at Missouri S&T Residential Life.</h3>
                             <span id="expand_12">
                                 Beginning in late October/early November, new daily cases of COVID-19 began to skyrocket in the U.S. Finding a good-fitting position in
                                 Seattle was proving difficult, and it was clear that a difficult winter (both in economic and public health terms)
@@ -2224,7 +2237,7 @@
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_13()">
                             <p>January 2021</p>
-                            <h2>Working at S&T Residential Life / Job-searching</h2>
+                            <h3>Working at S&T Residential Life / Job-searching</h3>
                             <span id="expand_13">
                                 I returned to Missouri S&T in Rolla, Missouri late in December 2020, and began work as the Resident Director of
                                 an apartment-style residence hall that houses approximately 400 undergraduate students, where I supervise a student-staff
@@ -2238,8 +2251,8 @@
                 <div class="tl-container right">
                     <div class="tl-content">
                         <button class="covid-button-tl" onclick="myFunction_expand_14()">
-                            <p>2021</p>
-                            <h2>What next?</h2>
+                            <p>2021 and beyond</p>
+                            <h3>What next?</h3>
                             <span id="expand_14">
                                 What comes next is partially in the hands of people like you! 
                                 Take a look at my <a href="./resources/docs/Resume - Christopher Cattron.pdf" target="_blank">resume</a>,
