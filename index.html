@@ -261,7 +261,7 @@
                     <p>
                         As I seek out career opportunities, I am working as a Residence Hall Director on a temporary basis for the Residential Life
                         department at Missouri University of Science and Technology in Rolla, Missouri. In my spare time I have been experimenting 
-                        with new cooking recipies, practicing coding, and reading J.E. Gordon's 1978 classic "Structures: Or Why Things Don't Fall Down".
+                        with new cooking recipes, practicing coding, and reading J.E. Gordon's 1978 classic "Structures: Or Why Things Don't Fall Down".
                         Most recently, I've been trying out bouldering at an indoor gym near St. Louis.
                     </p>
             <div style="display: flex; align-items: center; justify-content: space-evenly;">
@@ -441,7 +441,7 @@
                   <div class="cont-3-2-1">
                     <div class="cont-3-2-1-1">
                       <p id="ed-degree-title"><em>Master of Science in Civil Engineering</em><span id="ed-GPA-show-on-desktop">, 3.9 GPA</span></p>
-                      <p id="ed-GPA-show-on-mobile">3.9 GPA</p>
+                      <p class="ed-GPA-show-on-mobile">3.9 GPA</p>
                     </div><!--/cont-3-2-1-1-->
                     <div class="cont-3-2-1-2">
                       <p id="ed-date"><span id="ed-date-expand">Graduated </span>Dec<span id="ed-date-expand">ember</span> 2019</p>
@@ -456,7 +456,7 @@
                   <div class="cont-3-2-2">
                     <div class="cont-3-2-2-1">
                       <p id="ed-degree-title"><em>Bachelor of Science in Civil Engineering</em><span id="ed-GPA-show-on-desktop">, 3.3 GPA</span></p>
-                      <p id="ed-GPA-show-on-mobile">3.3 GPA</p>
+                      <p class="ed-GPA-show-on-mobile">3.3 GPA</p>
                     </div><!--/cont-3-2-2-1-->
                     <div class="cont-3-2-2-2">
                       <p id="ed-date"><span id="ed-date-expand">Graduated </span>May 2018</p>
@@ -855,18 +855,18 @@
                     <style>
 
     
-                        #show-on-mobile {
+                        #show-on-mobile-grg, #show-on-mobile-reslife {
                         display: none;
                         }
                         
                         
                         @media screen and (max-width: 850px){
                         
-                        #show-on-mobile {
+                        #show-on-mobile-grg, #show-on-mobile-reslife {
                         display: inline-block;
                         }
                         
-                        #hide-on-mobile {
+                        #hide-on-mobile-grg, #hide-on-mobile-reslife {
                         display: none;
                         }
                         
@@ -876,7 +876,7 @@
                         </style>
                         
 
-                        <div class="cont-1-2-1 s-wrap-ex-2 s-type-2-ex-2" id="show-on-mobile" role="slider"><!--GRG slideshow-->
+                        <div class="cont-1-2-1 s-wrap-ex-2 s-type-2-ex-2" id="show-on-mobile-grg" role="slider"><!--GRG slideshow-->
                             <ul class="s-content">
                               <li class="s-item s-item-1"></li>
                               <li class="s-item s-item-2"></li>
@@ -901,7 +901,7 @@
                     
 
 
-                    <div class="cont-1-2-1 s-wrap-ex-2 s-type-2-ex-2" id="hide-on-mobile" role="slider"><!--GRG slideshow-->
+                    <div class="cont-1-2-1 s-wrap-ex-2 s-type-2-ex-2" id="hide-on-mobile-grg" role="slider"><!--GRG slideshow-->
                       <ul class="s-content">
                         <li class="s-item s-item-1"></li>
                         <li class="s-item s-item-2"></li>
@@ -1188,7 +1188,7 @@
                 </div>
                 </div>
                 <div class="cont-1-2">
-                    <div class="cont-1-2-1 s-wrap-ex-4 s-type-2-ex-4" id="show-on-mobile" role="slider"><!--Reslife slideshow-->
+                    <div class="cont-1-2-1 s-wrap-ex-4 s-type-2-ex-4" id="show-on-mobile-reslife" role="slider"><!--Reslife slideshow-->
                         <ul class="s-content">
                           <li class="s-item s-item-1"></li>
                           <li class="s-item s-item-2"></li>
@@ -1214,7 +1214,7 @@
                         <li>Served as a Conduct Officer and an Advisor to local student hall government.</li> 
                         </ul>
                     </div>
-                    <div class="cont-1-2-1 s-wrap-ex-4 s-type-2-ex-4" id="hide-on-mobile" role="slider"><!--Reslife slideshow-->
+                    <div class="cont-1-2-1 s-wrap-ex-4 s-type-2-ex-4" id="hide-on-mobile-reslife" role="slider"><!--Reslife slideshow-->
                         <ul class="s-content">
                           <li class="s-item s-item-1"></li>
                           <li class="s-item s-item-2"></li>
@@ -1641,10 +1641,10 @@
             <h4 class="w3-center">
                 <em>
                     My current circumstances and the next steps in my life and career cannot be separated from 
-                    the impact of the COVID-19 pandemic. This section serves to highlight how my life has changed 
-                    and how I adapted to the rapidly changing situations brought on by the COVID-19 pandemic. 
-                    This section gives a snapshot view of major events during the past year
-                    or so that have altered my path. Tap or click each event to read more. 
+                    the impact of the COVID-19 pandemic. This section serves to give context to the gaps in my resume
+                    and illustrates how my path has changed and developed over the past year. 
+                    <br>
+                    Tap or click each event to read more. 
                 </em>
             </h4>
 
@@ -2021,20 +2021,20 @@
                 @media screen and (max-width: 600px) {
                   /* Place the timelime to the left */
                   .timeline::after {
-                  left: 31px;
+                  left: 5px; /*changed from 31px???*/
                   }
                   
                   /* Full-width tl-containers */
                   .tl-container {
                   width: 100%;
-                  padding-left: 70px;
-                  padding-right: 25px;
+                  padding-left: 45px; /*changed from 70px*/
+                  padding-right: 15px; /*changed from 25px*/
                   
                   }
                   
                   /* Make sure that all arrows are pointing leftwards */
                   .tl-container::before {
-                  left: 60px;
+                  left: 35px; /*Changed from 60px*/
                   border: medium solid white;
                   border-width: 10px 10px 10px 0;
                   border-color: transparent whitesmoke transparent transparent;
@@ -2042,7 +2042,7 @@
                 
                   /* Make sure all circles are at the same spot */
                   .left::after, .right::after {
-                  left: 15px;
+                  left: -7px;
                   }
                   
                   /* Make all right tl-containers behave like the left ones */
@@ -2050,8 +2050,19 @@
                   left: 0%;
                   }
 
+                  .tl-snapshot h3{
+                      font-size: 20px;
+                  }
+                  
+                  .tl-snapshot p{
+                      font-size: 18px;
+                  }
 
+                  .tl-snapshot img { 
+                    float: none !important;  
+                    margin: 0 10px !important; 
 
+                  } 
                 }
 
                 /* timeline snapshot icon styling (to wrap around h3 text) */
@@ -2082,7 +2093,7 @@
                             <span id="expand_1">
                                 While I was finishing up my master's studies at Missouri S&T, I applied for and was hired to fill 
                                 <a href="#reslife_cont" target="_blank" onclick="myFunction_expand_1()">a vacancy</a>
-                                in the Residential Life department. My intention was to use the position as a steppingstone between my studies in
+                                in the Residential Life department. My intention was to use the position as a stepping stone between my studies in
                                 Rolla and my desire to continue my education afterward. The position provided income and housing while I applied 
                                 for graduate programs and prepared for the next step of my academic and professional career. 
                             </span>

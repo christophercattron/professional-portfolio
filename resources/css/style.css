@@ -83,7 +83,24 @@ margin-left: 0x;
 */
 
 
+/* Show and Hide on Mobile Classes */
 
+.show-on-mobile{
+  display: none;
+}
+
+  
+  @media screen and (max-width: 600px){
+  
+  .show-on-mobile {
+  display: inline-block;
+  }
+  
+  .hide-on-mobile{
+  display: none;
+  }
+  
+  }
 
 
 
@@ -595,7 +612,7 @@ margin-left: 0x;
   display: inline;
 }
 
-#ed-GPA-show-on-mobile{
+.ed-GPA-show-on-mobile{
   display: none;
 }
 
@@ -718,7 +735,7 @@ margin-left: 0x;
   display: none;
 }
 
-#ed-GPA-show-on-mobile{
+.ed-GPA-show-on-mobile{
   display: inline;
   font-size: 1.1333333333333333em;
 }
