@@ -83,7 +83,24 @@ margin-left: 0x;
 */
 
 
+/* Show and Hide on Mobile Classes */
 
+.show-on-mobile{
+  display: none;
+}
+
+  
+  @media screen and (max-width: 600px){
+  
+  .show-on-mobile {
+  display: inline-block;
+  }
+  
+  .hide-on-mobile{
+  display: none;
+  }
+  
+  }
 
 
 
@@ -149,6 +166,7 @@ margin-left: 0x;
     margin: 15px auto;
     display: block;
     opacity: 0.85;
+    transition: width 1s ease-in-out 100ms, opacity 1s ease-in-out 100ms;
   }
   #about-the-logo:hover {
     width: 150px;
@@ -594,13 +612,13 @@ margin-left: 0x;
   display: inline;
 }
 
-#ed-GPA-show-on-mobile{
+.ed-GPA-show-on-mobile{
   display: none;
 }
 
 
 
-#ed-line-777{
+.ed-line-777{
   width:100%;
   height: 1px;
   background-color: #777;
@@ -608,7 +626,7 @@ margin-left: 0x;
   position: relative;
 }
 
-#ed-line-777-appear-on-mobile{
+.ed-line-777-appear-on-mobile{
   display: none;
   max-width: 400px;
   height: 1px;
@@ -717,7 +735,7 @@ margin-left: 0x;
   display: none;
 }
 
-#ed-GPA-show-on-mobile{
+.ed-GPA-show-on-mobile{
   display: inline;
   font-size: 1.1333333333333333em;
 }
@@ -1465,3 +1483,10 @@ background-color: #777;
 
 
 
+
+
+
+        /*LAST UPDATED*/
+        .last-updated{
+          font-size: 12px;
+        }

@@ -153,7 +153,7 @@
 
     <body>
         <!-- Navbar (sit on top) -->
-        <div class="w3-top">
+        <div class="w3-top" style="z-index: 3;"><!--z-index set to 3 in order to be behind the timeline elements in the covid section-->
             <div class="w3-bar" id="myNavbar">
                 <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                     <i class="fa fa-bars"></i>
@@ -232,19 +232,15 @@
 
             
             <h2 class="w3-center">ABOUT ME</h2>
-            <h4 class="w3-center"><em>Motivated entry-level civil/structural engineer seeking full-time employment, preferably in the field of historic preservation or working with existing structures.</em></h4>
-
+            <h4 class="w3-center"><em>Entry-level civil/structural engineer with a unique combination of academic, 
+                internship, and professional experiences.</em></h4>
             
-            
-            <!--<h4 class="w3-center"><em>I'm a engineer with a quirky sense of humor and a relentless drive for adventure, exploration, discovery, and creation.</em></h4>-->
             <p>
-                With the COVID-19 pandemic, we are certainly living in unique times. After graduating with my M.S. in Civil Engineering in December 2019, 
-                I applied and was accepted to my dream graduate program: the <a href="http://msc-sahc.org/" target="_blank"> SAHC Advanced Masters in Structural Analysis of Monuments and Historical 
-                    Constructions</a>—an advanced education program on the engineering of conservation of structures, with a focus on architectural heritage and 
-                buildings with cultural value. I was set to begin in September 2020. Unfortunately, due to circumstances surrounding the COVID-19 pandemic, I had 
-                to defer my enrollment to fall 2021, and after being laid off from my job in May (due to COVID-19), I have encountered several challenges that led
-                me to choose to indefinitely postpone my plans to continue my education. As such, I am now actively seeking out full-time opportunities with an engineering firm where I can learn, 
-                grow, and contribute meaningfully. Keep scrolling to learn more about my background, experiences, and what makes me unique.
+                Hello, I'm Chris, a recent graduate in civil/structural engineering whose post-graduation plans were 
+                <a href="#covid" target="_blank">severely impacted by the COVID-19 pandemic</a>.  
+                I am currently seeking out full-time opportunities with an engineering firm where I can learn, 
+                grow, and contribute meaningfully as I begin my career as an engineer. Keep scrolling to learn 
+                more about my background, experiences, and what makes me unique.
             </p>
 
             <div class="w3-row">
@@ -259,15 +255,14 @@
                 <div class="w3-col m6  w3-padding-large">
                     <p>
                         I'm an engineer with a quirky sense of humor and a relentless drive for adventure, exploration, discovery, and creation.
-                        I was born and grew up in Saint Charles, Missouri, just 25 miles west of St. Louis. I have a thoughtful, caring, 
+                        I was born and grew up in St. Charles, Missouri, just 25 miles west of St. Louis. I have a thoughtful, caring, 
                         intelligent, and sassy Russian wife named Maria, and together we have a mischievous cat named Daisy.
                     </p>
                     <p>
-                        As I continue my career search, I have been working
-                        for the Residential Life department at Missouri University of Science and Technology on a temporary basis as a Resident Director where I
-                        supervise a student-staff of Resident Assistants and oversee the operations of an apartment-style residence hall that houses 
-                        approximately 400 undergraduate students. In my spare time I have been experimenting with new cooking and baking recipes and reading J.E. Gordon's 1978 classic
-                        "Structures: Or Why Things Don't Fall Down".
+                        As I seek out career opportunities, I am working as a Residence Hall Director on a temporary basis for the Residential Life
+                        department at Missouri University of Science and Technology in Rolla, Missouri. In my spare time I have been experimenting 
+                        with new cooking recipes, practicing coding, and reading J.E. Gordon's 1978 classic "Structures: Or Why Things Don't Fall Down".
+                        Most recently, I've been trying out bouldering at an indoor gym near St. Louis.
                     </p>
             <div style="display: flex; align-items: center; justify-content: space-evenly;">
                 <a class="cc-button-1" style=" width: 200px; text-align: center; margin: 20px;" href="./resources/docs/Resume - Christopher Cattron.pdf" target="_blank" >Resume</a>
@@ -296,7 +291,7 @@
                     <p class="w3-xlarge w3-padding-16">Skills & Abilities</p>
                     <p id="isa"><i class="flaticon-model"></i> Analysis & Design</p>
                     <p id="isa"><i class="flaticon-maths"></i> Structural Calculations</p>
-                    <p id="isa"><i class="flaticon-3d-model"></i> 3D Modelling</p>
+                    <p id="isa"><i class="flaticon-3d-model"></i> 3D Structural Modelling</p>
                     <p id="isa"><i class="flaticon-report-1"></i> Producing Reports</p>
                     <p id="isa"><i class="flaticon-education"></i> Collaboration</p>
                 </div>
@@ -327,38 +322,55 @@
                 </div>
                 -->
 
-                <div class="w3-content w3-container" style="padding-bottom: 64px"><!--START div for MY LOGO section of ABOUT ME section-->
+                <div class="w3-content w3-container"><!--START div for MY LOGO section of ABOUT ME section-->
             <!--------------solid-1px-#777-line-------------->
-            <div id="ed-line-777"></div>
+            <div class="ed-line-777"></div>
             <!--------------solid-1px-#777-line-------------->
             <!-----------------------------logo section divider--------------------------------->
             <img id="about-the-logo" src="./resources/svg/cc-logo-with-arrows-filled-alt.svg.svg">
             <!---------------------------------------------------------------------------------->     
 
                     <h2 class="w3-center">MY LOGO</h2>
-                    <h4 class="w3-center"><em>You may have seen a blue “CC” logo in a few places on this website. Here’s a little more about
-                         the meaning behind the design.</em></h4>
-                    <p>
-                        The ‘CC’ in the logo is in the shape of a keystone—one of the most important components of a voussoir arch. 
-                        I chose the keystone shape due to my interest in historic structures. I have always daydreamed about being an 
-                        archaeologist and discovering some missing artifact or remnant of an ancient civilization. I strongly believe 
-                        in the value of human art, history, and heritage. Due to my strengths in science, engineering, and mathematics 
-                        rather than history and the humanities, I chose to pursue a degree in civil engineering instead of archaeology. 
-                        However, while job searching during my senior year at university, I began to wonder if there were archaeology jobs 
-                        for civil engineers. After reading an 
-                        <a href="https://archive.archaeology.org/0905/etc/conversation.html" target="_blank">article</a> about John Ochsendorf, 
-                        an engineer and professor at MIT whose work is heavily focused on the mechanics and behavior of historical structures,
-                        my career and professional goals shifted. I now look forward to future opportunities and adventures as I pursue a career 
-                        in the engineering of historic and existing structures
-                        
-                
-                    </p>
-            <!--------------solid-1px-#777-line-------------->
-            <div id="ed-line-777"></div>
-            <!--------------solid-1px-#777-line-------------->
+                    <h4 class="w3-center"><em>You may have seen a blue “CC” logo in a few places on this website. Tap or click
+                        below to learn about the meaning behind the design.</em></h4>
+                    <div class="read-more-logo">
+                        <div>
+                            The ‘CC’ (my initials) in the logo is in the shape of a keystone—one of the most important 
+                            components of a voussoir arch. 
+                            I chose the keystone shape due to my interest in historic structures. I have always daydreamed about being an 
+                            archaeologist and discovering some artifact or ruins of an ancient civilization. I strongly believe 
+                            in the value of human art, history, and heritage. Due to my strengths in science, engineering, and mathematics 
+                            rather than history and the humanities, I chose to pursue a degree in civil engineering instead of archaeology. 
+                            However, while job searching during my senior year at university, I began to wonder if there were archaeology jobs 
+                            for civil engineers. After reading an 
+                            <a href="https://archive.archaeology.org/0905/etc/conversation.html" target="_blank">article</a> about John Ochsendorf, 
+                            an engineer and professor at MIT whose work is heavily focused on the mechanics and behavior of historical structures,
+                            my career and professional goals shifted. I now look forward to future opportunities and adventures as I pursue a career 
+                            in the engineering of historic and existing structures
+                        </div>
+                    </div>
+                       
+                    <!--read more read less script for logo-->
+                    <script>
+                        $(function(){
+                            $(".read-more-logo").readmorelogo({
+                                buttonClasses: "btn-read-more",
+                            });
+                        });
+                    </script>
+
+
+
+
+
                 </div><!--END div for MY LOGO section of ABOUT ME section-->
-
-
+                <div class="w3-content w3-container" style="padding-bottom: 64px"><!--container for the ed-line-777; 
+                    if it doesn't have its own conatiner, the line will appear above the read more button for the MY LOGO section-->
+            <!--------------solid-1px-#777-line-------------->
+            <div class="ed-line-777"></div>
+            <!--------------solid-1px-#777-line-------------->    
+                </div>
+           
 
 
         <!-- Second Parallax Image with Education Text -->
@@ -421,7 +433,7 @@
                 </div><!--/cont-3-1-->
                
                 <!--------------solid-1px-#777-line-------------->
-                <div id="ed-line-777"></div>
+                <div class="ed-line-777"></div>
                 <!--------------solid-1px-#777-line-------------->
 
                 
@@ -429,7 +441,7 @@
                   <div class="cont-3-2-1">
                     <div class="cont-3-2-1-1">
                       <p id="ed-degree-title"><em>Master of Science in Civil Engineering</em><span id="ed-GPA-show-on-desktop">, 3.9 GPA</span></p>
-                      <p id="ed-GPA-show-on-mobile">3.9 GPA</p>
+                      <p class="ed-GPA-show-on-mobile">3.9 GPA</p>
                     </div><!--/cont-3-2-1-1-->
                     <div class="cont-3-2-1-2">
                       <p id="ed-date"><span id="ed-date-expand">Graduated </span>Dec<span id="ed-date-expand">ember</span> 2019</p>
@@ -437,14 +449,14 @@
                   </div><!--/cont-3-2-1-->
                   
                 <!--------------solid-1px-#777-line-------------->
-                <div id="ed-line-777-appear-on-mobile"></div>
+                <div class="ed-line-777-appear-on-mobile"></div>
                 <!--------------solid-1px-#777-line-------------->
 
 
                   <div class="cont-3-2-2">
                     <div class="cont-3-2-2-1">
                       <p id="ed-degree-title"><em>Bachelor of Science in Civil Engineering</em><span id="ed-GPA-show-on-desktop">, 3.3 GPA</span></p>
-                      <p id="ed-GPA-show-on-mobile">3.3 GPA</p>
+                      <p class="ed-GPA-show-on-mobile">3.3 GPA</p>
                     </div><!--/cont-3-2-2-1-->
                     <div class="cont-3-2-2-2">
                       <p id="ed-date"><span id="ed-date-expand">Graduated </span>May 2018</p>
@@ -453,7 +465,7 @@
                 </div><!--/cont-3-2-->
                 
                 <!--------------solid-1px-#777-line-------------->
-                <div id="ed-line-777"></div>
+                <div class="ed-line-777"></div>
                 <!--------------solid-1px-#777-line-------------->
 
 
@@ -495,7 +507,7 @@
                 </div><!--/cont-3-3-->
                 
                 <!--------------solid-1px-#777-line-------------->
-                <div id="ed-line-777"></div>
+                <div class="ed-line-777"></div>
                 <!--------------solid-1px-#777-line-------------->
 
 
@@ -590,7 +602,7 @@
                   </div><!--/cont-3-4-->
                   
                 <!--------------solid-1px-#777-line-------------->
-                <div id="ed-line-777"></div>
+                <div class="ed-line-777"></div>
                 <!--------------solid-1px-#777-line-------------->
 
 
@@ -626,7 +638,7 @@
   
   
                     <div class="cont-3-5-3">
-                      <p>For a comprehensive list of honors and awards (including those not associated with my time at Misssouri S&T), 
+                      <p>For a comprehensive list of honors and awards (including those not associated with my time at Missouri S&T), 
                           see the Honors & Awards section of <a href="./resources/docs/CV - Christopher Cattron.pdf" target="_blank">my CV</a>.</p>
                     </div><!--/cont-3-5-3-->
                   </div><!--/cont-3-5-->
@@ -843,18 +855,18 @@
                     <style>
 
     
-                        #show-on-mobile {
+                        #show-on-mobile-grg, #show-on-mobile-reslife {
                         display: none;
                         }
                         
                         
                         @media screen and (max-width: 850px){
                         
-                        #show-on-mobile {
+                        #show-on-mobile-grg, #show-on-mobile-reslife {
                         display: inline-block;
                         }
                         
-                        #hide-on-mobile {
+                        #hide-on-mobile-grg, #hide-on-mobile-reslife {
                         display: none;
                         }
                         
@@ -864,7 +876,7 @@
                         </style>
                         
 
-                        <div class="cont-1-2-1 s-wrap-ex-2 s-type-2-ex-2" id="show-on-mobile" role="slider"><!--GRG slideshow-->
+                        <div class="cont-1-2-1 s-wrap-ex-2 s-type-2-ex-2" id="show-on-mobile-grg" role="slider"><!--GRG slideshow-->
                             <ul class="s-content">
                               <li class="s-item s-item-1"></li>
                               <li class="s-item s-item-2"></li>
@@ -889,7 +901,7 @@
                     
 
 
-                    <div class="cont-1-2-1 s-wrap-ex-2 s-type-2-ex-2" id="hide-on-mobile" role="slider"><!--GRG slideshow-->
+                    <div class="cont-1-2-1 s-wrap-ex-2 s-type-2-ex-2" id="hide-on-mobile-grg" role="slider"><!--GRG slideshow-->
                       <ul class="s-content">
                         <li class="s-item s-item-1"></li>
                         <li class="s-item s-item-2"></li>
@@ -939,7 +951,7 @@
                             </li>
                             <br>
                             <h6><em>GIS Bridge layer</em></h6>
-                            <li>In conjunction with the GIS team at Horner & Shifrin,the bridge layer in the GIS was modified to better organize available data. 
+                            <li>In conjunction with the GIS team at Horner & Shifrin, the bridge layer in the GIS was modified to better organize available data. 
                                 The data was organized similar to the Federal Highway Administration’s National Bridge Database while being modified for use 
                                 in pedestrian and bicycle trail applications.
                             </li>
@@ -1086,7 +1098,7 @@
                             </p>
                             <p>At the office, I worked with the Project Manager to detail project objectives and timeline, 
                                 coordinate field work scheduling, material acquisition, and project cost tracking. Using satellite imagery, I mapped
-                                 out the slabs that needed to be replaced, and used a color coded map to track project progress and communicate with 
+                                 out the slabs that needed to be replaced and used a color-coded map to track project progress and communicate with 
                                  the PM, sub-contractors, and laborers. 
                             </p>
                             <p>In the field, I ensured that adequate and correct equipment and the needed materials were
@@ -1128,7 +1140,7 @@
             
 
             <!--------------solid-1px-#777-line-------------->
-            <div id="ed-line-777"></div>
+            <div class="ed-line-777"></div>
             <!--------------solid-1px-#777-line-------------->
              
             <!-----------------------------logo section divider--------------------------------->
@@ -1148,7 +1160,7 @@
 
             <!--START Missouri S&T Residential Life (ResLife) experience container-->
 
-            <div class="cont-1">
+            <div class="cont-1" id="reslife_cont">
                 <div class="cont-1-1">
                 <div class="cont-1-1-1">
                     <div class="cont-1-1-1-1">
@@ -1176,7 +1188,7 @@
                 </div>
                 </div>
                 <div class="cont-1-2">
-                    <div class="cont-1-2-1 s-wrap-ex-4 s-type-2-ex-4" id="show-on-mobile" role="slider"><!--Reslife slideshow-->
+                    <div class="cont-1-2-1 s-wrap-ex-4 s-type-2-ex-4" id="show-on-mobile-reslife" role="slider"><!--Reslife slideshow-->
                         <ul class="s-content">
                           <li class="s-item s-item-1"></li>
                           <li class="s-item s-item-2"></li>
@@ -1202,7 +1214,7 @@
                         <li>Served as a Conduct Officer and an Advisor to local student hall government.</li> 
                         </ul>
                     </div>
-                    <div class="cont-1-2-1 s-wrap-ex-4 s-type-2-ex-4" id="hide-on-mobile" role="slider"><!--Reslife slideshow-->
+                    <div class="cont-1-2-1 s-wrap-ex-4 s-type-2-ex-4" id="hide-on-mobile-reslife" role="slider"><!--Reslife slideshow-->
                         <ul class="s-content">
                           <li class="s-item s-item-1"></li>
                           <li class="s-item s-item-2"></li>
@@ -1237,7 +1249,7 @@
                                 <br><br>
                                 This job involved leading a staff of student leaders while meeting with students of concern, managing student conduct 
                                 cases, advising hall government, and responding to crisis situations. I co-led the staff of RAs along with my co-supervisor, 
-                                the Head Resident, a senior student studying Psychology with the long term goal of working as a Resident Director. 
+                                the Head Resident, a senior student studying Psychology with the long-term goal of working as a Resident Director. 
                                 We used one-on-one meetings, weekly staff meetings, monthly community assessments, regular evaluations, and other strategies
                                 to lead the RAs and implement the department’s residential curriculum.  
 
@@ -1267,7 +1279,7 @@
                                 available <a href="./resources/docs/TJ Assessment Summary 2019-2020 - TJURASSIC Challenge.pdf" target="_blank">here</a>. 
                             </li>
                             <br>
-                            <h6><em>COVID-19</em></h6>
+                            <h6 id="reslife-covid-19"><em>COVID-19</em></h6>
                             <li>
                                 Once the COVID-19 pandemic began spreading in the United States, it introduced unprecedented challenges to institutions of 
                                 higher education, including Residential Life. After a few weeks of daily impromptu and emergency meetings (one of these late 
@@ -1439,7 +1451,7 @@
                                     and bale events, thank-yous to volunteers, donors, and customers, and information about the salvage 
                                     baling program. In the shop, I educated every volunteer about the life-cycle of textiles in the 
                                     resale shop, including how the clothing is recycled. I explained to donors and customers that all 
-                                    clothing donations are either sold to customers, or baled and sold to a company that recycles or 
+                                    clothing donations are either sold to customers or baled and sold to a company that recycles or 
                                     repurposes nearly 100% of the cloth. Customers and donors often expressed support and gratitude 
                                     regarding TCP’s stewardship of donations and dedication to recycling efforts.
                                     
@@ -1502,7 +1514,7 @@
 <!--START SUB-EXPERIENCE SECTION-->
 
  <!--------------solid-1px-#777-line-------------->
- <div id="ed-line-777"></div>
+ <div class="ed-line-777"></div>
  <!--------------solid-1px-#777-line-------------->
   
  <!-----------------------------logo section divider--------------------------------->
@@ -1551,10 +1563,10 @@
     
     <div class="w3-quarter project-item">
         <img class="project-gallery-img-xp-misc" src="./resources/images/misc xp/canada.JPG" alt="" style="width:100%">
-        <h5>“En français à Québec”</h5>
+        <h5>“En fran&#231;ais &agrave; Qu&eacute;bec”</h5>
         <p class="read-more-xp-misc xp-misc">
-            I participated in a summer French immersion program at the Universite Laval in Quebec City. 
-            I attained valuable historical, cultural and political knowledge of French Canada
+            I participated in a summer French immersion program at the Universit&eacute; Laval in Quebec City. 
+            I attained valuable historical, cultural, and political knowledge of French Canada
             through formal tours, social gatherings, and independent research while improving my 
             French language skills through daily interactions with local people and French-spoken classes. 
 
@@ -1566,7 +1578,7 @@
         <h5>Algebra Tutor / Success Leader</h5>
         <p class="read-more-xp-misc xp-misc">
             
-            During my senior year of high school I participated in the Success Leaders program, wherein a senior student 
+            During my senior year of high school, I participated in the Success Leaders program, wherein a senior student 
             is matched with a freshman class to act as a mentor and tutor. I sat-in on Mr. Brown's freshman Algebra I class daily,
              role modelling good conduct and behavior, assisting with communicating material,
              explaining concepts, answering questions, and building mentoring relationships with freshman students. 
@@ -1597,7 +1609,7 @@
 </div>
 
         <!--------------solid-1px-#777-line-------------->
-        <div id="ed-line-777"></div>
+        <div class="ed-line-777"></div>
         <!--------------solid-1px-#777-line-------------->   
 
 
@@ -1629,14 +1641,704 @@
             <h4 class="w3-center">
                 <em>
                     My current circumstances and the next steps in my life and career cannot be separated from 
-                    the impact of the COVID-19 pandemic. This section serves to highlight what I did during lockdown 
-                    and the ensuing months, how my life has changed, how I adapted to rapidly changing situations, 
-                    and what I intend to do going forward.
+                    the impact of the COVID-19 pandemic. This section serves to give context to the gaps in my resume
+                    and illustrates how my path has changed and developed over the past year. 
+                    <br>
+                    <br>
+                    <strong>Tap or click each event to read more.</strong> 
                 </em>
             </h4>
 
-            <p style="text-align: center" class="w3-padding-64">This section of the website is currently under construction. Please return later!</p>
+            <!--START New COVID-19 timeline click to expand buttons-->
 
+            <script>//This script is used for the click-to-expand buttons in the COVID-19 section
+
+                function myFunction_expand_1() {
+                    var moreText = document.getElementById("expand_1");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_2() {
+                    var moreText = document.getElementById("expand_2");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_3() {
+                    var moreText = document.getElementById("expand_3");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_4() {
+                    var moreText = document.getElementById("expand_4");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_5() {
+                    var moreText = document.getElementById("expand_5");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_6() {
+                    var moreText = document.getElementById("expand_6");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_7() {
+                    var moreText = document.getElementById("expand_7");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_8() {
+                    var moreText = document.getElementById("expand_8");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_9() {
+                    var moreText = document.getElementById("expand_9");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_10() {
+                    var moreText = document.getElementById("expand_10");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_11() {
+                    var moreText = document.getElementById("expand_11");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_12() {
+                    var moreText = document.getElementById("expand_12");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_13() {
+                    var moreText = document.getElementById("expand_13");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_14() {
+                    var moreText = document.getElementById("expand_14");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_15() {
+                    var moreText = document.getElementById("expand_15");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+                function myFunction_expand_16() {
+                    var moreText = document.getElementById("expand_16");
+                    
+                
+                    if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    } else {
+                    moreText.style.display = "inline"
+                    }
+                }
+
+
+
+            </script>
+
+            <style> /*This style is used to style the click-to-expand buttons in the COVID-19 section*/
+                #expand_1, #expand_2, #expand_3, 
+                #expand_4, #expand_5, #expand_6,
+                #expand_7, #expand_8, #expand_9,
+                #expand_10, #expand_11, #expand_12,
+                #expand_13, #expand_14, #expand_15,
+                #expand_16, #expand_17, #expand_18 {
+                    display: none;
+                }
+
+                button.covid-button-tl{
+                    border: none; /*This removes the default border styling of the button HTML tag to match the style of the cont-X elements*/
+                    width: 100%;
+                    max-width: 946px;
+                    margin: 0 auto;
+                    padding: 0;
+                    color: #777;
+                    background-color: whitesmoke;
+                    display: block;
+                    text-align: left;
+                }
+                    
+                button.covid-button-tl:focus { /*This type selector removes the default border and outline styles of buttons when you click on them*/
+                    border: none;
+                    outline: none;
+                }
+
+            </style>
+            <!--END New COVID-19 timeline click to expand buttons-->
+
+
+            <!--START New COVID-19 Timeline-->
+            
+            <style>/*style for timeline*/
+                
+                /* The actual timeline (the vertical ruler) */
+                .timeline {
+                  position: relative;
+                  max-width: 1200px;
+                  margin: 0 auto;
+                  box-sizing: border-box !important; /*Must have this set to border-box otherwise timeline circle and other content is not aligned properly*/
+
+                 
+                }
+                
+                /* The actual timeline (the vertical ruler) */
+                .timeline::after {
+                  content: '';
+                  position: absolute;
+                  width: 6px;
+                  background-color: whitesmoke;
+                  top: 0;
+                  bottom: 0;
+                  left: 50%;
+                  margin-left: -3px;
+
+                  -webkit-box-shadow: 3px 3px 12px 2px rgb(0 0 0 / 43%);
+                  box-shadow: 3px 3px 12px 2px rgb(0 0 0 / 43%);
+
+
+                }
+                
+                /* Container around timeline box */
+                .tl-container {
+                  padding: 10px 40px;
+                  position: relative;
+                  background-color: inherit;
+                  width: 50%;
+
+
+
+                }
+                
+                /* The circles on the timeline */
+                .tl-container::after {
+                  content: '';
+                  position: absolute;
+                  width: 25px;
+                  height: 25px;
+                  right: -12px; /*This centers the circle on the timeline for tl-containers on the left side*/
+                  background-color: whitesmoke;
+                  border: 4px solid #007EA7;
+                  top: 15px;
+                  border-radius: 50%;
+                  z-index: 1;
+                }
+                
+                /* Place the tl-containerto the left */
+                .left {
+                  left: 0;
+                }
+                
+                /* Place the tl-container to the right */
+                .right {
+                  left: 50%;
+                }
+                
+                /* Add arrows to the left tl-container (pointing right) */
+                .left::before {
+                  content: " ";
+                  height: 0;
+                  position: absolute;
+                  top: 22px;
+                  width: 0;
+                  z-index: 1;
+                  right: 30px;
+                  border: medium solid whitesmoke;
+                  border-width: 10px 0 10px 10px;
+                  border-color: transparent transparent transparent whitesmoke;
+                }
+                
+                /* Add arrows to the right tl-container (pointing left) */
+                .right::before {
+                  content: " ";
+                  height: 0;
+                  position: absolute;
+                  top: 22px;
+                  width: 0;
+                  z-index: 1;
+                  left: 30px;
+                  border: medium solid whitesmoke;
+                  border-width: 10px 10px 10px 0;
+                  border-color: transparent whitesmoke transparent transparent;
+
+
+                }
+                
+                /* Fix the circle for tl-containers on the right side */
+                .right::after {
+                  left: -12px; /*This centers the circle on the timeline for tl-containers on the right side*/
+                }
+                
+                /* The actual content */
+                .tl-content {
+                  padding: 20px 30px;
+                  background-color: whitesmoke;
+                  position: relative;
+                  border-radius: 6px;
+                  -webkit-box-shadow: 3px 3px 12px 2px rgb(0 0 0 / 43%);
+                  box-shadow: 3px 3px 12px 2px rgb(0 0 0 / 43%);
+                
+                }
+                
+                .tl-content p {
+                font-size: 20px;
+                font-style: italic;
+                }
+
+                /*Testing for shaded triangles*/
+                /*
+
+                Using the link below, I think I can get the shaded triangles to work. 
+                It will require modifying the right, left, right::before, and left::before styling
+                https://onaircode.com/html-css-arrow-box-examples/#:~:text=%2012%20CSS%20Arrow%20Box%20Examples%20Source%20Code,made%20this%20structure.%20This%20impact%20has...%20More%20
+                
+                */
+
+                /*
+                MAKE SURE TO EDIT MEDIA QUERIES TO MAKE ARROWS 
+                (AND left::before and right::after RESIZING WHEN PAGE WIDTH DECREASES) 
+                RESPONSIVE!
+
+                For left::before, try this to start with: 
+
+                left::before{
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    margin-left: -0.5em;
+                    /* bottom: -2em; */ /*
+                    left: 89.5%;
+                    box-sizing: border-box;
+                    border: .6em solid black;
+                    border-color: transparent transparent whitesmoke whitesmoke;
+                    /* transform-origin: 0 50px; */ /*
+                    transform: rotate(-135deg);
+                    box-shadow: -3px 3px 3px 0 rgb(0 0 0 / 40%);
+                    z-index: 1;  
+                }
+              
+                /* End of Testing for Shaded Triangles */
+
+
+
+                /* Media queries - Responsive timeline on screens less than 600px wide */
+                @media screen and (max-width: 600px) {
+                  /* Place the timelime to the left */
+                  .timeline::after {
+                  left: 5px; /*changed from 31px???*/
+                  }
+                  
+                  /* Full-width tl-containers */
+                  .tl-container {
+                  width: 100%;
+                  padding-left: 45px; /*changed from 70px*/
+                  padding-right: 15px; /*changed from 25px*/
+                  
+                  }
+                  
+                  /* Make sure that all arrows are pointing leftwards */
+                  .tl-container::before {
+                  left: 35px; /*Changed from 60px*/
+                  border: medium solid white;
+                  border-width: 10px 10px 10px 0;
+                  border-color: transparent whitesmoke transparent transparent;
+                  }
+                
+                  /* Make sure all circles are at the same spot */
+                  .left::after, .right::after {
+                  left: -7px;
+                  }
+                  
+                  /* Make all right tl-containers behave like the left ones */
+                  .right {
+                  left: 0%;
+                  }
+
+                  .tl-snapshot h3{
+                      font-size: 20px;
+                  }
+                  
+                  .tl-snapshot p{
+                      font-size: 18px;
+                  }
+
+                  .tl-snapshot img { 
+                    float: none !important;  
+                    margin: 0 10px !important; 
+
+                  } 
+                }
+
+                /* timeline snapshot icon styling (to wrap around h3 text) */
+                .tl-snapshot img { 
+                    float: left;  
+                    margin: 10px; 
+                    height: 66px;
+                    width: auto;
+                    opacity: 51.42857142857142%; /*This matches the black color of the icon to the #777 color of the h3 text. Exact is 51.42857142857142%, determined from https://www.viget.com/articles/equating-color-and-transparency/  */
+                } 
+          
+               
+
+
+
+
+                </style><!--END style for timeline-->
+            
+            <div class="timeline">
+                <div class="tl-container left">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_1()">
+                            <div class="tl-snapshot">
+                                <p>September 2019</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/001-businessman.svg">
+                                <h3>Hired in full-time position with S&amp;T Residential Life</h3>
+                            </div>
+                            <span id="expand_1">
+                                While I was finishing up my master's studies at Missouri S&T, I applied for and was hired to fill 
+                                <a href="#reslife_cont" target="_blank" onclick="myFunction_expand_1()">a vacancy</a>
+                                in the Residential Life department. My intention was to use the position as a stepping stone between my studies in
+                                Rolla and my desire to continue my education afterward. The position provided income and housing while I applied 
+                                for graduate programs and prepared for the next step of my academic and professional career. 
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container right">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_2()">
+                            <div class="tl-snapshot">
+                                <p>December 2019</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/002-graduated.svg">
+                                <h3>Graduated with M.S. in Civil Engineering</h3>
+                            </div>                          
+                            <span id="expand_2">
+                                In December 2019, I completed my <a href="#education" target="_blank" onclick="myFunction_expand_2()">studies</a> at Missouri S&T, graduating with a Master of Science in Civil Engineering
+                                with an emphasis in structural engineering.
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container left">
+                    <div class="tl-content">
+                     <!--   <span title="Click to expand">   --><!--This will be added later?? Can delete if want to-->
+                            <button class="covid-button-tl" onclick="myFunction_expand_3()">
+                                <div class="tl-snapshot">
+                                    <p>January 2020</p>
+                                    <img src="resources/flaticon/covid-timeline-icons/svg/004-form.svg">
+                                    <h3>Begin applying for graduate programs</h3>
+                                </div>
+                                <span id="expand_3">
+                                    Beginning just after the winter holiday, I began to ramp up my search for the next step of my academic career.
+                                    I considered several options and weighed the outcomes of pursuing a PhD versus getting a second master's degree 
+                                    (due to my lack of research/publishing experience). The program that quickly rose to the top of my list was the 
+                                    <a href="https://msc-sahc.org/" target="_blank" onclick="myFunction_expand_3()">SAHC Advanced Masters in the 
+                                    Structural Analysis of Historic Monuments and Constructions</a>—a year-long advanced education program on the
+                                    engineering of conservation of structures, with a focus on architectural heritage and buildings with cultural value.
+                                    The program involves 7 months of coursework at a university in Portugal, Spain, Italy, or Czechia followed by 4 months 
+                                    completing a dissertation at another university. 
+                                </span>
+                            </button>
+                    <!--    </span> --><!--This will be added later?? Can delete if want to-->
+                    </div>
+                </div>
+                <div class="tl-container right">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_4()">
+                            <div class="tl-snapshot">
+                                <p>March 2020</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/014-spread-1.svg">
+                                <h3>COVID-19 begins to spread rapidly in the United States</h3>
+                            </div>
+                            <span id="expand_4">
+                                While I was waiting to hear back from graduate schools, the rate of spread of the novel Coronavirus COVID-19 began
+                                to increase exponentially, and the entire world began to change in a matter of weeks. 
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container left">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_5()">
+                            <div class="tl-snapshot">
+                                <p>March 2020</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/046-pantheon.svg">
+                                <h3>Accepted to SAHC Advanced Masters</h3>
+                            </div>
+                            <span id="expand_5">
+                                On March 18, 2020 I was notified that I had been accepted to the 2020/2021 edition of the 
+                                <a href="https://msc-sahc.org/" target="_blank" onclick="myFunction_expand_5()">SAHC Advanced Masters in the 
+                                Structural Analysis of Historic Monuments and Constructions</a> program. Furthermore, due to the quality of 
+                                my application, I was selected by the SAHC Managing Board to receive a SAHC Consortium Scholarship. I was assigned
+                                coursework at the University of Minho in Portugal, and dissertation work at the University of Padua in Italy.
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container right">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_6()">
+                            <div class="tl-snapshot">
+                                <p>May 2020</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/017-firing.svg">
+                                <h3>Let go from job due to COVID-19</h3>
+                            </div>
+                            <span id="expand_6">
+                                The COVID-19 pandemic introduced unprecedented challenges to institutions of higher education, 
+                                including Residential Life. After a few weeks of impromptu and emergency meetings, the university 
+                                and department made a series of decisions that ultimately led to a nearly 90% reduction in the 
+                                number of students living in the residence halls. By mid-April, my hall was vacant excepting 
+                                me, my wife, and our cat, and by the end of May, I was let go from my position due to budget decisions
+                                and the ongoing uncertainties in light of COVID-19.
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container left">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_7()">
+                            <div class="tl-snapshot">
+                                <p>June 2020</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/018-fired-1-edit.svg">
+                                <h3>Unemployed, homeless, and awaiting schooling</h3>
+                            </div>
+                            <span id="expand_7">
+                                Recently unemployed, having lost my place of residence, and awaiting travel to Europe for graduate school
+                                in the middle of a global pandemic—this is the interesting situation I found myself in in June 2020.
+                                Fortunately, my sister and her husband welcomed my wife and I to stay with them and their two kids while
+                                we awaited our travel abroad for schooling at the University of Minho. In exchange for their kindness and 
+                                generosity in letting us stay with them, I set out to build a
+                                <a href="#project-gallery" target="_blank" onclick="myFunction_expand_7()">miniature playroom</a> for their
+                                daughters (one- and four-years-old) in a nook under the stairs in their basement. This was a great way for 
+                                me to pass the time while gaining a little experience with wood framing, home electric circuits, drywalling, 
+                                and more.
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container right">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_8()">
+                            <div class="tl-snapshot">
+                                <p>June 2020</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/021-next-week.svg">
+                                <h3>Decision to delay schooling at SAHC</h3>
+                            </div>
+                            <span id="expand_8">
+                                With the uncertainties introduced by the COVID-19 pandemic, and as a European Union ban on travelers from the
+                                United States became more and more likely, I made the difficult decision to not participate in the 2020/2021 edition
+                                of the SAHC program. Fortunately, the administers of the program allowed me to defer my enrollment to the 
+                                2021/2022 edition of the program, and my sister and her husband graciously agreed to allow my wife and I to continue
+                                living in their guest room until the fall 2021 program was to begin. 
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container left">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_9()">
+                            <div class="tl-snapshot">
+                                <p>July 2020</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/023-newspaper.svg">
+                                <h3>Begin job searching for temporary position in St. Louis</h3>
+                            </div>
+                            <span id="expand_9">
+                                A one-year gap now existed between then and when the 2021/2022 SAHC program was to begin. My priority thus shifted to 
+                                finding full-time (though temporary) employment as a civil/structural engineer in the St. Louis, Missouri area.
+                                I spent my daytime hours applying for jobs, researching opportunities, and networking with other professionals. 
+                                In between applications and interviews, I also began to teach myself how to code. I followed self-paced courses
+                                online to learn HTML/CSS for web development. I put my new coding knowledge to the test by building this 
+                                website nearly from scratch.
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container right">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_10()">
+                            <div class="tl-snapshot">
+                                <p>September 2020</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/024-delete.svg">
+                                <h3>Decision to cancel plans to participate in SAHC program</h3>
+                            </div> 
+                            <span id="expand_10">
+                                After nearly three months of dedicated full-force job-searching, I was unable to secure employment that would
+                                provide the financial resources necessary for me to continue my education at the SAHC Advanced Masters program 
+                                in fall 2021. I made the difficult decision to indefinitely postpone my plans abroad.
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container left">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_11()">
+                            <div class="tl-snapshot">
+                                <p>October 2020</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/003-job-search.svg">
+                                <h3>Begin full-time job search - Seattle</h3>
+                            </div> 
+                            <span id="expand_11">
+                                After deciding to cancel my plans to attend SAHC, my priority shifted to attaining a full-time position in 
+                                Seattle, Washington, where my wife intends to continue her education and where I could begin my career as a 
+                                structural engineer. During this time, I also began working part-time as a Shipt Shopper, shopping for and 
+                                delivering groceries to customers. 
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container right">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_12()">
+                            <div class="tl-snapshot">
+                                <p>November 2020</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/006-tick.svg">
+                                <h3>Job offer at Missouri S&T Residential Life</h3>
+                            </div> 
+                            <span id="expand_12">
+                                Beginning in late October/early November, new daily cases of COVID-19 began to skyrocket in the U.S. Finding a good-fitting position in
+                                Seattle was proving difficult, and it was clear that a difficult winter (both in economic and public health terms)
+                                was coming in the months ahead. I received a text message from my former supervisor at Missouri S&T Residential Life.
+                                She let me know that the department was looking to hire a temporary Resident Director for the spring 2021 semester (Jan-May).
+                                In the face of renewed uncertainties, I made the decision to apply for and accept the offer of employment from the
+                                Residential Life department. 
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container left">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_13()">
+                            <div class="tl-snapshot">
+                                <p>January 2021</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/038-job-search-2.svg">
+                                <h3>Working at S&T Residential Life while job-searching</h3>
+                            </div> 
+                            <span id="expand_13">
+                                I returned to Missouri S&T in Rolla, Missouri late in December 2020, and began work as the Resident Director of
+                                an apartment-style residence hall that houses approximately 400 undergraduate students, where I supervise a student-staff
+                                of Resident Assistants, manage building operations, and advise local hall government. I updated my website to include this
+                                COVID-19 timeline, and began applying for full-time positions in Seattle, Washington, where my wife intends to continue
+                                her education and I intend to begin my career as a civil/structural engineer.
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tl-container right">
+                    <div class="tl-content">
+                        <button class="covid-button-tl" onclick="myFunction_expand_14()">
+                            <div class="tl-snapshot">
+                                <p>2021 and beyond</p>
+                                <img src="resources/flaticon/covid-timeline-icons/svg/036-question-1.svg">
+                                <h3>What next?</h3>
+                            </div> 
+                            <span id="expand_14">
+                                What comes next is partially in the hands of people like you! 
+                                Take a look at my <a href="./resources/docs/Resume - Christopher Cattron.pdf" target="_blank">resume</a>,
+                                scour this webpage to learn more about me, and <a href="#contact" target="_blank">let me know</a> if I might 
+                                be a good fit for your company! I look forward to getting in touch!
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div><!--END 'timeline' div -->
+            <!--END New COVID-19 Timeline-->
 
 
 
@@ -1680,7 +2382,7 @@
                 for me outside the office and classroom.</em></h4>
       
         <!--------------solid-1px-#777-line-------------->
-        <div id="ed-line-777"></div>
+        <div class="ed-line-777"></div>
         <!--------------solid-1px-#777-line-------------->
 
             <div class="cc-row">
@@ -1725,7 +2427,7 @@
 
 
         <!--------------solid-1px-#777-line-------------->
-        <div id="ed-line-777"></div>
+        <div class="ed-line-777"></div>
         <!--------------solid-1px-#777-line-------------->
 
             
@@ -1774,17 +2476,17 @@
 
   <!-- First Photo Grid-->
 
-  <div class="w3-row-padding w3-padding-16 w3-center"><!--START First Photo Grid div-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="project-gallery"><!--START First Photo Grid div-->
     <div class="w3-quarter project-item">
         <img class="project-gallery-img" src="./resources/images/projects/mini-mcmansion.jpg" alt="Playroom under stairs" style="width:100%">
         <h4>Mini McMansion</h4>
         <p>There is a little nook under the stairs in the basement of my 
             sister's house. Since she has two little girls, I thought I would take it upon myself to build 
-            them a secret playspace under the stairs! The space was completely unfinished before I began. I added framing, 
+            them a secret play space under the stairs! The space was completely unfinished before I began. I added framing, 
             lighting, carpet, finish, electric outlets, and even a secret storage compartment hidden in the wall! More photos to come!
             </p>
         <!--------------solid-1px-#777-line-------------->
-        <div id="ed-line-777"></div>
+        <div class="ed-line-777"></div>
         <!--------------solid-1px-#777-line-------------->
     </div>   
 
@@ -1793,21 +2495,21 @@
         <img class="project-gallery-img" src="./resources/images/projects/jdm.jpg" alt="Screenshot of website joedannyman.com" style="width:100%">
         <h4>JoeDannyMan website</h4>
         <p>After being let go from my job in May 2020, I had a lot of spare time on my hands. 
-            I began learning how to code by following tutorials online. For my friend Joe's birthday 
+            I began learning how to code by following tutorials online. For my friend Joe's birthday, 
             I put my coding skills to the test and built a <a href="https://joedannyman.com" target="_blank">website</a> 
             to showcase some of his video game level designs.</p>
         <!--------------solid-1px-#777-line-------------->
-        <div id="ed-line-777"></div>
+        <div class="ed-line-777"></div>
         <!--------------solid-1px-#777-line-------------->    
     </div>
     <div class="w3-quarter project-item">
         <img class="project-gallery-img" src="./resources/images/projects/planter-box.jpg" alt="Chris standing over large wooden planter box" style="width:100%">
         <h4>Planter boxes for mom</h4>
         <p>My mom wanted some big pretty planter boxes to put outside the home. She didn't like
-             any of the ones she found online or in stores, so she described what she wanted and 
+             any of the ones she found online or in stores, so she described what she wanted, and 
              I designed and built two of them. She did the painting and the planting though!</p>
         <!--------------solid-1px-#777-line-------------->
-        <div id="ed-line-777"></div>
+        <div class="ed-line-777"></div>
         <!--------------solid-1px-#777-line-------------->   
     </div>
     <div class="w3-quarter project-item">
@@ -1818,7 +2520,7 @@
             and some old hinges to make a dual chest/table. After getting married to my lovely wife, 
             the table was relocated to Joe's place at "The Den".</p>
         <!--------------solid-1px-#777-line-------------->
-        <div id="ed-line-777"></div>
+        <div class="ed-line-777"></div>
         <!--------------solid-1px-#777-line-------------->   
     
         
@@ -1874,7 +2576,7 @@
 
         <h2 class="w3-padding-16">What's on my bookshelf?</h2>
         <p>You can learn a lot about someone from the contents of their bookshelf. 
-            Here is a bit of what can be found on mine. <span class="content-mobile">Tap to learn more about each item!</span></p>
+            Here is a bit of what can be found on mine. <span class="content-mobile"><strong>Tap to learn more about each item!</strong></span></p>
             <!--the class="content-mobile" makes the "Tap to learn more..." dissappear unless the screen resolution is mobile-->
 
 
@@ -2146,7 +2848,7 @@
                     <div class="w3-large w3-margin-bottom">
                         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Rolla, MO - United States<br />
                         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 636-795-5677<br />
-                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: christophercattron@mail.com<br />
+                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: christophercattron@gmail.com<br />
                     </div>
                     <p>Leave your name, email, and a note and I'll get back to you.</p>
                     <form action="/action_page.php" method="POST" data-netlify="true">
@@ -2183,6 +2885,7 @@
                 
 
             </div>
+            <p class="last-updated">Last Updated: Tuesday 16th February, 2021 | 17:39 CST</p>
             <p>Copyright &copy; 2021 All Rights Reserved by <a href="https://www.linkedin.com/in/christopher-cattron/" target="_blank">Christopher Cattron</a>.</p>
         </footer>
 
