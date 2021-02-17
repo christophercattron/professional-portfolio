@@ -149,6 +149,7 @@ margin-left: 0x;
     margin: 15px auto;
     display: block;
     opacity: 0.85;
+    transition: width 1s ease-in-out 100ms, opacity 1s ease-in-out 100ms;
   }
   #about-the-logo:hover {
     width: 150px;
