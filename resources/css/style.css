@@ -27,6 +27,18 @@
 
 
 
+                  #nav-bar-cc-logo{
+                    height: 42.4px; 
+                    width: auto; 
+                    padding: 0px 16px; 
+                    opacity: 0.85;
+                    transition: opacity 1s ease-in-out 100ms;
+                  }
+
+                  #nav-bar-cc-logo:hover{
+                    opacity: 1;
+                    transition: opacity 1s ease-in-out 100ms;
+                  }
 
 
 
