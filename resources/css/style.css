@@ -612,7 +612,7 @@ margin-left: 0x;
   display: inline;
 }
 
-.ed-GPA-show-on-mobile{
+#ed-undergrad-GPA-show-on-mobile, #ed-grad-GPA-show-on-mobile{
   display: none;
 }
 
@@ -735,7 +735,7 @@ margin-left: 0x;
   display: none;
 }
 
-.ed-GPA-show-on-mobile{
+#ed-undergrad-GPA-show-on-mobile, #ed-grad-GPA-show-on-mobile{
   display: inline;
   font-size: 1.1333333333333333em;
 }
