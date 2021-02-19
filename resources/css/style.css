@@ -40,6 +40,56 @@
                     transition: opacity 1s ease-in-out 100ms;
                   }
 
+                  /*Hides the navbar labels and icons when screen is too crowded*/
+                  @media (max-width: 1233px) {
+                    .nav-bar-hide-text{display:none;}
+
+                    #home-icon:hover #home-nav-text,
+                    #about-icon:hover #about-nav-text,
+                    #education-icon:hover #education-nav-text,
+                    #experience-icon:hover #experience-nav-text,
+                    #covid-19-icon:hover #covid-19-nav-text,
+                    #fun-stuff-icon:hover #fun-stuff-nav-text,
+                    #contact-icon:hover #contact-nav-text{
+                      display:inline!important;}
+                    
+                    #home-nav-text:hover,
+                    #about-nav-text:hover,
+                    #education-nav-text:hover,
+                    #experience-nav-text:hover,
+                    #covid-19-nav-text:hover,
+                    #fun-stuff-nav-text:hover,
+                    #contact-nav-text:hover{
+                      display:inline!important;}
+                  }
+
+                  
+                  @media (max-width: 784px) {
+                    
+                    #home-nav-text,
+                    #about-nav-text,
+                    #education-nav-text,
+                    #experience-nav-text,
+                    #covid-19-nav-text,
+                    #fun-stuff-nav-text,
+                    #contact-nav-text{
+                      font-size: 10px;
+                    }
+                  }
+                  @media (max-width: 749px) {
+                    .nav-bar-hide-icons{display:none!important}
+                  }
+
+                  @media (min-width: 993px){
+
+                  }
+
+                  @media (max-width: 992px) and (min-width: 749px){
+                     .w3-hide-medium-cc-edit {
+                      display: none!important;
+                  }
+                  }
+                 
 
 
 
