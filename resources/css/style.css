@@ -40,6 +40,18 @@
                     transition: opacity 1s ease-in-out 100ms;
                   }
 
+                  /*Controls "Christopher Cattron, EIT" font size in navbar when screen size changes"*/
+                  @media (max-width: 380px) {
+                    #name-in-navbar{
+                      font-size: small;
+                    }
+                  }
+                  @media (max-width: 350px) {
+                    #name-in-navbar{
+                      font-size: x-small;
+                    }
+                  }
+
                   /*Hides the navbar labels and icons when screen is too crowded*/
                   @media (max-width: 1233px) {
                     .nav-bar-hide-text{display:none;}
