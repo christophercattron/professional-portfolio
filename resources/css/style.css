@@ -26,7 +26,7 @@
                   }
 
 
-
+/*------------------------START OF NAVBAR STUFF------------------------*/
                   #nav-bar-cc-logo{
                     height: 42.4px; 
                     width: auto; 
@@ -76,13 +76,11 @@
                       font-size: 10px;
                     }
                   }
+
                   @media (max-width: 749px) {
                     .nav-bar-hide{display:none!important}
                   }
 
-                  @media (min-width: 993px){
-
-                  }
 
                   @media (max-width: 992px) and (min-width: 749px){
                      .w3-hide-medium-cc-edit {
@@ -90,7 +88,7 @@
                   }
                   }
                  
-
+/*------------------------END OF NAVBAR STUFF------------------------*/
 
 
 
