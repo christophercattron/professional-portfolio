@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>The David Zone</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />   <!--W3.CSS stylesheet-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />   <!--Lato font stylesheet-->
+        <link rel="stylesheet" href="resources/css/style.css" type="text/css" />    <!--My stylesheet-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">   <!--Montserrat & Roboto font stylesheet-->
+        <link rel="shortcut icon" href="./resources/favicon/favicon-cc-arrows.ico" type="image/x-icon">  <!--Favicon CC Logo (1of2)-->
+        <link rel="icon" href="./resources/favicon/favicon-cc-arrows.ico" type="image/x-icon">  <!--Favicon CC Logo (2of2)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!--Font Awesome 4.7.0-->
+        <link rel="stylesheet" type="text/css" href="./resources/flaticon/font/flaticon.css"> <!--Flaticon stylesheet-->
+
+        
+
+        <style>
+            video {
+              width: 100%;
+              height: auto;
+            }
+        
+            </style>
+
+    </head>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top" style="z-index: 3;"><!--z-index set to 3 in order to be behind the timeline elements in the covid section-->
+            <div class="w3-bar" id="myNavbar">
+                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium-cc-edit w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="./index.html"><img id="nav-bar-cc-logo" class="w3-bar-item" src="resources/svg/cc-logo-with-arrows-filled-alt.svg.svg"></a>
+                <a class="w3-bar-item" id="name-in-navbar"><strong>CHRISTOPHER CATTRON, EIT</strong></a> 
+                <div style="float: right !important;">
+
+                </div>
+                
+           
+            </div>
+            
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Container (The DAVID Zone Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="the-david-zone">
+        
+            <h2 class="w3-center" id="header-2">Mysterious Button</h2>
+            <h4 class="w3-center" id="header-4">Do <em>you</em> click the button?</h4>
+
+                <style>
+                        #david-left {
+                            position: fixed;
+                            left: 0;
+                            height: 50%;
+                            z-index: 2;
+                        }
+                        #david-right {
+                            position: fixed;
+                            right: 0;
+                            height: 50%;
+                            z-index: 2;
+                        }
+
+                        @media (max-width: 600px){
+                            #david-left {
+                            position: fixed;
+                            float:left;
+                            bottom: 50%;
+                            z-index: 2;
+                            height: 150px;
+                            width: auto;
+                        }
+                            #david-right {
+                            position: fixed;
+                            float:right;
+                            bottom: 50%;
+
+                            z-index: 2;
+                            height: 100px;
+                            width: auto;
+                        }
+                        }
+
+                </style>
+
+
+
+
+            <div class="cont-3">
+                  <div class="cont-3-1" id="divChange1" style="display: flex; align-content: center; align-items: center; justify-content: center;">
+                    <input type="button" onclick="changeDiv1()" value="Click?">
+           
+                    <script>
+                        function changeDiv1(){
+                        //This plays the video and deletes the button
+                        document.getElementById('divChange1').innerHTML = '<video id="fishFryVideo"><source src="./resources/the-david-zone/fish-fry.mp4" type="video/mp4"><source src="./resources/the-david-zone/fish-fry.ogg" type="video/ogg">Your browser does not support HTML5 video.</video>';
+                        //This makes the fishFryVideo become designated as 'x'    
+                        var x = document.getElementById("fishFryVideo"); 
+                        //This plays 'x' which is the fishFryVideo
+                        x.play();
+                        //The next two lines delete the h2 and h4 elements that say "Mysterious Button" and "Click the button?", respectively
+                        document.getElementById('header-2').innerHTML = '';
+                        document.getElementById('header-4').innerHTML = '';
+                        //This defines the function 'hideVideo1' //I NEED TO CONTINUE MAKING COMMENTS//
+                        function hideVideo1(){
+                            document.getElementById('divChange1').innerHTML = '<div style="width: 100%;"><p style="text-align: center;">Thank you for coming to my TED Talk.</p><div>';
+                            document.getElementById('header-2').innerHTML = 'The David Zone';
+                            document.getElementById('header-4').innerHTML = '';
+                            image1 = document.getElementById('david-left');
+                            image1.src = 'resources/the-david-zone/david-thumbs-up.PNG';
+                            image2 = document.getElementById('david-right');
+                            image2.src = 'resources/the-david-zone/david-squat.png';
+                            image3 = document.getElementById('nav-bar-cc-logo');
+                            image3.src = 'resources/the-david-zone/david-sun.png';
+                            document.getElementById('name-in-navbar').innerHTML = '<strong>DAVID PRUITT</strong>';
+                            }
+                        x.addEventListener('ended', hideVideo1);
+
+
+
+                        
+                        
+                        
+                        } 
+                                            
+                    </script>
+                  </div>
+                  
+               
+            </div>
+            <img id="david-left" src="">
+            <img id="david-right" src="">
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-padding-64 " style="background-color: #003249">
+            <p>Copyright &copy; 2021 All Rights Reserved by <a href="https://www.christophercattron.com/" target="_blank">Christopher Cattron</a>.</p>
+        </footer>
+
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Change style of navbar on scroll
+            window.onscroll = function () {
+                myFunction();
+            };
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                }
+            }
+
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function toggleFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+    </body>
+    
+</html>
