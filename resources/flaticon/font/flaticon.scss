@@ -1,0 +1,777 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?074bcc3d8c31a90ed65f99b3aad00e86") format("truetype"),
+url("./flaticon.woff?074bcc3d8c31a90ed65f99b3aad00e86") format("woff"),
+url("./flaticon.woff2?074bcc3d8c31a90ed65f99b3aad00e86") format("woff2"),
+url("./flaticon.eot?074bcc3d8c31a90ed65f99b3aad00e86#iefix") format("embedded-opentype"),
+url("./flaticon.svg?074bcc3d8c31a90ed65f99b3aad00e86#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "3d-model-1": "\f101",
+    "3d-model": "\f102",
+    "3d-modeling": "\f103",
+    "3d-printer": "\f104",
+    "3d-printing-software": "\f105",
+    "analytics-1": "\f106",
+    "analytics": "\f107",
+    "appartment": "\f108",
+    "architecture-and-city": "\f109",
+    "bauschinger-effect": "\f10a",
+    "beam-1": "\f10b",
+    "beam-2": "\f10c",
+    "beam-3": "\f10d",
+    "beam-4": "\f10e",
+    "beam-5": "\f10f",
+    "beam-6": "\f110",
+    "beam": "\f111",
+    "bibi-heybat-mosque-1": "\f112",
+    "bibi-heybat-mosque": "\f113",
+    "block": "\f114",
+    "board-1": "\f115",
+    "board": "\f116",
+    "brick-wall": "\f117",
+    "brick": "\f118",
+    "bricklayer": "\f119",
+    "brickwall-1": "\f11a",
+    "brickwall": "\f11b",
+    "brickwork": "\f11c",
+    "bridge-1": "\f11d",
+    "bridge-2": "\f11e",
+    "bridge-3": "\f11f",
+    "bridge-4": "\f120",
+    "bridge-5": "\f121",
+    "bridge-6": "\f122",
+    "bridge": "\f123",
+    "bridges": "\f124",
+    "broken-house": "\f125",
+    "broken-roof": "\f126",
+    "building": "\f127",
+    "buildings": "\f128",
+    "burj-khalifa": "\f129",
+    "business-and-finance": "\f12a",
+    "business-plan": "\f12b",
+    "business": "\f12c",
+    "can": "\f12d",
+    "castle-1": "\f12e",
+    "celebration": "\f12f",
+    "cement-truck": "\f130",
+    "chisel": "\f131",
+    "city-hall": "\f132",
+    "ciudad-mitad-del-mundo": "\f133",
+    "clipboard-1": "\f134",
+    "clipboard": "\f135",
+    "cold-formed-steel": "\f136",
+    "coliseum-1": "\f137",
+    "coliseum-2": "\f138",
+    "coliseum": "\f139",
+    "column-stability-thick-777": "\f13a",
+    "column": "\f13b",
+    "columns": "\f13c",
+    "compass": "\f13d",
+    "computer": "\f13e",
+    "concrete-1": "\f13f",
+    "concrete-mixer-1": "\f140",
+    "concrete-mixer": "\f141",
+    "concrete": "\f142",
+    "confetti": "\f143",
+    "construction": "\f144",
+    "coronavirus": "\f145",
+    "crack": "\f146",
+    "cracked-smartphone": "\f147",
+    "crane": "\f148",
+    "diagram": "\f149",
+    "earthquake-1": "\f14a",
+    "earthquake-2": "\f14b",
+    "earthquake-3": "\f14c",
+    "earthquake-4": "\f14d",
+    "earthquake-5": "\f14e",
+    "earthquake-6": "\f14f",
+    "earthquake-7": "\f150",
+    "earthquake": "\f151",
+    "edit": "\f152",
+    "education": "\f153",
+    "eiffel-tower": "\f154",
+    "elegant-antique-building-shape-with-columns": "\f155",
+    "empire-state-building": "\f156",
+    "engineer-1": "\f157",
+    "engineer-2": "\f158",
+    "engineer": "\f159",
+    "engineering": "\f15a",
+    "equipment": "\f15b",
+    "fireworks": "\f15c",
+    "flow": "\f15d",
+    "formula-1": "\f15e",
+    "formula": "\f15f",
+    "foundation": "\f160",
+    "friction": "\f161",
+    "galata-tower-1": "\f162",
+    "galata-tower": "\f163",
+    "gate-of-india": "\f164",
+    "geological": "\f165",
+    "graph": "\f166",
+    "hagia-sophia-1": "\f167",
+    "hagia-sophia": "\f168",
+    "hammer-drill": "\f169",
+    "heaven": "\f16a",
+    "historic-theatre": "\f16b",
+    "historical-building": "\f16c",
+    "history": "\f16d",
+    "home": "\f16e",
+    "house": "\f16f",
+    "hurricane-1": "\f170",
+    "hurricane-2": "\f171",
+    "hurricane": "\f172",
+    "hyderabad-charminar": "\f173",
+    "hypothesis": "\f174",
+    "idea-1": "\f175",
+    "idea": "\f176",
+    "knowledge": "\f177",
+    "kremlin": "\f178",
+    "laptop-with-antique-historical-building-on-screen": "\f179",
+    "laptop": "\f17a",
+    "learning": "\f17b",
+    "light-bulb-1": "\f17c",
+    "light-bulb": "\f17d",
+    "live-music": "\f17e",
+    "mansory": "\f17f",
+    "mapping-1": "\f180",
+    "mapping": "\f181",
+    "mask": "\f182",
+    "maths": "\f183",
+    "measure": "\f184",
+    "mechanics": "\f185",
+    "mesh-1": "\f186",
+    "mesh": "\f187",
+    "metal": "\f188",
+    "millau-viaduct": "\f189",
+    "model": "\f18a",
+    "monitor": "\f18b",
+    "monument": "\f18c",
+    "mosque-1": "\f18d",
+    "mosque-2": "\f18e",
+    "mosque-3": "\f18f",
+    "mosque": "\f190",
+    "museum": "\f191",
+    "obelisk-1": "\f192",
+    "obelisk-2": "\f193",
+    "obelisk": "\f194",
+    "office-building": "\f195",
+    "old-monument": "\f196",
+    "parthenon": "\f197",
+    "party": "\f198",
+    "pendulum": "\f199",
+    "physics": "\f19a",
+    "plank": "\f19b",
+    "problem-solving": "\f19c",
+    "puzzle-1": "\f19d",
+    "puzzle-pieces": "\f19e",
+    "puzzle": "\f19f",
+    "reinforced-concrete": "\f1a0",
+    "report-1": "\f1a1",
+    "report": "\f1a2",
+    "ruins-1": "\f1a3",
+    "ruins": "\f1a4",
+    "saw": "\f1a5",
+    "seismograph": "\f1a6",
+    "selection": "\f1a7",
+    "sigma": "\f1a8",
+    "skill": "\f1a9",
+    "space-needle": "\f1aa",
+    "statue-of-liberty": "\f1ab",
+    "structure": "\f1ac",
+    "sustainable": "\f1ad",
+    "taj-mahal": "\f1ae",
+    "temple-of-heaven": "\f1af",
+    "temple": "\f1b0",
+    "tin": "\f1b1",
+    "triangle": "\f1b2",
+    "truck": "\f1b3",
+    "university": "\f1b4",
+    "virus-1": "\f1b5",
+    "virus": "\f1b6",
+    "wood-1": "\f1b7",
+    "wood-board-1": "\f1b8",
+    "wood-board": "\f1b9",
+    "wood": "\f1ba",
+    "work": "\f1bb",
+    "worker": "\f1bc",
+);
+
+.flaticon-3d-model-1:before {
+    content: map-get($flaticon-map, "3d-model-1");
+}
+.flaticon-3d-model:before {
+    content: map-get($flaticon-map, "3d-model");
+}
+.flaticon-3d-modeling:before {
+    content: map-get($flaticon-map, "3d-modeling");
+}
+.flaticon-3d-printer:before {
+    content: map-get($flaticon-map, "3d-printer");
+}
+.flaticon-3d-printing-software:before {
+    content: map-get($flaticon-map, "3d-printing-software");
+}
+.flaticon-analytics-1:before {
+    content: map-get($flaticon-map, "analytics-1");
+}
+.flaticon-analytics:before {
+    content: map-get($flaticon-map, "analytics");
+}
+.flaticon-appartment:before {
+    content: map-get($flaticon-map, "appartment");
+}
+.flaticon-architecture-and-city:before {
+    content: map-get($flaticon-map, "architecture-and-city");
+}
+.flaticon-bauschinger-effect:before {
+    content: map-get($flaticon-map, "bauschinger-effect");
+}
+.flaticon-beam-1:before {
+    content: map-get($flaticon-map, "beam-1");
+}
+.flaticon-beam-2:before {
+    content: map-get($flaticon-map, "beam-2");
+}
+.flaticon-beam-3:before {
+    content: map-get($flaticon-map, "beam-3");
+}
+.flaticon-beam-4:before {
+    content: map-get($flaticon-map, "beam-4");
+}
+.flaticon-beam-5:before {
+    content: map-get($flaticon-map, "beam-5");
+}
+.flaticon-beam-6:before {
+    content: map-get($flaticon-map, "beam-6");
+}
+.flaticon-beam:before {
+    content: map-get($flaticon-map, "beam");
+}
+.flaticon-bibi-heybat-mosque-1:before {
+    content: map-get($flaticon-map, "bibi-heybat-mosque-1");
+}
+.flaticon-bibi-heybat-mosque:before {
+    content: map-get($flaticon-map, "bibi-heybat-mosque");
+}
+.flaticon-block:before {
+    content: map-get($flaticon-map, "block");
+}
+.flaticon-board-1:before {
+    content: map-get($flaticon-map, "board-1");
+}
+.flaticon-board:before {
+    content: map-get($flaticon-map, "board");
+}
+.flaticon-brick-wall:before {
+    content: map-get($flaticon-map, "brick-wall");
+}
+.flaticon-brick:before {
+    content: map-get($flaticon-map, "brick");
+}
+.flaticon-bricklayer:before {
+    content: map-get($flaticon-map, "bricklayer");
+}
+.flaticon-brickwall-1:before {
+    content: map-get($flaticon-map, "brickwall-1");
+}
+.flaticon-brickwall:before {
+    content: map-get($flaticon-map, "brickwall");
+}
+.flaticon-brickwork:before {
+    content: map-get($flaticon-map, "brickwork");
+}
+.flaticon-bridge-1:before {
+    content: map-get($flaticon-map, "bridge-1");
+}
+.flaticon-bridge-2:before {
+    content: map-get($flaticon-map, "bridge-2");
+}
+.flaticon-bridge-3:before {
+    content: map-get($flaticon-map, "bridge-3");
+}
+.flaticon-bridge-4:before {
+    content: map-get($flaticon-map, "bridge-4");
+}
+.flaticon-bridge-5:before {
+    content: map-get($flaticon-map, "bridge-5");
+}
+.flaticon-bridge-6:before {
+    content: map-get($flaticon-map, "bridge-6");
+}
+.flaticon-bridge:before {
+    content: map-get($flaticon-map, "bridge");
+}
+.flaticon-bridges:before {
+    content: map-get($flaticon-map, "bridges");
+}
+.flaticon-broken-house:before {
+    content: map-get($flaticon-map, "broken-house");
+}
+.flaticon-broken-roof:before {
+    content: map-get($flaticon-map, "broken-roof");
+}
+.flaticon-building:before {
+    content: map-get($flaticon-map, "building");
+}
+.flaticon-buildings:before {
+    content: map-get($flaticon-map, "buildings");
+}
+.flaticon-burj-khalifa:before {
+    content: map-get($flaticon-map, "burj-khalifa");
+}
+.flaticon-business-and-finance:before {
+    content: map-get($flaticon-map, "business-and-finance");
+}
+.flaticon-business-plan:before {
+    content: map-get($flaticon-map, "business-plan");
+}
+.flaticon-business:before {
+    content: map-get($flaticon-map, "business");
+}
+.flaticon-can:before {
+    content: map-get($flaticon-map, "can");
+}
+.flaticon-castle-1:before {
+    content: map-get($flaticon-map, "castle-1");
+}
+.flaticon-celebration:before {
+    content: map-get($flaticon-map, "celebration");
+}
+.flaticon-cement-truck:before {
+    content: map-get($flaticon-map, "cement-truck");
+}
+.flaticon-chisel:before {
+    content: map-get($flaticon-map, "chisel");
+}
+.flaticon-city-hall:before {
+    content: map-get($flaticon-map, "city-hall");
+}
+.flaticon-ciudad-mitad-del-mundo:before {
+    content: map-get($flaticon-map, "ciudad-mitad-del-mundo");
+}
+.flaticon-clipboard-1:before {
+    content: map-get($flaticon-map, "clipboard-1");
+}
+.flaticon-clipboard:before {
+    content: map-get($flaticon-map, "clipboard");
+}
+.flaticon-cold-formed-steel:before {
+    content: map-get($flaticon-map, "cold-formed-steel");
+}
+.flaticon-coliseum-1:before {
+    content: map-get($flaticon-map, "coliseum-1");
+}
+.flaticon-coliseum-2:before {
+    content: map-get($flaticon-map, "coliseum-2");
+}
+.flaticon-coliseum:before {
+    content: map-get($flaticon-map, "coliseum");
+}
+.flaticon-column-stability-thick-777:before {
+    content: map-get($flaticon-map, "column-stability-thick-777");
+}
+.flaticon-column:before {
+    content: map-get($flaticon-map, "column");
+}
+.flaticon-columns:before {
+    content: map-get($flaticon-map, "columns");
+}
+.flaticon-compass:before {
+    content: map-get($flaticon-map, "compass");
+}
+.flaticon-computer:before {
+    content: map-get($flaticon-map, "computer");
+}
+.flaticon-concrete-1:before {
+    content: map-get($flaticon-map, "concrete-1");
+}
+.flaticon-concrete-mixer-1:before {
+    content: map-get($flaticon-map, "concrete-mixer-1");
+}
+.flaticon-concrete-mixer:before {
+    content: map-get($flaticon-map, "concrete-mixer");
+}
+.flaticon-concrete:before {
+    content: map-get($flaticon-map, "concrete");
+}
+.flaticon-confetti:before {
+    content: map-get($flaticon-map, "confetti");
+}
+.flaticon-construction:before {
+    content: map-get($flaticon-map, "construction");
+}
+.flaticon-coronavirus:before {
+    content: map-get($flaticon-map, "coronavirus");
+}
+.flaticon-crack:before {
+    content: map-get($flaticon-map, "crack");
+}
+.flaticon-cracked-smartphone:before {
+    content: map-get($flaticon-map, "cracked-smartphone");
+}
+.flaticon-crane:before {
+    content: map-get($flaticon-map, "crane");
+}
+.flaticon-diagram:before {
+    content: map-get($flaticon-map, "diagram");
+}
+.flaticon-earthquake-1:before {
+    content: map-get($flaticon-map, "earthquake-1");
+}
+.flaticon-earthquake-2:before {
+    content: map-get($flaticon-map, "earthquake-2");
+}
+.flaticon-earthquake-3:before {
+    content: map-get($flaticon-map, "earthquake-3");
+}
+.flaticon-earthquake-4:before {
+    content: map-get($flaticon-map, "earthquake-4");
+}
+.flaticon-earthquake-5:before {
+    content: map-get($flaticon-map, "earthquake-5");
+}
+.flaticon-earthquake-6:before {
+    content: map-get($flaticon-map, "earthquake-6");
+}
+.flaticon-earthquake-7:before {
+    content: map-get($flaticon-map, "earthquake-7");
+}
+.flaticon-earthquake:before {
+    content: map-get($flaticon-map, "earthquake");
+}
+.flaticon-edit:before {
+    content: map-get($flaticon-map, "edit");
+}
+.flaticon-education:before {
+    content: map-get($flaticon-map, "education");
+}
+.flaticon-eiffel-tower:before {
+    content: map-get($flaticon-map, "eiffel-tower");
+}
+.flaticon-elegant-antique-building-shape-with-columns:before {
+    content: map-get($flaticon-map, "elegant-antique-building-shape-with-columns");
+}
+.flaticon-empire-state-building:before {
+    content: map-get($flaticon-map, "empire-state-building");
+}
+.flaticon-engineer-1:before {
+    content: map-get($flaticon-map, "engineer-1");
+}
+.flaticon-engineer-2:before {
+    content: map-get($flaticon-map, "engineer-2");
+}
+.flaticon-engineer:before {
+    content: map-get($flaticon-map, "engineer");
+}
+.flaticon-engineering:before {
+    content: map-get($flaticon-map, "engineering");
+}
+.flaticon-equipment:before {
+    content: map-get($flaticon-map, "equipment");
+}
+.flaticon-fireworks:before {
+    content: map-get($flaticon-map, "fireworks");
+}
+.flaticon-flow:before {
+    content: map-get($flaticon-map, "flow");
+}
+.flaticon-formula-1:before {
+    content: map-get($flaticon-map, "formula-1");
+}
+.flaticon-formula:before {
+    content: map-get($flaticon-map, "formula");
+}
+.flaticon-foundation:before {
+    content: map-get($flaticon-map, "foundation");
+}
+.flaticon-friction:before {
+    content: map-get($flaticon-map, "friction");
+}
+.flaticon-galata-tower-1:before {
+    content: map-get($flaticon-map, "galata-tower-1");
+}
+.flaticon-galata-tower:before {
+    content: map-get($flaticon-map, "galata-tower");
+}
+.flaticon-gate-of-india:before {
+    content: map-get($flaticon-map, "gate-of-india");
+}
+.flaticon-geological:before {
+    content: map-get($flaticon-map, "geological");
+}
+.flaticon-graph:before {
+    content: map-get($flaticon-map, "graph");
+}
+.flaticon-hagia-sophia-1:before {
+    content: map-get($flaticon-map, "hagia-sophia-1");
+}
+.flaticon-hagia-sophia:before {
+    content: map-get($flaticon-map, "hagia-sophia");
+}
+.flaticon-hammer-drill:before {
+    content: map-get($flaticon-map, "hammer-drill");
+}
+.flaticon-heaven:before {
+    content: map-get($flaticon-map, "heaven");
+}
+.flaticon-historic-theatre:before {
+    content: map-get($flaticon-map, "historic-theatre");
+}
+.flaticon-historical-building:before {
+    content: map-get($flaticon-map, "historical-building");
+}
+.flaticon-history:before {
+    content: map-get($flaticon-map, "history");
+}
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-house:before {
+    content: map-get($flaticon-map, "house");
+}
+.flaticon-hurricane-1:before {
+    content: map-get($flaticon-map, "hurricane-1");
+}
+.flaticon-hurricane-2:before {
+    content: map-get($flaticon-map, "hurricane-2");
+}
+.flaticon-hurricane:before {
+    content: map-get($flaticon-map, "hurricane");
+}
+.flaticon-hyderabad-charminar:before {
+    content: map-get($flaticon-map, "hyderabad-charminar");
+}
+.flaticon-hypothesis:before {
+    content: map-get($flaticon-map, "hypothesis");
+}
+.flaticon-idea-1:before {
+    content: map-get($flaticon-map, "idea-1");
+}
+.flaticon-idea:before {
+    content: map-get($flaticon-map, "idea");
+}
+.flaticon-knowledge:before {
+    content: map-get($flaticon-map, "knowledge");
+}
+.flaticon-kremlin:before {
+    content: map-get($flaticon-map, "kremlin");
+}
+.flaticon-laptop-with-antique-historical-building-on-screen:before {
+    content: map-get($flaticon-map, "laptop-with-antique-historical-building-on-screen");
+}
+.flaticon-laptop:before {
+    content: map-get($flaticon-map, "laptop");
+}
+.flaticon-learning:before {
+    content: map-get($flaticon-map, "learning");
+}
+.flaticon-light-bulb-1:before {
+    content: map-get($flaticon-map, "light-bulb-1");
+}
+.flaticon-light-bulb:before {
+    content: map-get($flaticon-map, "light-bulb");
+}
+.flaticon-live-music:before {
+    content: map-get($flaticon-map, "live-music");
+}
+.flaticon-mansory:before {
+    content: map-get($flaticon-map, "mansory");
+}
+.flaticon-mapping-1:before {
+    content: map-get($flaticon-map, "mapping-1");
+}
+.flaticon-mapping:before {
+    content: map-get($flaticon-map, "mapping");
+}
+.flaticon-mask:before {
+    content: map-get($flaticon-map, "mask");
+}
+.flaticon-maths:before {
+    content: map-get($flaticon-map, "maths");
+}
+.flaticon-measure:before {
+    content: map-get($flaticon-map, "measure");
+}
+.flaticon-mechanics:before {
+    content: map-get($flaticon-map, "mechanics");
+}
+.flaticon-mesh-1:before {
+    content: map-get($flaticon-map, "mesh-1");
+}
+.flaticon-mesh:before {
+    content: map-get($flaticon-map, "mesh");
+}
+.flaticon-metal:before {
+    content: map-get($flaticon-map, "metal");
+}
+.flaticon-millau-viaduct:before {
+    content: map-get($flaticon-map, "millau-viaduct");
+}
+.flaticon-model:before {
+    content: map-get($flaticon-map, "model");
+}
+.flaticon-monitor:before {
+    content: map-get($flaticon-map, "monitor");
+}
+.flaticon-monument:before {
+    content: map-get($flaticon-map, "monument");
+}
+.flaticon-mosque-1:before {
+    content: map-get($flaticon-map, "mosque-1");
+}
+.flaticon-mosque-2:before {
+    content: map-get($flaticon-map, "mosque-2");
+}
+.flaticon-mosque-3:before {
+    content: map-get($flaticon-map, "mosque-3");
+}
+.flaticon-mosque:before {
+    content: map-get($flaticon-map, "mosque");
+}
+.flaticon-museum:before {
+    content: map-get($flaticon-map, "museum");
+}
+.flaticon-obelisk-1:before {
+    content: map-get($flaticon-map, "obelisk-1");
+}
+.flaticon-obelisk-2:before {
+    content: map-get($flaticon-map, "obelisk-2");
+}
+.flaticon-obelisk:before {
+    content: map-get($flaticon-map, "obelisk");
+}
+.flaticon-office-building:before {
+    content: map-get($flaticon-map, "office-building");
+}
+.flaticon-old-monument:before {
+    content: map-get($flaticon-map, "old-monument");
+}
+.flaticon-parthenon:before {
+    content: map-get($flaticon-map, "parthenon");
+}
+.flaticon-party:before {
+    content: map-get($flaticon-map, "party");
+}
+.flaticon-pendulum:before {
+    content: map-get($flaticon-map, "pendulum");
+}
+.flaticon-physics:before {
+    content: map-get($flaticon-map, "physics");
+}
+.flaticon-plank:before {
+    content: map-get($flaticon-map, "plank");
+}
+.flaticon-problem-solving:before {
+    content: map-get($flaticon-map, "problem-solving");
+}
+.flaticon-puzzle-1:before {
+    content: map-get($flaticon-map, "puzzle-1");
+}
+.flaticon-puzzle-pieces:before {
+    content: map-get($flaticon-map, "puzzle-pieces");
+}
+.flaticon-puzzle:before {
+    content: map-get($flaticon-map, "puzzle");
+}
+.flaticon-reinforced-concrete:before {
+    content: map-get($flaticon-map, "reinforced-concrete");
+}
+.flaticon-report-1:before {
+    content: map-get($flaticon-map, "report-1");
+}
+.flaticon-report:before {
+    content: map-get($flaticon-map, "report");
+}
+.flaticon-ruins-1:before {
+    content: map-get($flaticon-map, "ruins-1");
+}
+.flaticon-ruins:before {
+    content: map-get($flaticon-map, "ruins");
+}
+.flaticon-saw:before {
+    content: map-get($flaticon-map, "saw");
+}
+.flaticon-seismograph:before {
+    content: map-get($flaticon-map, "seismograph");
+}
+.flaticon-selection:before {
+    content: map-get($flaticon-map, "selection");
+}
+.flaticon-sigma:before {
+    content: map-get($flaticon-map, "sigma");
+}
+.flaticon-skill:before {
+    content: map-get($flaticon-map, "skill");
+}
+.flaticon-space-needle:before {
+    content: map-get($flaticon-map, "space-needle");
+}
+.flaticon-statue-of-liberty:before {
+    content: map-get($flaticon-map, "statue-of-liberty");
+}
+.flaticon-structure:before {
+    content: map-get($flaticon-map, "structure");
+}
+.flaticon-sustainable:before {
+    content: map-get($flaticon-map, "sustainable");
+}
+.flaticon-taj-mahal:before {
+    content: map-get($flaticon-map, "taj-mahal");
+}
+.flaticon-temple-of-heaven:before {
+    content: map-get($flaticon-map, "temple-of-heaven");
+}
+.flaticon-temple:before {
+    content: map-get($flaticon-map, "temple");
+}
+.flaticon-tin:before {
+    content: map-get($flaticon-map, "tin");
+}
+.flaticon-triangle:before {
+    content: map-get($flaticon-map, "triangle");
+}
+.flaticon-truck:before {
+    content: map-get($flaticon-map, "truck");
+}
+.flaticon-university:before {
+    content: map-get($flaticon-map, "university");
+}
+.flaticon-virus-1:before {
+    content: map-get($flaticon-map, "virus-1");
+}
+.flaticon-virus:before {
+    content: map-get($flaticon-map, "virus");
+}
+.flaticon-wood-1:before {
+    content: map-get($flaticon-map, "wood-1");
+}
+.flaticon-wood-board-1:before {
+    content: map-get($flaticon-map, "wood-board-1");
+}
+.flaticon-wood-board:before {
+    content: map-get($flaticon-map, "wood-board");
+}
+.flaticon-wood:before {
+    content: map-get($flaticon-map, "wood");
+}
+.flaticon-work:before {
+    content: map-get($flaticon-map, "work");
+}
+.flaticon-worker:before {
+    content: map-get($flaticon-map, "worker");
+}
